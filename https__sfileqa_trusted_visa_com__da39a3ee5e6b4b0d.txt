@@ -1,0 +1,13 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html; charset=utf-8
+Content-Length: 5233
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data:;
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:11:56 GMT
+Set-Cookie: mfatoken=xxxxxx; expires=Thursday, 16-Mar-23 03:11:56 GMT; path=/; HttpOnly; SameSite=Strict passchangesession=xxxxxx; expires=Thursday, 16-Mar-23 03:11:56 GMT; path=/; HttpOnly; SameSite=Strict csrftoken=4C750047-58F7-19A6-8BEC-226F0AB5448B; path=/; SameSite=Lax
+Expires: -1
+Referrer-Policy: no-referrer
+Cache-Control: no-cache, no-store, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

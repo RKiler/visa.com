@@ -1,0 +1,14 @@
+403 
+Set-Cookie: JSESSIONID=OGQ0NjNhMjUtZWE0Yi00MThiLWJiODYtNTFkMGMzNDdkMTNl; Path=/; Secure; HttpOnly; SameSite=Lax lbs=!HrUxZsGdwblBn2X2dpMC7wIStOzLrW6c8TwUWntSq0S5JS6lCBcZipCXvaa4c+CdTFmAg7fNdu2EVJU0jOyI6Es0tWL/j2xtCZw0AUHZoQ==; path=/; Httponly; Secure
+Server: Apache Tomcat
+Strict-Transport-Security: max-age=31536000;includeSubDomains
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: *.jamf.net *.jamf.build *.jamfcloud.com *.jamf.com *.jamfnebula.com *.jamfsoftware.com *.inf.jamf.one *.jamfnimbus.cloud *.amazonaws.com *.mzstatic.com *.googleapis.com *.gstatic.com *.googletmanager.com *.zoominsoftware.io *.nr-data.net https://js-agent.newrelic.com *.pendo.io; frame-ancestors 'self' *.jamf.net *.jamf.build *.jamfcloud.com app.pendo.io
+Permissions-Policy: geolocation=(), fullscreen=(self)
+X-Content-Type-Options: nosniff
+Content-Length: 290
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html;charset=utf-8
+Retry-Count: 0
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Referrer-Policy: strict-origin-when-cross-origin
+Date: Fri, 15 Mar 2024 03:10:10 GMT

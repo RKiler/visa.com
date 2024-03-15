@@ -1,0 +1,13 @@
+520 
+Strict-Transport-Security: max-age=264310; preload
+Set-Cookie: __cfruid=e70d187445eafad36b7c999d0f583a7f674445a9-1710472075; path=/; domain=.sandbox.consumerapi.digital.visa.com; HttpOnly; Secure; SameSite=None
+Referrer-Policy: same-origin
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 15
+Retry-Count: 0
+Server: cloudflare
+Cf-Ray: 86494bc4fd0c943a-SJC
+Date: Fri, 15 Mar 2024 03:07:55 GMT
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0

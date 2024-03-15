@@ -1,0 +1,16 @@
+200 OK
+X-Xss-Protection: 1; mode=block 1; mode=block 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Ua-Compatible: IE=edge
+Set-Cookie: __cfruid=a293916396c43cfae8abf7c06b86aa6e8061ed2c-1710472134; path=/; domain=.mktpg.visa.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:08:54 GMT
+Content-Length: 0
+X-Robots-Tag: noindex
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+Content-Security-Policy: upgrade-insecure-requests; script-src 'self'; object-src 'self'
+Access-Control-Allow-Origin: *
+Cf-Ray: 86494d3a5875230e-SJC
+X-Content-Type-Options: nosniff
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0

@@ -1,0 +1,20 @@
+200 OK
+X-Cache: Hit from cloudfront
+X-Amz-Server-Side-Encryption: AES256
+Vary: Accept-Encoding
+X-Amz-Cf-Pop: SFO5-C3
+X-Amz-Version-Id: ZQ90D3zVgrOePNTtOK9cs_jXoH.0r0Xc
+Etag: W/"1d798c0c37445cdf39c8058573794414"
+Via: 1.1 7ba3caf71ae7a52dd411d1a543e80cd8.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: 5OgA7B36o_HOjRtFVBUESdcgCCraDFmYqvPNkp6wPbWPkEtaPLf20A==
+X-Frame-Options: DENY
+X-Amz-Meta-Codebuild-Content-Md5: 29594b6f271704192326e70d0ab0cb29
+Server: AmazonS3
+Content-Type: text/html
+Retry-Count: 0
+Last-Modified: Wed, 10 May 2023 06:10:54 GMT
+X-Amz-Meta-Codebuild-Content-Sha256: 25d79f37cd59da2b30fd78505c0185356da5923a5d08052704ec8eefcd86c8de
+X-Amz-Meta-Codebuild-Buildarn: arn:aws:codebuild:ap-southeast-2:675076543228:build/merchant-ui:35c034e7-36a2-4f52-aa49-ee7643460142
+Date: Thu, 14 Mar 2024 11:50:06 GMT
+Age: 55155
+Strict-Transport-Security: max-age=31536000; includeSubDomains

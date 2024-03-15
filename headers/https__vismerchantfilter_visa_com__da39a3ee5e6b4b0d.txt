@@ -1,0 +1,18 @@
+403 Forbidden
+Date: Thu, 14 Mar 2024 09:48:16 GMT
+X-Cache: Error from cloudfront
+Last-Modified: Fri, 17 Mar 2023 07:31:25 GMT
+X-Amz-Version-Id: impV_1fu3hipAvN0GK56WziE7flTAgBj
+X-Amz-Meta-Codebuild-Content-Md5: 63b28e657a43485b72904252c064119a
+Server: AmazonS3
+Via: 1.1 88eccec4c36b443b42b3988f57d3bebe.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SFO5-P1
+Content-Type: text/html
+X-Amz-Meta-Codebuild-Content-Sha256: 2c88cb1665f943ef32f6bd6dc853b03a39f5945dc0db98c63846b24e4e6ae2cc
+X-Amz-Meta-Codebuild-Buildarn: arn:aws:codebuild:ap-southeast-2:086596609497:build/merchant-ui:bed5e0c0-54aa-4b85-bb45-2a4c65e95649
+X-Amz-Cf-Id: ZxRlSbor-UBdRvFpkxcN8vgB6l48SBeXb8ipxLe-duGlQHKEcorUCw==
+Age: 64319
+Retry-Count: 0
+X-Amz-Server-Side-Encryption: AES256
+Etag: W/"4204cbbf85506782721cfb990dba6eb7"
+Vary: Accept-Encoding

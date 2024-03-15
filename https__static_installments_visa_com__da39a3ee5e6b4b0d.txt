@@ -1,0 +1,8 @@
+403 Forbidden
+Strict-Transport-Security: max-age=15768000; includeSubDomains
+Date: Fri, 15 Mar 2024 03:08:18 GMT
+Content-Type: text/html
+Content-Length: 1233
+Retry-Count: 0
+X-Powered-By: ASP.NET
+Server: PINPONA

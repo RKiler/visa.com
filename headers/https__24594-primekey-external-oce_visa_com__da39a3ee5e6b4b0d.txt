@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Last-Modified: Mon, 11 Mar 2024 20:36:58 GMT
+Accept-Ranges: bytes
+Date: Fri, 15 Mar 2024 03:11:01 GMT
+Server: Apache
+Content-Security-Policy: upgrade-insecure-requests; script-src 'self'; object-src 'self'
+Retry-Count: 0

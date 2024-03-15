@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Server Login</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/Web/Shared/forms.css" />
+    <script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+            var switchtoptc = getCookie("switchtoptc");
+
+            // Anti-CSRF: fix up all FORM inputs to use double submit csrftoken in their URL
+			var elements = document.querySelectorAll('form');
+			Array.prototype.forEach.call(elements, function(index){
+                index.action += "?csrftoken=" + getCookie("csrftoken");
+            });
+
+            var EftServerLoginFailureMsg = 'Not logged in.';
+            var WtcLoginFailedMsg = 'Login failed.<br/><br/> Please check your credentials and try again.';
+            var LoginErrorClass = '.loginErrorMsg';
+			
+            // Modify generic server login fail message with new WTC credentials failing message.
+            var loginErr = document.querySelector(LoginErrorClass);
+            if (loginErr && loginErr.innerHTML.length > 0) {
+                var moddedMsg = loginErr.innerHTML.replace(EftServerLoginFailureMsg, WtcLoginFailedMsg);
+                loginErr.innerHTML = moddedMsg;
+            }
+        });
+		
+        function submitHandler() {
+            // trim spaces around username and password
+			// note: previously used name attr instead of id
+            var u = document.querySelector('input[id=username]');
+            u.value = u.value.trim();
+            var p = document.querySelector('input[id=password]');
+            p.value = p.value.trim();
+        }
+		
+		function getCookie(name) {
+			// Split cookie string and get all individual name=value pairs in an array
+			var cookieArr = document.cookie.split(";");
+    
+			// Loop through the array elements
+			for(var i = 0; i < cookieArr.length; i++) {
+				var cookiePair = cookieArr[i].split("=");
+			
+				/* Removing whitespace at the beginning of the cookie name
+				and compare it with the given string */
+				if(name == cookiePair[0].trim()) {
+					// Decode the cookie value and return
+					return decodeURIComponent(cookiePair[1]);
+				}
+			}
+ 
+			// Return null if not found
+			return null;
+		}
+    </script>
+</head>
+<body>
+	<noscript>
+		<div class="scriptRequired">This site requires JavaScript. Please enable JavaScript in your browser settings and reload this page.</div>
+	</noscript>
+	
+    
+
+    
+    <div class="loginWrapper loginTablularForm" role="main">
+        <fieldset id="loginFieldset">
+            <legend id="loginLegend">Log in</legend>
+			
+			<img id="login-logo" src="/Web/Shared/images/gs-atom-logo.png" alt="Globalscape" height="125">
+
+            
+
+            <form id="mainform" method="post" autocomplete="off" action="/Web/Account/Login.htm" onsubmit="submitHandler(); return true;">
+                <table class="loginTable">
+                    <tr>
+                        <td class="col1" ><label id="userNameLabel" for="username" accesskey="u"><u>U</u>sername:</label></td>
+                        <td class="col2" ><input class="tbInput" type="text" maxlength="1024" id="username" name="username" tabindex="1" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="colSpanRow inputText" colspan="2">
+                            <a href="/Web/Shadowfax/reg/register.html/#/forgot-username" target="_blank" rel="noopener" class="forgotCreds">Forgot Username</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col1">
+                            <label id="passwordLabel" accesskey="p" for="password"><u>P</u>assword:</label>
+                        </td>
+                        <td class="col2">
+                            <input class="tbInput" type="password" maxlength="1024" id="password" name="password" tabindex="2" autocomplete="off" />
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td class="colSpanRow inputText" colspan="2">
+                            <a href="/Web/Shadowfax/reg/register.html/#/forgot-password" target="_blank" rel="noopener" class="forgotCreds">Forgot Password</a>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td colspan="2" class="colSpanRow colSpanRowCheckBox">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" class="colSpanRow" id="loginSubmitTd">
+                            <input type="submit" value="Log in" tabindex="4" id="loginSubmit" />
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </fieldset>
+
+        
+    </div>
+
+    
+
+    
+</body>
+</html>

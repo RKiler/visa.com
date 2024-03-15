@@ -1,0 +1,18 @@
+200 OK
+Set-Cookie: __cfruid=3486fe3eab329348994dbb3744ead8d28d0145ca-1710472137; path=/; domain=.visa.co.uk; HttpOnly; Secure; SameSite=None _cfuvid=e3ghniu7ee4B1okhqBChaOpMB6GyK9aieHYWnauuLOg-1710472137726-0.0.1.1-604800000; path=/; domain=.visa.co.uk; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: HIT
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Referrer-Policy: no-referrer-when-downgrade
+Retry-Count: 0
+Last-Modified: Thu, 14 Mar 2024 10:29:04 GMT
+X-Content-Type-Options: nosniff nosniff
+X-Xss-Protection: 1; mode=block
+Cf-Ray: 86494d4c8ba16441-SJC
+Cache-Control: max-age=14400
+Vary: Accept-Encoding
+Content-Security-Policy: self
+X-Frame-Options: SAMEORIGIN
+Date: Fri, 15 Mar 2024 03:08:57 GMT
+Age: 4100

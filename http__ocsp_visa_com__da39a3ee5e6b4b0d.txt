@@ -1,0 +1,8 @@
+403 Forbidden
+Content-Length: 90
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:08:32 GMT
+Server: Apache
+Content-Type: text/html;charset=UTF-8

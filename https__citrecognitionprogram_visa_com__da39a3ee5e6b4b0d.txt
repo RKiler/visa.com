@@ -1,0 +1,18 @@
+200 OK
+Expires: -1
+X-Xss-Protection: 0
+Set-Cookie: esctx-idXOhb6iJVE=AQABCQEAAADnfolhJpSnRYB1SVj-Hgd88Sfk422MgAhysKIKM5StxYm3Dal-QPkaSDKo6yOoXqH0_-tFmZW-ctLalydeTgIyp6Eo0YIejittB7SCXc0a_V7pafojJ3UaM6iPVJSE4t52wv3lF5I2Vccty1lpjZFdlTKZwf94bm8l_gBICUigXCAA; domain=.login.microsoftonline.com; expires=Sat, 16-Mar-2024 04:07:57 GMT; path=/; secure; HttpOnly fpc=Ah6F2h5WJ39GiAkvNCGr1vw; expires=Sun, 14-Apr-2024 03:07:57 GMT; path=/; secure; HttpOnly esctx=PAQABBwEAAADnfolhJpSnRYB1SVj-Hgd8WaqRAlYKvyrz9jqX8SZcnBbHptYKewPU4aSOriQHLq2GxBGJenGseonOQgosbvr95K8A7-Oa6SGU1zY7aQcBivgKIdkM3fiisDGs1Mr6VkYeX9L9HAGwl4DdRuD0UsA-d8JJzFj5kkntadF35rZHeHYc_yEOg1VU7bwF9J-n1aAgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly x-ms-gateway-slice=estsfd; path=/; secure; httponly stsservicecookie=estsfd; path=/; secure; httponly
+Content-Type: text/html; charset=utf-8
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+Date: Fri, 15 Mar 2024 03:07:56 GMT
+Cache-Control: no-store, no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+est"}]}
+Retry-Count: 0
+Pragma: no-cache
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Ms-Request-Id: c9482b02-2228-4c01-96c3-a5142f263100
+X-Ms-Ests-Server: 2.1.17445.4 - NCUS ProdSlices
+Referrer-Policy: strict-origin-when-cross-origin

@@ -1,0 +1,16 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Server: Apache
+Last-Modified: Mon, 11 Mar 2024 15:18:12 GMT
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Date: Fri, 15 Mar 2024 03:12:19 GMT
+Content-Length: 12344
+Expires: Fri, 15 Mar 2024 03:12:19 GMT
+X-Ua-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=0, no-cache, max-age=0, no-cache
+Etag: "3038-613640cc29500"
+Age: 0
+Retry-Count: 0

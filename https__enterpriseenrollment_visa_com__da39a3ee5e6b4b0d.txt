@@ -1,0 +1,25 @@
+200 OK
+X-Ms-Version: 13.216.0.1 (dev#578be48fc0.240308-0645) Signed
+Timing-Allow-Origin: *
+Permissions-Policy: accelerometer=(), ambient-light-sensor=(), battery=(), camera=(), gyroscope=(), magnetometer=(), screen-wake-lock=()
+Retry-Count: 0
+Expires: Fri, 15 Mar 2024 03:00:00 GMT
+Etag: "0VA01yUfRqAj"
+Content-Security-Policy: frame-ancestors 'self'
+Access-Control-Allow-Origin: *
+Date: Fri, 15 Mar 2024 03:09:53 GMT
+Cache-Control: public, stale-while-revalidate=900, max-age=900
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin
+X-Azure-Ref: 20240315T030953Z-m8cppag9xd5v3curw5xap9hkqn0000000220000000006wg3
+Accept-Ranges: bytes
+Content-Type: text/html; charset=utf-8
+Last-Modified: Fri, 15 Mar 2024 02:42:00 GMT
+Vary: Accept-Encoding, host
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Ms-Content-Source: Runtime
+X-Ua-Compatible: IE=edge
+X-Cache: TCP_HIT
+X-Fd-Int-Roxy-Purgeid: 49712766

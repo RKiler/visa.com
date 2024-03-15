@@ -1,0 +1,16 @@
+200 OK
+Set-Cookie: lbs=!0QsLmCIqVgXKTrKCWW0fbBXS8ZnHLpyt0uz80LDawzIL4PAZlUTGFdhS9eGnVF3L9UMcNssSwONoMO3+gQbSla9MgmrzMQ5AT319K61i; Path=/; Version=1; Secure; Httponly __cfruid=12db347e4e11dacdd3a73ac0aec2e93f4886b9fb-1710472312; path=/; domain=.visa.com.co; HttpOnly; Secure; SameSite=None _cfuvid=XJfBYEVX2Q.yeXlaTzSdnFaJyxGnfF2zzKMdArVSlZs-1710472312735-0.0.1.1-604800000; path=/; domain=.visa.com.co; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+X-Frame-Options: SAMEORIGIN
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:11:52 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Retry-Count: 0
+Last-Modified: Fri, 15 Mar 2024 03:01:14 GMT
+Content-Security-Policy: self
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: BYPASS
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff nosniff
+Cf-Ray: 864951907bd26446-SJC

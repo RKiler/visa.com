@@ -1,0 +1,19 @@
+403 Forbidden
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Origin-Agent-Cluster: ?1
+Referrer-Policy: same-origin
+Server: cloudflare
+Retry-Count: 0
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Cf-Ray: 86495253eb92983d-SJC
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Permissions-Policy: accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+X-Frame-Options: SAMEORIGIN
+Cf-Chl-Out: f1UCVrJF6U14hZvOx+Ceb4Wr/sAZ4PNUOaWx7Oe608635mCURrlQRoiubn5BEpSJs9jgYTFaL30E9n2of4QY0RT68ulMZSvi+NhCFnJ1GZlFkuTJxP5MWXoDruKXFM/Dm/jta8oZnJrPBAazaNPFfw==$SygwdXiaFSU920gr1GDdxw==
+Date: Fri, 15 Mar 2024 03:12:23 GMT
+Content-Type: text/html; charset=UTF-8
+Cf-Mitigated: challenge
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Vary: Accept-Encoding

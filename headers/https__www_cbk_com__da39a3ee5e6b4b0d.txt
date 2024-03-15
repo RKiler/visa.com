@@ -1,0 +1,12 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Expires: -1
+Date: Fri, 15 Mar 2024 03:09:13 GMT
+Set-Cookie: cookiesession1=678A8C3639D4DD1142EC14C521D2C10A;Expires=Sat, 15 Mar 2025 03:09:14 GMT;Path=/;HttpOnly
+Strict-Transport-Security: max-age=15552000
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 121067
+Retry-Count: 0
+Server: Microsoft-IIS/10.0
+X-Ua-Compatible: IE=Edge

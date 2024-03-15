@@ -1,0 +1,13 @@
+403 Forbidden
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+Server: cloudflare
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Date: Fri, 15 Mar 2024 03:08:11 GMT
+Content-Type: text/html
+Retry-Count: 0
+Set-Cookie: __cf_bm=CAcGUEQRDqQZQAaFwDNvy4QiEQU9vSiMXwcvjFGozeg-1710472091-1.0.1.1-ve.y4Lb7hvPfj9gFwn9KqeE_1fUEBSg6fz_0VDHE0mWXKJobCjRv.Cd0jmnbzcpTbC1e8.Qb8UoY4ORvwa.ZvQ; path=/; expires=Fri, 15-Mar-24 03:38:11 GMT; domain=.innovation-platform-qa.visa.com; HttpOnly; Secure; SameSite=None __cfruid=08a6378c6f2e143d4233dc180bf3a4e2860c3843-1710472091; path=/; domain=.innovation-platform-qa.visa.com; HttpOnly; Secure; SameSite=None
+Content-Security-Policy: script-src 'self' *.secure.checkout.visa.com appsforoffice.microsoft.com 'unsafe-inline'; frame-ancestors 'self' *.live.com *.outlook.com *.office.com *.office365.com; object-src 'self'
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 86494c2cb9cd67f3-SJC

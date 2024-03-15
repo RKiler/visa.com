@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: origin-when-cross-origin
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Retry-Count: 0
+Correlationid: 5bce892b-4da8-4467-be3f-5f89ed9d2f32
+Cache-Control: no-cache, no-store
+X-Content-Type-Options: nosniff
+Pragma: no-cache
+Server: 
+Set-Cookie: .AspNetCore.Antiforgery.RZ_MfZbsdRA=CfDJ8CAmCmNBq-FDk-v6AaeeUWrx10-sPUh4yRoiY7YshXauObQuHgnlAcIFvZOnAMNgpFyf9WKphAPueEzxEm_2X3pp9BTA-aKd9L_sxm2hFvi73LRlzTQChZ6RFUgq5GSLkU365Vksg-jocQ76xIZoWSU; path=/; secure; samesite=strict; httponly
+Date: Fri, 15 Mar 2024 03:09:46 GMT
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SameOrigin

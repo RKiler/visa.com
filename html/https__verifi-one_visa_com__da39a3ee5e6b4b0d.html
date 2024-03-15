@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- rel: 1.126.2-8 -->
+      <!-- commit: fbda59a0a652139ab25c87e7b78deca24ae2c507 -->
+		  <!-- For Browsers -->
+		  <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+      <script>
+          /**
+           * @param  {} url
+           */
+          function isWhiteLabelled(url) {
+              try {
+                  let a = document.createElement("a");
+                  a.href = url;
+                  let hostName = a.hostname;
+                  var hostArray = hostName ? hostName.split('.') : [];
+
+                  if (hostArray.length < 2) return false;
+
+                  //Need for check for the base domain
+                  if (hostArray[hostArray.length - 2] !== "cybersource") {
+                      return hostName; // is a WhiteLabelled URL
+                  } else {
+                      return false;
+                  }
+              } catch (e) {
+                  return false
+              }
+          }
+
+
+          /**
+           * @param  {} faviconUrl
+           */
+          function createFaviconLink(faviconUrl) {
+            var link = document.createElement('link');
+            link.id = 'favicon';
+            link.rel = 'shortcut icon';
+            link.href = window.sessionStorage.getItem('favicon')?window.sessionStorage.getItem('favicon'):faviconUrl;
+            document.head.appendChild(link);
+          }
+
+          if(!isWhiteLabelled(window.location.href)){
+            document.write("<title>Enterprise Business Center - Login</title>");
+            createFaviconLink('/ebc2/favicon.ico');
+          } else {
+              if (document.getElementById("favicon") && window.sessionStorage.getItem('favicon') ) {
+                document.getElementById("favicon").href= window.sessionStorage.getItem('favicon');
+              } else {
+                createFaviconLink('');
+              }
+          }
+
+          let defaultTitle = new String('Enterprise Business Center - Login');
+          if (window.sessionStorage.getItem('pageTitle')) {
+            let prefixTitle = window.sessionStorage.getItem('pageTitle');
+            let suffixTitle = defaultTitle.substring(defaultTitle.indexOf('-'));
+            document.title = prefixTitle + suffixTitle;
+          }
+    </script>
+
+    <script>
+      function detectBrowser() {
+          var userAgentString = navigator.userAgent;
+
+          if (!userAgentString) {
+            return null;
+          }
+
+          if (document.all && !document.addEventListener) {
+            return null;
+          }
+
+          const browsers = browserGetRules();
+
+          var detected = browsers.map(function (browser) {
+            var match = browser.rule.exec(userAgentString);
+            var version = match && match[1].split(/[._]/).slice(0, 3);
+
+            if (version && version.length < 3) {
+              version = version.concat(version.length === 1 ? [0, 0] : [0]);
+            }
+
+            return match && {
+              name: browser.name,
+              version: version.join('.')
+            };
+          }).filter(Boolean)[0] || null;
+
+          if (detected) {
+            detected.os = browserDetectOS(userAgentString);
+          }
+          return detected;
+      }
+
+        function browserDetectOS(userAgentString) {
+          var rules = browserGetOSRules();
+          var detected = rules.filter(function (os) {
+            return os.rule && os.rule.test(userAgentString);
+          })[0];
+          return detected ? detected.name : null;
+        }
+
+        function browserGetRules() {
+          return browserBuildRules([
+            ['edge', /Edge\/([0-9\._]+)/],
+            ['crios', /CriOS\/([0-9\.]+)(:?\s|$)/],
+            ['opera', /Opera\/([0-9\.]+)(?:\s|$)/],
+            ['opera', /OPR\/([0-9\.]+)(:?\s|$)$/],
+            ['ie', /Trident\/7\.0.*rv\:([0-9\.]+).*\).*Gecko$/],
+            ['ie', /MSIE\s([0-9\.]+);.*Trident\/[4-7].0/],
+            ['ie', /MSIE\s(7\.0)/],
+            ['ios', /Version\/([0-9\._]+).*Mobile.*Safari.*/],
+            ['safari', /Version\/([0-9\._]+).*Safari/],
+            ['firefox', /Firefox\/([0-9\.]+)(?:\s|$)/],
+            ['chrome', /(?!Chrom.*OPR)Chrom(?:e|ium)\/([0-9\.]+)(:?\s|$)/],
+          ]);
+        }
+
+        function browserGetOSRules() {
+          return browserBuildRules([
+            ['Windows 7', /(Windows NT 6.1)/],
+            ['Windows 8', /(Windows NT 6.2)/],
+            ['Windows 8.1', /(Windows NT 6.3)/],
+            ['Windows 10', /(Windows NT 10.0)/],
+            ['Windows 11', /(Windows NT 11.0)/]
+          ]);
+        }
+
+        function browserBuildRules(ruleTuples) {
+          return ruleTuples.map(function (tuple) {
+            return {
+              name: tuple[0],
+              rule: tuple[1]
+            };
+          });
+        }
+
+        function getBrowserSupportMessage() {
+
+          var versions = {
+            'safari': 12,
+            'opera': 50,
+            'ios_saf': 11,
+            'ie_mob': 12,
+            'edge': 85,
+            'firefox': 78,
+            'chrome': 80,
+            'ios' : 9,
+            'crios' : 53
+          };
+
+          var message = { title: "", text: "", linkText: "", link: "" };
+
+          var browser = detectBrowser();
+
+          if (!browser || !versions[browser.name] || parseInt(browser.version) < versions[browser.name]) {
+            message = {
+              title: "Your browser version is not supported.",
+              text: "Some features may not work or appear. Recommended versions can be found on the",
+              linkText: "Supported Web Browsers page",
+              link: "https://support.cybersource.com/s/article/Web-Browser-Supported-by-Business-Center"
+            }
+          }
+          return message;
+        }
+
+      </script>
+      <script>
+        getBrowserSupportMessage()
+      </script>
+
+			
+			
+			<script>
+      window.location.search.substring(1).split('&').forEach(function(params) {
+        if (/^token=.+$/.test(params)) {
+          // New user creation steps start at 10.
+          window.__INITIAL_STATE = {step: 10};
+          // TODO: validate token.
+          window.__NEW_USER_TOKEN = params.split('=')[1];
+        }
+      });
+      var chunks={"2spr":{"size":3012191,"entry":"/ebc2/app/modules/2spr.7039f73948.js","hash":"7039f73948087107a36a","css":["/ebc2/app/modules/cybs-ui.7039f739.css"]},"boarding":{"size":4623116,"entry":"/ebc2/app/modules/boarding.3674429db7.js","hash":"3674429db75a0e961a12","css":["/ebc2/app/modules/cybs-ui.3674429d.css"]},"ebc":{"size":9495242,"entry":"/ebc2/app/modules/ebc.a9279c52cf.js","hash":"a9279c52cf783fd4cac9","css":["/ebc2/app/modules/cybs-ui.a9279c52.css"]},"evalMerchantSignUp":{"size":934302,"entry":"/ebc2/app/modules/evalMerchantSignUp.75a4816d3b.js","hash":"75a4816d3bbba79d0340","css":[]},"expiredPwd":{"size":2193304,"entry":"/ebc2/app/modules/expiredPwd.64448fed89.js","hash":"64448fed89729799f6ec","css":["/ebc2/app/modules/cybs-ui.64448fed.css"]},"invoicePayment":{"size":1806485,"entry":"/ebc2/app/modules/invoicePayment.1f2c8c6686.js","hash":"1f2c8c668665ba510767","css":["/ebc2/app/modules/cybs-ui.1f2c8c66.css"]},"ipValidation":{"size":2730298,"entry":"/ebc2/app/modules/ipValidation.eb35291c3d.js","hash":"eb35291c3d94d70caa2c","css":["/ebc2/app/modules/cybs-ui.eb35291c.css"]},"login":{"size":1566996,"entry":"/ebc2/app/modules/login.de338dba5a.js","hash":"de338dba5a1af831fd9d","css":[]},"oauth":{"size":1503996,"entry":"/ebc2/app/modules/oauth.837295cb47.js","hash":"837295cb47d3da6aa0a3","css":[]}}
+      function fnGetUrlByParameter( keyword, query_string ) {
+          try   {
+            keyword = keyword.toLowerCase().replace(/[[]/, '\[').replace(/[]]/, '\]');
+            let regex = new RegExp( keyword + '=([^&#]*)');
+            let results = regex.exec( query_string.toLowerCase() );
+            return results === null ? '' : decodeURIComponent(results[1]);
+          }
+          catch(e) {
+            console.log('** An exception occurred while trying to read query parameter **');
+          }
+     };
+     function fnGetAppId(){
+        if(location.pathname.indexOf('vdm') > -1){
+         return "VDM";
+       } else if(window.location.href.indexOf("rapidselleronboarding") > -1){
+        return "RSO";
+      } else {
+        return "EBC2";
+      }
+     }
+      function getPreloginModules() {
+        try {
+            const xhr = new XMLHttpRequest();
+            let requestBaseUrl = '/epcapi/v1/pre-login/application-manifests';
+            const USER_PARAM = fnGetUrlByParameter('tag', window.location.href);
+            console.log(USER_PARAM, 'USER PARAM');
+            if(USER_PARAM && USER_PARAM !== "" || !!fnGetAppId()){
+                requestBaseUrl +='?applicationId=' + fnGetAppId() + '&tag='+ USER_PARAM.toLowerCase();
+            }
+            xhr.open('GET', requestBaseUrl, false);
+            xhr.send();
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.response);
+                if (data && Object.keys(data).length !== 0) {
+                    const baseStaticModule = '/ebc2/static/modules/';
+                    if (data && data.moduleConfigurations && data.moduleConfigurations.length !== 0) {
+                        staticModules = data.moduleConfigurations.reduce(function(acc, elm) {
+                            let val = baseStaticModule + elm.moduleReference.moduleId + '/' + elm.moduleReference.versionNumber;
+                            acc[Object.keys(elm["routes"])] = val;
+                            return acc
+                        }, {});
+                    }
+                }
+            } else {
+                console.log("** An error occurred while trying to call API");
+                throw "error";
+            }
+            xhr.onerror = function() {
+                console.log("** An error occurred while trying to fetch modules");
+            };
+
+        } catch(e) {
+            console.log('** An exception occurred while trying to fetch modules');
+        }
+    }
+    let staticModules = "";
+    getPreloginModules();
+		</script>
+		  <link id="favicon" rel="shortcut icon" href="" />
+
+			<link rel="stylesheet" href="/ebc2/app/modules/l1_lib/l1-dev.e66fd375.css" />
+			<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.7039f739.css" />
+<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.3674429d.css" />
+<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.a9279c52.css" />
+<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.64448fed.css" />
+<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.1f2c8c66.css" />
+<link rel="stylesheet" href="/ebc2/app/modules/cybs-ui.eb35291c.css" />
+
+    <script src="/ebc2/app/modules/js/polyfill.min.js"></script>
+    <script src="/ebc2/app/modules/js/system.js"></script>
+    <script>
+
+    var dllCount={"l1.js":"/ebc2/app/modules/l1_lib/l1-dev.bundle.e66fd375.js","l2.js":"/ebc2/app/modules/l2_lib/l2.bundle.06d748d8.js","l3.js":"/ebc2/app/modules/l3_lib/l3.bundle.fc62f1be.js"};
+    window.publicPath="/ebc2/app/modules/";
+    SystemJS.config({
+        baseURL: '/ebc2/app/modules/',
+        map: {
+            'text': '/ebc2/app/modules/js/systemjs-text.js',
+            'json': '/ebc2/app/modules/js/systemjs-plugin-json.js',
+            'css': '/ebc2/app/modules/js/systemjs-plugin-css.js',
+            'pdfmake.min.js': '/ebc2/app/modules/js/pdfmake-0.1.59.min.js',
+            'vfs_fonts.js': '/ebc2/app/modules/js/vfs_fonts.js',
+            'vfs_fonts_roboto.js': '/ebc2/app/modules/js/vfs_fonts_roboto.js'
+        },
+        meta: {
+    "/ebc2/app/modules/*.html": {
+        "loader": "text"
+    },
+    "/ebc2/app/modules/*.json": {
+        "loader": "json"
+    },
+    "/ebc2/app/modules/*.css": {
+        "loader": "css"
+    },
+    "/ebc2/static/modules/*.js": {
+        "format": "cjs"
+    },
+    "@ebc2ui/*.js": {
+        "format": "cjs"
+    },
+    "2spr.7039f73948.js": {
+        "format": "cjs"
+    },
+    "boarding.3674429db7.js": {
+        "format": "cjs"
+    },
+    "ebc.a9279c52cf.js": {
+        "format": "cjs"
+    },
+    "evalMerchantSignUp.75a4816d3b.js": {
+        "format": "cjs"
+    },
+    "expiredPwd.64448fed89.js": {
+        "format": "cjs"
+    },
+    "invoicePayment.1f2c8c6686.js": {
+        "format": "cjs"
+    },
+    "ipValidation.eb35291c3d.js": {
+        "format": "cjs"
+    },
+    "login.de338dba5a.js": {
+        "format": "cjs"
+    },
+    "oauth.837295cb47.js": {
+        "format": "cjs"
+    },
+    "/ebc2/app/modules/l1_lib/l1-dev.bundle.e66fd375.js": {
+        "format": "cjs"
+    },
+    "/ebc2/app/modules/l2_lib/l2.bundle.06d748d8.js": {
+        "format": "cjs"
+    },
+    "/ebc2/app/modules/l3_lib/l3.bundle.fc62f1be.js": {
+        "format": "cjs"
+    }
+}
+    });
+    </script>
+    <script>
+        var VAAPConfig = {
+            "output_section": "callback"
+        }
+
+        // Implementation to not use concat, as concat is very slow in IE, and that is what this polyfill is for.
+        if (!Array.prototype.flat) {
+            Object.defineProperty(Array.prototype, 'flat', {
+                configurable: true,
+                writeable:true,
+                value: function(){
+                    var d=isNaN(arguments[0])?1:Number(arguments[0]);
+                    return d?Array.prototype.reduce.call(this,function(acc, cur){
+                        if (Array.isArray(cur)) {
+                            acc.push.apply(acc, cur.flat.call(cur, d - 1));
+                        } else {
+                            acc.push(cur);
+                        }
+                        return acc;
+                    }, []):Array.prototype.slice.call(this); // return a copy.
+                }
+            });
+        }
+        if (!Array.prototype.flatMap) {
+            Object.defineProperty(Array.prototype, 'flatMap', {
+                configurable: true,
+                writeable:true,
+                value: function(){return Array.prototype.map.apply(this,arguments).flat();}
+            });
+        }
+    </script>
+    <script id="vba" src="/ebc2/app/modules/js/vba/js/VisaBehaviorAnalytics-3.1.5.min.js" defer></script>
+    </head>
+
+    <style>
+        @font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Book.eot");src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Book.woff") format("woff"),url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Book.ttf") format("truetype")}@font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Bold.otf");font-weight:bold}@font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-BoldItalic.otf");font-weight:bold;font-style:italic}@font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Italic.otf");font-style:italic}@font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-Medium.otf");font-weight:500}@font-face{font-family:"relative-book";src:url("/ebc2/app/config/client/cybersource/fonts/CybersourceRelative-MediumItalic.otf");font-weight:500;font-style:italic}.skin-bg-status-negative{background-color:#d60036}.skin-bg-status-warning{background-color:#ff9800}.skin-bg-background{background-color:#f2f4f8}html{font-size:14px;color:#222}body{background:#f2f4f8;color:#222;font-family:"relative-book","Open Sans","Roboto",sans-serif !important;font-size:1rem;line-height:1.5;margin:0}.login-link,a{color:#0051dc;cursor:pointer;text-decoration:underline}.login-link{font-size:.86rem}.button-custom{margin:0 !important;min-width:240px !important;letter-spacing:normal !important}.textField-custom{min-width:auto !important}.text-small{font-size:.86rem}.text-color-primary{color:#0051dc}.text-color-white{color:#fff}.text-heading1{font-size:1.6rem}.text-heading2{font-size:1.4rem}.text-heading3{font-size:1.3rem}.text-heading4{font-size:1.1rem}.text-heading5{font-size:1rem}.text-heading6{font-size:1rem}.text-body{font-size:1rem}.text-small{font-size:.86rem}.text-tiny{font-size:.71rem}.text-style-bold{font-weight:700}.text-style-medium,.text-heading4,.text-heading5{font-weight:700}.text-style-regular{font-weight:400}.text-style-light,.text-heading1,.text-heading2,.text-heading3,.text-heading6{font-weight:300}.text-heading1,.text-heading2,.text-heading3,.text-heading4,.text-heading5,.text-heading6{color:#222}.text-color-primary{color:#003ea9}.text-color-secondary{color:#15195a}.text-color-dark{color:#222}.text-color-medium{color:#767676}.text-color-light{color:#d7d7de}.text-color-white{color:#fff}.text-color-disabled{color:#b4b4c6}.text-color-status-neutral{color:#6f7083}.text-color-status-positive{color:#077844}.text-color-status-warning{color:#ff9800}.text-color-status-negative{color:#d60036}.text-color-inherit{color:inherit}.struct-marginAuto{margin:auto}.struct-marginAuto--vertical{margin:auto 0}.struct-marginAuto--horizontal{margin:0 auto}.struct-marginNone{margin:0}.struct-marginNone--left{margin-left:0}.struct-marginNone--right{margin-right:0}.struct-marginNone--top{margin-top:0}.struct-marginNone--bottom{margin-bottom:0}.struct-marginSpace1--all{margin:.2rem !important}.struct-marginSpace1--left{margin-left:.2rem !important}.struct-marginSpace1--right{margin-right:.2rem !important}.struct-marginSpace1--top{margin-top:.2rem !important}.struct-marginSpace1--bottom{margin-bottom:.2rem !important}.struct-marginSpace2--all{margin:.36rem}.struct-marginSpace2--left{margin-left:.36rem}.struct-marginSpace2--right{margin-right:.36rem}.struct-marginSpace2--top{margin-top:.36rem}.struct-marginSpace2--bottom{margin-bottom:.36rem}.struct-marginSpace3--all{margin:.7rem}.struct-marginSpace3--left{margin-left:.7rem}.struct-marginSpace3--right{margin-right:.7rem}.struct-marginSpace3--top{margin-top:.7rem}.struct-marginSpace3--bottom{margin-bottom:.7rem}.struct-marginSpace4--all{margin:1.07rem}.struct-marginSpace4--left{margin-left:1.07rem}.struct-marginSpace4--right{margin-right:1.07rem}.struct-marginSpace4--top{margin-top:1.07rem}.struct-marginSpace4--bottom{margin-bottom:1.07rem}.struct-marginSpace5--all{margin:1.4rem}.struct-marginSpace5--left{margin-left:1.4rem}.struct-marginSpace5--right{margin-right:1.4rem}.struct-marginSpace5--top{margin-top:1.4rem}.struct-marginSpace5--bottom{margin-bottom:1.4rem}.struct-marginSpace6--all{margin:2.1rem}.struct-marginSpace6--left{margin-left:2.1rem}.struct-marginSpace6--right{margin-right:2.1rem}.struct-marginSpace6--top{margin-top:2.1rem}.struct-marginSpace6--bottom{margin-bottom:2.1rem}.struct-marginSpace7--all{margin:2.8rem}.struct-marginSpace7--left{margin-left:2.8rem}.struct-marginSpace7--right{margin-right:2.8rem}.struct-marginSpace7--top{margin-top:2.8rem}.struct-marginSpace7--bottom{margin-bottom:2.8rem}.struct-marginSpace8--all{margin:3.5rem}.struct-marginSpace8--left{margin-left:3.5rem}.struct-marginSpace8--right{margin-right:3.5rem}.struct-marginSpace8--top{margin-top:3.5rem}.struct-marginSpace8--bottom{margin-bottom:3.5rem}.struct-marginSpace3Neg--all{margin:-0.7rem}.struct-marginSpace3Neg--left{margin-left:-0.7rem}.struct-marginSpace3Neg--right{margin-right:-0.7rem}.struct-marginSpace3Neg--top{margin-top:-0.7rem}.struct-marginSpace3Neg--bottom{margin-bottom:-0.7rem}.struct-paddingNone{padding:0}.struct-paddingNone--left{padding-left:0}.struct-paddingNone--right{padding-right:0}.struct-paddingNone--top{padding-top:0}.struct-paddingNone--bottom{padding-bottom:0}.struct-paddingSpace1--all{padding:.2rem !important}.struct-paddingSpace1--left{padding-left:.2rem !important}.struct-paddingSpace1--right{padding-right:.2rem !important}.struct-paddingSpace1--top{padding-top:.2rem !important}.struct-paddingSpace1--bottom{padding-bottom:.2rem !important}.struct-paddingSpace2--all{padding:.36rem}.struct-paddingSpace2--left{padding-left:.36rem}.struct-paddingSpace2--right{padding-right:.36rem}.struct-paddingSpace2--top{padding-top:.36rem}.struct-paddingSpace2--bottom{padding-bottom:.36rem}.struct-paddingSpace3--all{padding:.7rem}.struct-paddingSpace3--left{padding-left:.7rem}.struct-paddingSpace3--right{padding-right:.7rem}.struct-paddingSpace3--top{padding-top:.7rem}.struct-paddingSpace3--bottom{padding-bottom:.7rem}.struct-paddingSpace4--all{padding:1.07rem}.struct-paddingSpace4--left{padding-left:1.07rem}.struct-paddingSpace4--right{padding-right:1.07rem}.struct-paddingSpace4--top{padding-top:1.07rem}.struct-paddingSpace4--bottom{padding-bottom:1.07rem}.struct-paddingSpace5--all{padding:1.4rem}.struct-paddingSpace5--left{padding-left:1.4rem}.struct-paddingSpace5--right{padding-right:1.4rem}.struct-paddingSpace5--top{padding-top:1.4rem}.struct-paddingSpace5--bottom{padding-bottom:1.4rem}.struct-paddingSpace6--all{padding:2.1rem}.struct-paddingSpace6--left{padding-left:2.1rem}.struct-paddingSpace6--right{padding-right:2.1rem}.struct-paddingSpace6--top{padding-top:2.1rem}.struct-paddingSpace6--bottom{padding-bottom:2.1rem}.struct-paddingSpace7--all{padding:2.8rem}.struct-paddingSpace7--left{padding-left:2.8rem}.struct-paddingSpace7--right{padding-right:2.8rem}.struct-paddingSpace7--top{padding-top:2.8rem}.struct-paddingSpace7--bottom{padding-bottom:2.8rem}.struct-paddingSpace8--all{padding:3.5rem}.struct-paddingSpace8--left{padding-left:3.5rem}.struct-paddingSpace8--right{padding-right:3.5rem}.struct-paddingSpace8--top{padding-top:3.5rem}.struct-paddingSpace8--bottom{padding-bottom:3.5rem}.struct-layer7{z-index:2000}.struct-layer6{z-index:600}.struct-layer5{z-index:500}.struct-layer4{z-index:400}.struct-layer3{z-index:300}.struct-layer2{z-index:200}.struct-layer1{z-index:100}.struct-layer0{z-index:0}.u-shadow0{box-shadow:none !important}.u-shadow1{box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}.u-shadow2{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}.u-shadow3{box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23)}.u-shadow4{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)}.u-shadow5{box-shadow:0 19px 38px rgba(0,0,0,.3),0 15px 12px rgba(0,0,0,.22)}.u-display-block{display:block}.u-display-inline{display:inline}.u-display-inline-block{display:inline-block}.u-display-flex{display:flex}.u-display-none{display:none}.u-cursor-default{cursor:default}.u-cursor-nopointer{pointer-events:none;user-select:none}.u-cursor-pointer{cursor:pointer}.u-cursor-not-allowed{cursor:not-allowed}.u-cursor-select{cursor:text}.u-cursor-col-resize{cursor:col-resize}.u-float-right{float:right}.u-float-left{float:left}.u-float-none{float:none}.u-align-baseline{vertical-align:baseline}.u-align-bottom{vertical-align:bottom}.u-align-middle{vertical-align:middle}.u-align-top{vertical-align:top}.u-align-self-center{align-self:center}.u-pos-absolute{position:absolute}.u-pos-fixed{position:fixed}.u-pos-relative{position:relative}.u-pos-static{position:static}.u-pos-bottom{bottom:0}.u-pos-top{top:0}.u-pos-left{left:0}.u-pos-right{right:0}.u-width-total{width:100vw}.u-width-full{width:100%}.u-width-half{width:50%}.u-width-none{width:0}.u-height-total{height:100vh}.u-height-full{height:100%}.u-height-half{height:50%}.u-height-none{height:0}.u-overflow-auto{overflow:auto}.u-overflow-auto-y{overflow-y:auto}.u-overflow-auto-x{overflow-x:auto}.u-overflow-hidden{overflow:hidden}.u-overflow-hidden--y{overflow-x:hidden}.u-overflow-hidden--x{overflow-y:hidden}.u-list-style-none{list-style:none}.u-clearfix{overflow:auto}.u-clearfix:after{clear:both;content:" "}.u-clear-both{clear:both}.u-border-radius-card{border-radius:2px}.u-text-overflow-ellipsis{overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important}.u-white-space-nowrap{white-space:nowrap}.u-word-wrap-break{word-wrap:break-word}.u-word-break-break-word{word-break:break-word}.u-word-break-break-all{word-break:break-all}.u-text-transform-upcase{text-transform:uppercase}.u-text-transform-lowercase{text-transform:lowercase}.u-text-transform-upcase{text-transform:capitalize}.u-text-align-center{text-align:center}.u-text-align-left{text-align:left}.u-text-align-right{text-align:right}.u-text-align-justify{text-align:justify}.u-line-height-none{line-height:0}.u-line-height-single{line-height:1}.u-line-height-normal{line-height:1.5}.u-line-height-more{line-height:1.75}.u-line-height-double{line-height:2}.c-status-manager{top:0 !important}.content-container{height:100vh}.card-and-error-container{width:380px}.accessible-content{width:.1px;height:.1px;clip:rect(0px, 0px, 0px, 0px);position:absolute}.card-container{height:60%}.button-container{width:60%}.login-logo{margin-bottom:40px;max-width:200px}.cybs-login-logo{height:auto;width:172px}.login-error,.login-error-hidden{background:#d60036;color:#fff;margin-bottom:20px;padding:10px;text-align:center;transition:all .5s}.login-error a,.login-error-hidden a{color:#fff}.login-error-hidden{display:none}.status,.status-success,.hideSuccess,.showSuccess,.status-error,.hideError,.showError{color:#fff;text-align:center;margin-bottom:10px;transition:all .5s;width:400px}.status a,.status-success a,.hideSuccess a,.showSuccess a,.status-error a,.hideError a,.showError a{color:#fff}.status span,.status-success span,.hideSuccess span,.showSuccess span,.status-error span,.hideError span,.showError span{display:block;padding:10px}.status-error,.hideError,.showError{background:#d60036}.status-success,.hideSuccess,.showSuccess{background:#077844}.showError{opacity:1}.hideError{opacity:0}.showSuccess{opacity:1}.hideSuccess{opacity:0}@keyframes spinner{to{transform:rotate(360deg)}}.spinner:before{content:"";box-sizing:border-box;position:absolute;top:50%;left:50%;width:30px;height:30px;margin-top:-10px;margin-left:-10px;border-radius:50%;border-top:2px solid #07d;border-right:2px solid rgba(0,0,0,0);animation:spinner .6s linear infinite}.show-step{animation:fadein .75s;-moz-animation:fadein .75s;-webkit-animation:fadein .75s;-o-animation:fadein .75s}.animation-hide-error,.animation-hide-success{display:none;opacity:0}.animation-show-login{opacity:1;transition:all .5s}.animation-hide-login{display:none;opacity:0;transition:opacity .5s}.animation-show-step{animation:fadein .75s;-moz-animation:fadein .75s;-webkit-animation:fadein .75s;-o-animation:fadein .75s}@keyframes fadein{from{opacity:0}to{opacity:1}}@-moz-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@-o-keyframes fadein{from{opacity:0}to{opacity:1}}.loader-wrap{position:fixed;height:0;width:0;top:0;left:0;display:none;z-index:10000}.loader-wrap.loading{display:block;height:100%;width:100%}.loader-wrap .loader{-webkit-animation:spin 1s ease-in-out infinite alternate both;animation:spin 1s ease-in-out infinite alternate both;height:10rem;position:relative;width:10rem;top:45%;margin:auto}.loader-wrap .loader>svg{max-width:100%}.loader-wrap .loader>svg:not(#circle-middle){-webkit-animation:spin 1s ease-in-out infinite alternate both;animation:spin 1s ease-in-out infinite alternate both;position:absolute;top:-50%;left:0;-webkit-transform-origin:bottom center;-ms-transform-origin:bottom center;transform-origin:bottom center}.loader-wrap .loader>svg:nth-of-type(1):not(#circle-middle){-webkit-transform:rotate(30deg);-ms-transform:rotate(30deg);transform:rotate(30deg)}.loader-wrap .loader>svg:nth-of-type(2):not(#circle-middle){-webkit-transform:rotate(60deg);-ms-transform:rotate(60deg);transform:rotate(60deg)}.loader-wrap .loader>svg:nth-of-type(3):not(#circle-middle){-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.loader-wrap .loader>svg:nth-of-type(4):not(#circle-middle){-webkit-transform:rotate(120deg);-ms-transform:rotate(120deg);transform:rotate(120deg)}.loader-wrap .loader>svg:nth-of-type(5):not(#circle-middle){-webkit-transform:rotate(150deg);-ms-transform:rotate(150deg);transform:rotate(150deg)}.loader-wrap .loader>svg:nth-of-type(6):not(#circle-middle){-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.loader-wrap .loader>svg:nth-of-type(7):not(#circle-middle){-webkit-transform:rotate(210deg);-ms-transform:rotate(210deg);transform:rotate(210deg)}.loader-wrap .loader>svg:nth-of-type(8):not(#circle-middle){-webkit-transform:rotate(240deg);-ms-transform:rotate(240deg);transform:rotate(240deg)}.loader-wrap .loader>svg:nth-of-type(9):not(#circle-middle){-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.loader-wrap .loader>svg:nth-of-type(10):not(#circle-middle){-webkit-transform:rotate(300deg);-ms-transform:rotate(300deg);transform:rotate(300deg)}.loader-wrap .loader>svg:nth-of-type(11):not(#circle-middle){-webkit-transform:rotate(330deg);-ms-transform:rotate(330deg);transform:rotate(330deg)}.loader-wrap .loader>svg:nth-of-type(12):not(#circle-middle){-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}.loader-wrap .loader>svg:nth-of-type(13):not(#circle-middle){-webkit-transform:rotate(390deg);-ms-transform:rotate(390deg);transform:rotate(390deg)}.large-spinner:before{content:"";position:absolute;top:50%;left:50%;width:30px;height:30px;margin-top:-10px;margin-left:-10px}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+          .cs-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .cs-brand span {
+            white-space: nowrap;
+            display: inline-block;
+            color:#000369;
+            vertical-align: middle;
+          }
+
+          .cs-name {
+            border-right: 1px solid;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
+
+          .cs-name sup {
+            font-size: 0.75rem;
+          }
+
+          .cs-slogan {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1rem;
+          }
+
+          .cs-animation {
+            width: 100%;
+            height: 2rem;
+            margin-top: 1rem;
+            position: relative;
+          }
+
+       </style>
+<body>
+
+<div class="login-background" id="cybs-ui" tabindex="-1">
+</div>
+
+<template id="spinner" style="display:none">
+    <div class="login-container" id="login-container">
+        <div class="cs-loading">
+            <div class="cs-brand">
+                <span class="cs-slogan"><img src="/ebc2/app/modules/js/mini-loader-opt.gif" /></span>
+            </div>
+        </div>
+    </div>
+</template>
+</body>
+<script>
+    // Show spinner.
+    var spinner=document.getElementById('spinner');
+    spinner=spinner.content||spinner.firstElementChild;
+    document.getElementById('cybs-ui').appendChild(spinner.cloneNode(true));
+    // This is added because in some error scenarios EBC2 redirects to /ebc2. For verifi, context is "vdm"
+    if(location.hostname.indexOf("verifi") > -1 && location.pathname.indexOf('/ebc2') > -1){
+        location.href = location.href.replace('/ebc2', '/vdm')
+    }
+    
+    const isAnet = function() {
+        return ((location && location.hostname && location.pathname) && location.hostname.indexOf("authorize.net") > -1);
+    }
+    
+    const getRootPath = function() {
+        const pathnames = location.pathname ? location.pathname.split("/") : [];
+        return (pathnames.length > 1) ? pathnames[1] : "";
+    }
+        
+    const isAnetMerchant = function() {
+        return (isAnet() && getRootPath()==="merchant");
+    }
+    
+    const isAnetPartner = function() {
+        return (isAnet() && getRootPath()==="partner");
+    }
+    
+    if(isAnet() && location.pathname.indexOf('/ebc2') > -1){
+        //by default, we replace it with /merchant
+        location.href = location.href.replace('/ebc2', '/merchant')
+    }
+    const loadedUrls = {};
+    // if trying to access '/vdm'context when domain is not verifi domain, change context to '/ebc2'
+    if(location.hostname.indexOf("verifi") < 0 && location.pathname.indexOf('/vdm') > -1){
+        location.href = location.href.replace('/vdm', '/ebc2')
+    }  
+    // if trying to access '/merchant or /partner' context when domain is not authorize domain, change context to '/ebc2'
+    if(!isAnet()) {
+       let pathnames =  location.pathname.split('/');
+       if(pathnames.length > 1) {
+           if(pathnames[1] === 'merchant') {
+                location.href = location.href.replace('/merchant', '/ebc2')
+           } else if(pathnames[1] === 'partner') {
+                location.href = location.href.replace('/partner', '/ebc2')
+           }
+       }
+    }
+    
+
+    SystemJS.import('/ebc2/app/modules/l1_lib/l1-dev.bundle.e66fd375.js')
+    .then(function(){
+        return Promise.all([
+            SystemJS.import('react-dom/index.js')
+          , SystemJS.import('react/index.js')
+          , SystemJS.import('react-router/lib/index.js')
+        ]);
+    })
+    .then(function(modules){
+        var ReactDOM=modules[0];
+        var React=modules[1];
+        var Router=modules[2];
+        var requireCommon={"login":2,"expiredPwd":2,"2spr":2,"oauth":2,"ipValidation":3,"evalMerchantSignUp":3,"boarding":3,"invoicePayment":3,"linkPayment":3,"rsoRegistration":3,"merchantRegistration":3};
+        var legacyPaths={"":"login","user/UpdatePassword":"expiredPwd","user/IPValidation":"ipValidation","user/AccountRecovery":"2spr","user/registration":"2spr","registration/external":"evalMerchantSignUp","boarding":"boarding","invoicing/payInvoice/:invoicetoken":"invoicePayment","invoicing/payInvoice":"invoicePayment","payByLink/pay/:linkToken":"linkPayment","payByLink/pay":"linkPayment","oauth/authorize":"login","oauth/grantPermission":"oauth","rsoRegistration":"rsoRegistration","merchantRegistration":"merchantRegistration"};
+
+        var appPaths = Object.assign({}, legacyPaths, {"": staticModules.login || "login"}, staticModules);
+
+        const additionalRoutes = {
+              invoicePayment: {
+                routes: [RegExp('(invoicing/payInvoice)/?(:?invoicetoken)?'), RegExp('(payByLink/pay)/?(:?linkToken)?')],
+              },
+        }
+
+        var URLMap = Object.keys(appPaths).reduce((result, item) => {
+          var routes = [item]
+          var legacyPath = legacyPaths[item] || item
+          var staticPath = staticModules[item] || staticModules[legacyPaths[item]] 
+
+          if(additionalRoutes[item]) {
+            routes = additionalRoutes[item].routes.concat(item)
+            legacyPath = item
+          } else if(item === "" || item === "/") {
+            routes = [item]
+            legacyPath = 'login'
+            staticPath = staticModules['login']
+          } 
+
+          return result.concat({routes: routes, staticPath: staticPath, legacyPath: legacyPath})
+        }, [])
+
+        var getNoAuthBase = function(){
+            if(location.pathname.indexOf('/vdm') > -1){
+                return '/vdm/';
+            } else if(isAnetPartner()){
+                return '/partner/';
+            } else if(isAnetMerchant()){
+                return '/merchant/';
+            } else{
+                return '/ebc2/';
+            }
+        }
+
+        var allRoutes = URLMap.reduce((result, item) => result.concat(item.routes), []);
+        var reqPath = location.pathname.replace(getNoAuthBase(), '').split('/').slice(0, 2).filter(p => p).join('/');
+
+        var routerConfig={
+            path:'/',
+            component:function(props){return React.createElement("div",{},props.children)},
+            indexRoute:function(){return React.createElement("div"),{},document.createTextNode('Index Route')},
+            childRoutes: allRoutes.map(function(k){
+                return {
+                    path: getNoAuthBase() + k,
+                    getComponent:function(){
+                    if(!loadedUrls[k]) {
+                      var module = URLMap.filter(m => m.routes&&m.routes.includes(k))[0]
+                      if (module.staticPath) {
+                          const xhrManifest = new XMLHttpRequest();
+                          xhrManifest.open('GET', module.staticPath + '/manifest.json', false);
+                          xhrManifest.send();
+                          if (xhrManifest.status === 200) {
+                              const manifest = JSON.parse(xhrManifest.response);
+                                  if (manifest && manifest['module.css']) {
+                                      const style = document.createElement('link');
+                                      style.rel = "stylesheet";
+                                      style.href = module.staticPath + "/" + manifest['module.css'];
+                                      document.head.appendChild(style);
+                                  }
+                                  loadedUrls[k] = true
+                                  return SystemJS.import(module.staticPath + '/' + manifest['module.js'])
+                            } else {
+                              console.log("** An error occurred while trying to load modules js and css files");
+                              throw "error";
+                            }
+                            xhrManifest.onerror = function () {
+                                console.log("** An error occurred while trying to load no-auth manifest");
+                                return SystemJS.import(chunks[module.legacyPath].entry);
+                            };
+                      } else {
+                        loadedUrls[k] = true
+                        return SystemJS.import(chunks[module.legacyPath].entry);
+                      }
+                    }
+                  }
+                //   , onEnter:function(){console.log("Entering",appPaths[k])}
+                //   , onLeave:function(){console.log("Leaving",appPaths[k])}
+                }
+            })
+        };
+        const totalCommon=Object.keys(dllCount).length;
+        window.loadTarget=function(url) {
+            if (Object.keys(dllCount).length) {
+                window.loadApp=function(k){
+                    console.log("Loaded ",k);
+                    k&&delete dllCount[k];
+                    k==="l2.js"&&!window.fetch&&
+                        SystemJS.import('whatwg-fetch/dist/fetch.umd.js').then(function(){
+                            return !window.URLSearchParams&&SystemJS.import('url-search-params-polyfill/index.js');
+                        });
+                    if (Object.keys(dllCount).length) return;
+                    console.log("(new loadapp) All common libs loaded");
+                    initApp(url);
+                }
+                return;
+            }
+            initApp(url);
+        }
+        var render=function(){ReactDOM.render(React.createElement(Router.Router,{history:Router.browserHistory,routes:routerConfig}),document.getElementById('cybs-ui'));}
+        window.loadApp=function(k){
+            k&&delete dllCount[k];
+            console.log("Loaded ",k);
+            k==="l2.js"&&!window.fetch&&
+                SystemJS.import('whatwg-fetch/dist/fetch.umd.js').then(function(){
+                    return !window.URLSearchParams&&SystemJS.import('url-search-params-polyfill/index.js');
+                });
+            if (allRoutes.includes(reqPath)&&totalCommon-requireCommon[legacyPaths[reqPath]] >= Object.keys(dllCount).length){
+                render();
+                render=function(){};
+            }
+            if (Object.keys(dllCount).length) return;
+            console.log("All common libs loaded");
+        }
+        loadApp('l1.js');
+        loadCommon();
+        if (!allRoutes.includes(reqPath)) {
+            return loadTarget(location.pathname + location.search)
+        }
+
+        function initApp(fullUrl) {
+            let matchUrl = fullUrl.split('?')[0].replace(/(ebc2|vdm)/).split('/').filter(i => i).join('/')
+            let targetUrl = fullUrl.split('?')[0].replace(/(ebc2|vdm)/).split('/').filter(i => i).slice(0, 2).join('/')
+            let args = fullUrl.split('?')[1] ? "?" + fullUrl.split('?')[1] : "";
+            if (!allRoutes.includes(targetUrl)) {
+                Router.browserHistory.replace(fullUrl);
+                ReactDOM.unmountComponentAtNode(document.getElementById('cybs-ui'));
+                document.getElementById('cybs-ui').innerHTML='';
+                document.getElementById('cybs-ui').appendChild(spinner.cloneNode(true));
+
+                console.time("LandingLoaded");
+                SystemJS.import(chunks['ebc'].entry).then(function(){
+                    console.timeEnd("LandingLoaded");
+                    console.time("LandingInit");
+                    SystemJS.import('@cybs/cybs-js').then(function($cybs){
+                        console.log("Subscribing to ready signal");
+                        $cybs.cybsReady$.subscribe(function(){
+                            console.timeEnd("LandingInit");
+                            console.log("Routing to:", fullUrl);
+                            // Entry is now displayed.
+                        });
+                    });
+                });
+                return;
+            } else {
+                if(fullUrl.includes("user/UpdatePassword")){
+                    params = new URLSearchParams(args)
+                    organizationId = params.get('organizationId') || '';
+                    userName = params.get('userName') || '';
+                    Router.browserHistory.push({pathname:getNoAuthBase() + matchUrl, state:{userName:userName,organizationId:organizationId}});
+                } else {
+                    Router.browserHistory.push(getNoAuthBase() + matchUrl + args);
+                }
+            }
+        }
+    });
+
+</script>
+
+    
+    
+        <script>
+        function loadCommon() {
+          // for/await
+            Object.keys(dllCount).reduce(function(p,k){
+                return p.then(function(){return SystemJS.import(dllCount[k]).then(function(lib){loadApp(k);})})
+            },Promise.resolve());
+        }
+        </script>
+<!-- Google Tag Manager -->
+<script>
+   (function(w, d, s, l, i) {
+       w[l] = w[l] || [];
+      w[l].push({
+           "gtm.start": new Date().getTime(),
+            event: "gtm.js"
+       });
+       var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PNJ96W");
+</script>
+
+    <script
+        async
+        src="/ebc2/app/modules/js/keylines/js/keylines.js"
+        onload="KeyLines.paths({ images: '/ebc2/app/modules/js/keylines/images/', assets: '/ebc2/app/modules/js/keylines/assets/' });"
+    ></script>
+</html>

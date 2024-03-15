@@ -1,0 +1,16 @@
+200 OK
+Server: cloudflare
+Alt-Svc: h3=":443"; ma=86400
+Date: Fri, 15 Mar 2024 03:11:24 GMT
+Cache-Control: public, max-age=31536000
+Cf-Cache-Status: MISS
+Expires: Sat, 15 Mar 2025 03:11:24 GMT
+Content-Type: text/html;charset=utf-8
+Content-Security-Policy: frame-ancestors 'self' godaddy.com *.godaddy.com
+Retry-Count: 0
+Link: <//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.34.11.js>; rel=preload; as=script; crossorigin,<https://img1.wsimg.com/gfonts/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18Q.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18Q.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf>; rel=preload; as=font; crossorigin,<https://fonts.googleapis.com>; rel=preconnect; crossorigin,<https://fonts.gstatic.com>; rel=preconnect; crossorigin,<https://img1.wsimg.com>; rel=preconnect; crossorigin,<https://isteam.wsimg.com>; rel=preconnect; crossorigin,<https://668885a7-2623-437e-809a-686cfac332b4.onlinestore.godaddy.com>; rel=preconnect; crossorigin
+X-Version: 623bf47
+X-Siteid: us-east-1
+Set-Cookie: dps_site_id=us-east-1; path=/; secure
+Vary: Accept-Encoding
+Cf-Ray: 864950e158f7643b-SJC

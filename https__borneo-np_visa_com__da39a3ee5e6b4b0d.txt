@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html;charset=UTF-8
+Pragma: no-cache
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Server: Server
+Content-Language: en-US
+Retry-Count: 0
+Content-Security-Policy-Report-Only: script-src https://d2uqej7bo24sqa.cloudfront.net https://borneo-np-visa-com.auth.eu-west-1.amazoncognito.com; style-src https://d2uqej7bo24sqa.cloudfront.net https://borneo-np-visa-com.auth.eu-west-1.amazoncognito.com; img-src https://d2uqej7bo24sqa.cloudfront.net https://borneo-np-visa-com.auth.eu-west-1.amazoncognito.com; report-uri https://borneo-np-visa-com.auth.eu-west-1.amazoncognito.com/cspreport
+X-Amz-Cognito-Request-Id: 16801555-8d4a-450c-85e4-cb85177d8035
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Date: Fri, 15 Mar 2024 03:11:30 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0

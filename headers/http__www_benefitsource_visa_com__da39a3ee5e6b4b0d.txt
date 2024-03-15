@@ -1,0 +1,18 @@
+200 OK
+Pragma: no-cache
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: dnn_IsMobile=False; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true dnn_IsMobile=False; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true language=en-US; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: accelerometer=(),camera=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),payment=(),usb=()
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:08:42 GMT
+Cache-Control: no-cache
+Expires: -1
+Content-Security-Policy: default-src 'self' https: https://ajax.googleapis.com https://cdn.jsdelivr.net https://dnnapi.com https://cdnjs.cloudflare.com; font-src * data:; connect-src 'self' https: https://wtwdevcbot-bot.azurewebsites.net wss://directline.botframework.com; script-src 'self' https: 'unsafe-inline' 'unsafe-eval' blob:; style-src * 'unsafe-inline' 'unsafe-eval' blob:; media-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: 'unsafe-inline' 'unsafe-eval' data: blob:
+Cross-Origin-Opener-Policy: same-origin
+Content-Type: text/html
+Content-Length: 5974
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff

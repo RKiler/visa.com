@@ -1,0 +1,20 @@
+200 OK
+X-Xss-Protection: 1; mode=block 1; mode=block
+Content-Security-Policy: upgrade-insecure-requests; script-src 'self' https://*.googletagmanager.com 'nonce-5351108162844659b66cbd2455f6ee2a'; object-src 'self'; img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+Server: cloudflare
+Pragma: no-cache
+S: 73LGC001 CTE PR01
+Access-Control-Allow-Headers: origin, x-requested-with, content-type
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS
+Cache-Control: no-cache,no-store
+Access-Control-Allow-Credentials: true
+Retry-Count: 0
+Expires: -1
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN SAMEORIGIN SAMEORIGIN
+X-Content-Type-Options: nosniff nosniff
+Set-Cookie: CTE_BookMark=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ CTE_UiCulture=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ IDPID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ b2bamtokenc=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ amlbcookie=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ XSRF-TOKEN-B2BIAM-COOKIE=CfDJ8DkU52uOEZFOnALWMNQNbpzEtmurIAWstWwJO04XFgIMMRl2hbg4u-Q2N7Lz4y1pm55XQTyaHUUeMgj85IU8gpAK7MRxtQTkX8wlza9ooCb3y9z3wvLqHFwi-cHecfPhDdLadA-XEHu8NXUZEWtm-5E; path=/; secure; samesite=strict; httponly .AspNetCore.Session=CfDJ8DkU52uOEZFOnALWMNQNbpxEO1mySt5bSqkHfx67w%2BbF0lLICnRzRITrmAV48MNvbjBgre3IpQ528AuSTh6QJPyzvT73zuZyh6yszS5xQVEtka5BnixYrKxRe0V%2BupQ7Vp7w%2BRxg9UK6IspXDohTdzu4qK4HPf4Lj9YYyL2PJkKo; path=/; secure; samesite=lax; httponly BIGipServer~Extranet_CCTE_Business~B2BIAM-Login_18318_AB_119_20_11443=!YjLeMCf9ybj4ea9rW3KgXL2iOe6JfH2+mfKZeuRF9dWoz/QaRTT2TU9AoV+GfCYKm5ztyjQcTw9Fj4p5U/GxuTk6sRKzB9sDaB6mmQa4t64=; path=/; Httponly; Secure __cfruid=7a1026d52bc9d8de23c84733e790bd0bad9d4f3c-1710472202; path=/; domain=.cte.visaonline.com; HttpOnly _cfuvid=hNNMYUXBxHzpS_PKySJ4jTMTGsoOFvVl6XlL9dgzPrs-1710472202536-0.0.1.1-604800000; path=/; domain=.cte.visaonline.com; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 86494edfbb58cfbc-SJC
+Date: Fri, 15 Mar 2024 03:10:02 GMT

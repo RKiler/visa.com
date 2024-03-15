@@ -1,0 +1,20 @@
+200 OK
+Cache-Control: no-cache,no-store
+Expires: -1
+Pragma: no-cache
+S: 73LGC001 CTE PR02
+Access-Control-Allow-Headers: origin, x-requested-with, content-type
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 8649515e986a96a2-SJC
+X-Frame-Options: SAMEORIGIN SAMEORIGIN SAMEORIGIN
+X-Content-Type-Options: nosniff nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Date: Fri, 15 Mar 2024 03:11:44 GMT
+Content-Security-Policy: upgrade-insecure-requests; script-src 'self' https://*.googletagmanager.com 'nonce-5351108162844659b66cbd2455f6ee2a'; object-src 'self'; img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+Set-Cookie: CTE_BookMark=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ CTE_UiCulture=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ IDPID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ b2bamtokenc=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ amlbcookie=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ XSRF-TOKEN-B2BIAM-COOKIE=CfDJ8DkU52uOEZFOnALWMNQNbpxVeZlIHqtOyvMR0HpYEQ0QpEzOXocgqEaAw0-WOCrfyLN2tQDmrrWgYvFi5HK4Ge8sDnSvzxttzhEBOS0ofl0mw5MzEbd0RZ8FXEFi5Tj6PhxPs3Ek_5tOQYQF6vHLpes; path=/; secure; samesite=strict; httponly .AspNetCore.Session=CfDJ8DkU52uOEZFOnALWMNQNbpxENeSotasOtcSVkjFmUIYNtdP5yiqGjr1AoqTwOUv2EisdpuNDy7odtHOQxp5BHwk80yIEJQUkR4XwI7Blf577rrDcquEvHyrifpUVOWRCaIjI%2FfsZ8HJXrHCRnj2gS0P5Pr%2BljM%2FNrqSKvRUW5EQZ; path=/; secure; samesite=lax; httponly BIGipServer~Extranet_CCTE_Business~B2BIAM-Login_18318_AB_119_20_11443=!FqWAr7sOBz3pckRrW3KgXL2iOe6JfP3tq7ZMsyYK60quKedfnuOrwZ0btPC1OMv1e5WPmXNSp4kVjx9Mr5M4rJYipv3LzuPB4OamJ6De+0w=; path=/; Httponly; Secure __cfruid=c4d58ff41304a958661ffe65fcbaaf5930a49efe-1710472304; path=/; domain=.cte.visaonline.com; HttpOnly; Secure; SameSite=None _cfuvid=0iZBUqaD49TqWpAfH.dmcvzqWh0IOeW6jGJwtQLe4FY-1710472304528-0.0.1.1-604800000; path=/; domain=.cte.visaonline.com; HttpOnly; Secure; SameSite=None
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS
+Access-Control-Allow-Credentials: true
+Server: cloudflare
+X-Xss-Protection: 1; mode=block 1; mode=block
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8

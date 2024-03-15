@@ -1,0 +1,1430 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Visa Card Designer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap" rel="stylesheet">
+    <link href="build/css/main.min.css" rel="stylesheet" type="text/css">
+
+    <link href="img/favicon.ico" rel="shortcut icon">
+
+    <script type='text/javascript'>
+        var GTMContainerID = "GTM-56H72RN";
+
+
+        var webAnalyticsData = {
+            "usertype": "Visitor",
+            "gtagAdvertiserID": "5525825",
+            "gtagGroupID": "",
+            "gtagActivityID": "",
+            "event": "dataLayer-loaded"
+        };
+    </script>
+
+    <script type='text/javascript'>
+
+        var UrlEnviroment = "https://partner.visa.com";
+
+        function receiveMessage(event) {
+            if (event.origin !== UrlEnviroment) //it is "https://partner.visa.com" on prod!!!
+                return;
+            document.cookie = "wscrCookieConsent=" + event.data;
+            dataLayer.push({"event":"cookieConsentReceived"});
+        }
+        window.addEventListener("message", receiveMessage, false);
+    </script>
+</head>
+
+<body>
+
+    <div class="blocker"></div>
+
+<!-- MAIN MODULE --->
+<main class="cdt__main" role="main" aria-label="Visa Card Designer">
+    <section>
+        <div class="cdt__wrapper">
+
+            <div class="cdt__currentPageText" aria-live="polite"><p>Visa Card Designer</p></div>
+
+            <!-- NAVS MODULES --->
+            <div class="cdt__navigationModule" style="display:none">
+                <h1 id="titleStep" class="ctd__titleStep">Step <span></span></h1>
+                <h2 id="title" class="ctd__title"></h2>
+                <div id="navigation" class="ctd__navigation">
+                    <div class="ctd__navigationBtn ctd__navigationBack" aria-label="Previous Step" role="button" tabindex="-1"><img class="enabled" src="build/img/icons/icon-arrow-left.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-left-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-left-white.png" alt=""></div>
+                    <nav role="navigation" aria-label="Card Designer Steps Pagination Controls">
+                        <ol>
+                            <li data-step="1" aria-current="step" role="button" tabindex="-1">
+                                <span class="sr-only">Current Step</span>
+                                01
+                            </li>
+                            <li data-step="2" role="button" tabindex="-1">
+                                <span class="sr-only">Step</span>
+                                02
+                            </li>
+                            <li data-step="3" role="button" tabindex="-1">
+                                <span class="sr-only">Step</span>
+                                03
+                            </li>
+                            <li data-step="4" role="button" tabindex="-1">
+                                <span class="sr-only">Step</span>
+                                04
+                            </li>
+                            <li data-step="5" role="button" tabindex="-1">
+                                <span class="sr-only">Step</span>
+                                05
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="ctd__navigationBtn ctd__navigationNext" aria-label="Next Step" role="button" tabindex="-1"><img class="enabled" src="build/img/icons/icon-arrow-right.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-right-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-right-white.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="cdt__breadcrumbModule" style="display:none">
+                <div id="breadcrumbs" class="cmd_breadcrumbs">
+                    <h3 class="breadcrumbs__title">Your Card</h3>
+                    <ul>
+                        <li class="region"></li>
+                        <li class="product"></li>
+                        <li class="process"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARD EDITOR MODULE --->
+            <div class="cdt__TopWrapper">
+
+                <!-- LOADER MODULE -->
+                <div class="cdt__loader active" aria-hidden="true">
+                    <div id="preloader"><div id="loader"></div></div>
+                </div>
+
+                <!-- INIT MODULE -->
+                <div class="cdt__contentModule cdt__initModule">
+                    <div class="cdt__flexBox">
+                        <div class="cdt__topModule">
+                            <div class="cdt__initContent">
+                                <div class="cdt__initModuleImg">
+                                    <img src="build/img/init-module.png" alt="">
+                                </div>
+                                <div class="cdt__initModuleTitle">
+                                    <h1>
+                                        Welcome to the
+                                        <br aria-hidden="true" />
+                                        <span>Visa Card Designer</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cdt__bottomModule">
+                            <div class="cdt__button cdt__buttonLetsBegins" role="button" tabindex="0" aria-labelledby="btnLetsBegins--text">
+                                <span id="btnLetsBegins--text">Let's Begin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TUTORIAL MODULE -->
+                <div id="tutorial" class="cdt__contentModule cdt__tutorialModule" style="display:none">
+                    <div class="cdt__flexBox">
+                        <div class="cdt__topModule">
+
+                            <!-- NAV TABS -->
+                            <div class="cdt__navContent">
+                                <div class="cdt__navTabs">
+                                    <ul role="tablist">
+                                        <li class="cdt__navItem cdt__navSteps active" role="tab" aria-selected="true" aria-setsize="3" aria-posinset="1" tabindex="0">
+                                            <i class="icon-navStepbystep">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     width="47px" height="49px" viewBox="0 0 47 49" enable-background="new 0 0 47 49" xml:space="preserve" alt="" role="img">
+                                                <polygon points="23.5,0.151 0.065,13.46 23.5,26.85 46.935,13.46 " />
+                                                <polygon points="23.5,29.154 7.699,20.125 0.065,24.46 23.5,37.849 46.935,24.46 39.302,20.125 " />
+                                                <polygon points="23.5,40.154 7.699,31.125 0.065,35.46 23.5,48.849 46.935,35.46 39.302,31.125 " />
+										        </svg>
+                                            </i>
+                                            <p>Step by Step</p>
+                                        </li>
+                                        <li class="cdt__navItem cdt__navVideo" role="tab" aria-selected="false" aria-setsize="3" aria-posinset="2" tabindex="0">
+                                            <i class="icon-navVideo">
+                                                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     width="246px" height="281px" viewBox="0 0 246 281" enable-background="new 0 0 246 281" xml:space="preserve" alt="" role="img">
+                                                <g>
+                                                <defs>
+                                                <rect id="SVGID_1_" x="0.474" y="0.376" width="245.052" height="280.249" />
+                                                        </defs>
+                                                <clipPath id="SVGID_2_">
+                                                <use xlink:href="#SVGID_1_" overflow="visible" />
+                                                        </clipPath>
+                                                <path clip-path="url(#SVGID_2_)" d="M245.527,138.415c-0.571-2.763-2.285-5.171-4.752-6.591L15.474,1.727
+															            c-3.09-1.801-6.91-1.801-10,0c-3.101,1.797-5.008,5.113-5,8.699v260.198c-0.008,3.587,1.899,6.903,5,8.7
+															            c3.11,1.734,6.891,1.734,10,0l225.301-130.098c2.023-1.188,3.548-3.028,4.35-5.186
+															            C245.331,142.185,245.498,140.324,245.527,138.415" />
+                                                    </g>
+										        </svg>
+                                            </i>
+                                            <p>Video</p>
+                                        </li>
+                                        <li class="cdt__navItem cdt__navFutureCard" role="tab" aria-selected="false" aria-setsize="3" aria-posinset="3" tabindex="0">
+                                            <i class="icon-navFutureCard">
+                                                <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     width="42.375px" height="44.556px" viewBox="0 0 42.375 44.556" enable-background="new 0 0 42.375 44.556" xml:space="preserve" alt="" role="img">
+                                                <g>
+                                                <defs>
+                                                <rect id="SVGID_3_" width="42.375" height="44.556" />
+                                                        </defs>
+                                                <clipPath id="SVGID_4_">
+                                                <use xlink:href="#SVGID_3_" overflow="visible" />
+                                                        </clipPath>
+                                                <path clip-path="url(#SVGID_4_)" d="M41.223,20.889L21.501,1.167C20.724,0.389,19.706,0,18.688,0c-1.017,0-2.036,0.389-2.813,1.166
+															            L5.076,11.964c-1.555,1.554-1.555,4.122,0,5.676l1.79,1.839h4.128L7.14,15.575c-0.27-0.271-0.31-0.61-0.31-0.774
+															            s0.04-0.491,0.31-0.761l1.427-1.382l6.777,6.821h6.501L11.816,9.401l6.122-6.147c0.27-0.27,0.586-0.321,0.749-0.321
+															            c0.164,0,0.479,0.034,0.749,0.303l19.723,19.72c0.271,0.27,0.312,0.583,0.312,0.748c0,0.164-0.069,0.477-0.341,0.749l-1.118,1.091
+															            v4.129l3.185-3.156C42.748,24.961,42.777,22.443,41.223,20.889" />
+                                                <path clip-path="url(#SVGID_4_)" d="M31.969,21.328H4.076C1.879,21.328,0,23.098,0,25.295v10.55h35.897v-10.55
+															            C35.897,23.098,34.166,21.328,31.969,21.328 M9.748,32.253c-0.779,0-1.484-0.311-2.004-0.811c-0.52,0.5-1.226,0.811-2.003,0.811
+															            c-1.598,0-2.895-1.295-2.895-2.896c0-1.599,1.296-2.895,2.895-2.895c0.778,0,1.484,0.31,2.003,0.81c0.52-0.5,1.225-0.81,2.004-0.81
+															            c1.599,0,2.895,1.296,2.895,2.895C12.643,30.958,11.347,32.253,9.748,32.253" />
+                                                <path clip-path="url(#SVGID_4_)" d="M0,40.567c0,2.195,1.878,3.988,4.076,3.988h27.893c2.197,0,3.93-1.793,3.93-3.988v-0.234H0
+															            V40.567z" />
+                                                <rect x="1.617" y="25.387" clip-path="url(#SVGID_4_)" width="12.275" height="8.202" />
+											        </g>
+										        </svg>
+                                            </i>
+                                            <p>Future of the Card</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- INNER MODULES -->
+                            <div class="cdt__topBlockContent">
+                                <div id="stepbystep" class="cdt__innerBlock cdt__stepByStepModule" role="tabpanel" aria-hidden="false">
+
+                                    <!-- STEP 01 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep1">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>STEP 01</h2>
+                                                        <h3>Region</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">Select the region that you’d like to launch in. Visa offers different types of card products based on the region.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__boxContentBottom">
+                                                    <nav class="cdt__tutorialStepsNumbers" role="navigation" aria-label="Step by Step Pagination Controls">
+                                                        <ol>
+                                                            <li class="active" data-step="1" aria-current="step" role="button" tabindex="0">
+                                                                <span class="sr-only">Current Step</span>
+                                                                01
+                                                            </li>
+                                                            <li data-step="2" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                02
+                                                            </li>
+                                                            <li data-step="3" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                03
+                                                            </li>
+                                                            <li data-step="4" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                04
+                                                            </li>
+                                                            <li data-step="5" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                05
+                                                            </li>
+                                                        </ol>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepImgCompo">
+                                                <div class="cdt__step01Img01">
+                                                    <img src="build/img/step01-a.png" alt="Map illustration with region marker">
+                                                </div>
+                                            </div>
+                                            <div class="cdt__boxContent"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 02 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep2" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>STEP 02</h2>
+                                                        <h3>Products</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">Select a card product based on your target customer base – whether they are affluent customers with a strong credit history or young adults who are just starting out.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__boxContentBottom">
+                                                    <nav class="cdt__tutorialStepsNumbers" role="navigation" aria-label="Step by Step Pagination Controls">
+                                                        <ol>
+                                                            <li class="nextStep" data-step="1" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                01
+                                                            </li>
+                                                            <li class="active" data-step="2" aria-current="step" role="button" tabindex="0">
+                                                                <span class="sr-only">Current Step</span>
+                                                                02
+                                                            </li>
+                                                            <li data-step="3" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                03
+                                                            </li>
+                                                            <li data-step="4" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                04
+                                                            </li>
+                                                            <li data-step="5" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                05
+                                                            </li>
+                                                        </ol>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepImgCompo">
+                                                <div class="cdt__step02Img03"><img src="build/img/step02-b.png" alt=""></div>
+                                                <div class="cdt__step02Img02"><img src="build/img/step02-b.png" alt=""></div>
+                                                <div class="cdt__step02Img01">
+                                                    <img class="cdt__stepImgDesk" src="build/img/step02-a-desk.png" alt="Laptop illustration showing a card product selector">
+                                                    <img class="cdt__stepImgMob" src="build/img/step02-a-mob.png" alt="Laptop illustration showing a card product selector">
+                                                    <div class="cdt__stepDesc cdt__step02Desc01"><p>Select <span class="br-noMob"><br aria-hidden="true" /></span>format. <br aria-hidden="true" />Physical <span class="br-noMob"><br aria-hidden="true" /></span>or digital</p></div>
+                                                    <div class="cdt__stepDesc cdt__step02Desc02"><p>Choose <span class="br-noMob"><br aria-hidden="true" /></span>diferent <br aria-hidden="true" />products</p></div>
+                                                </div>
+                                            </div>
+                                            <div class="cdt__boxContent"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 03 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep3" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>STEP 03</h2>
+                                                        <h3>Background</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">Create an emotional connection with your cardholders and stand out amongst the competition. Combine your creativity and Visa’s brand and sponsorship assets to help your product shine.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__boxContentBottom">
+                                                    <nav class="cdt__tutorialStepsNumbers" role="navigation" aria-label="Step by Step Pagination Controls">
+                                                        <ol>
+                                                            <li class="nextStep" data-step="1" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                01
+                                                            </li>
+                                                            <li class="nextStep" data-step="2" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                02
+                                                            </li>
+                                                            <li class="active" data-step="3" aria-current="step" role="button" tabindex="0">
+                                                                <span class="sr-only">Current Step</span>
+                                                                03
+                                                            </li>
+                                                            <li data-step="4" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                04
+                                                            </li>
+                                                            <li data-step="5" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                05
+                                                            </li>
+                                                        </ol>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepImgCompo">
+                                                <div class="cdt__step03Img01">
+                                                    <img class="cdt__stepImgDesk" src="build/img/step03-a-desk.png" alt="Card illustration showing a creative background">
+                                                    <img class="cdt__stepImgMob" src="build/img/step03-a-mob.png" alt="Card illustration showing a creative background">
+                                                    <div class="cdt__stepDesc cdt__step03Desc01"><p>Choose <span class="br-noMob"><br aria-hidden="true" /></span>diferent <span class="br-noMob"><br aria-hidden="true" /></span>kind of <br aria-hidden="true" />backgrounds <span class="br-noMob"><br aria-hidden="true" /></span>and patterns</p></div>
+                                                    <div class="cdt__stepDesc cdt__step03Desc02"><p>Select your color</p></div>
+                                                </div>
+                                            </div>
+                                            <div class="cdt__boxContent"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 04 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep4" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>STEP 04</h2>
+                                                        <h3>Elements</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">Customize how essential payment card information elements are presented - from embossed lettering to user friendly “quick read” card numbers.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__boxContentBottom">
+                                                    <nav class="cdt__tutorialStepsNumbers" role="navigation" aria-label="Step by Step Pagination Controls">
+                                                        <ol>
+                                                            <li class="nextStep" data-step="1" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                01
+                                                            </li>
+                                                            <li class="nextStep" data-step="2" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                02
+                                                            </li>
+                                                            <li class="nextStep" data-step="3" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                03
+                                                            </li>
+                                                            <li class="active" data-step="4" aria-current="step" role="button" tabindex="0">
+                                                                <span class="sr-only">Current Step</span>
+                                                                04
+                                                            </li>
+                                                            <li data-step="5" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                05
+                                                            </li>
+                                                        </ol>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepImgCompo">
+                                                <div class="cdt__step04Img03"><img src="build/img/step04-c.png" alt=""></div>
+                                                <div class="cdt__step04Img02"><img src="build/img/step04-b.png" alt=""></div>
+                                                <div class="cdt__step04Img01">
+                                                    <img class="cdt__stepImgDesk" src="build/img/step04-a-desk.png" alt="Card illustration showing element editor">
+                                                    <img class="cdt__stepImgMob" src="build/img/step04-a-mob.png" alt="Card illustration showing element editor">
+                                                    <div class="cdt__stepDesc cdt__step04Desc01"><p>Upload your <span class="br-noMob"><br aria-hidden="true" /></span>own logo</p></div>
+                                                    <div class="cdt__stepDesc cdt__step04Desc02"><p>Edit the <span class="br-noMob"><br aria-hidden="true" /></span>front card <br aria-hidden="true" />elements <span class="br-noMob"><br aria-hidden="true" /></span>(Embossed, etc)</p></div>
+                                                    <div class="cdt__stepDesc cdt__step04Desc03"><p>Provide a <span class="br-noMob"><br aria-hidden="true" /></span>modern <br aria-hidden="true" />design with <span class="br-noMob"><br aria-hidden="true" /></span>Quick Read</p></div>
+                                                </div>
+                                            </div>
+                                            <div class="cdt__boxContent"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 05 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep5" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>STEP 05</h2>
+                                                        <h3>Mockup</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">See your card design in action across different use cases - and save them to your hard drive.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__boxContentBottom">
+                                                    <nav class="cdt__tutorialStepsNumbers" role="navigation" aria-label="Step by Step Pagination Controls">
+                                                        <ol>
+                                                            <li class="nextStep" data-step="1" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                01
+                                                            </li>
+                                                            <li class="nextStep" data-step="2" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                02
+                                                            </li>
+                                                            <li class="nextStep" data-step="3" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                03
+                                                            </li>
+                                                            <li class="nextStep" data-step="4" role="button" tabindex="0">
+                                                                <span class="sr-only">Step</span>
+                                                                04
+                                                            </li>
+                                                            <li class="active" data-step="5" aria-current="step" role="button" tabindex="0">
+                                                                <span class="sr-only">Current Step</span>
+                                                                05
+                                                            </li>
+                                                        </ol>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepImgCompo">
+                                                <div class="cdt__step05Img03"><img src="build/img/step05-b.png" alt=""></div>
+                                                <div class="cdt__step05Img02"><img src="build/img/step05-b.png" alt=""></div>
+                                                <div class="cdt__step05Img01">
+                                                    <img class="cdt__stepImgDesk" src="build/img/step05-a-desk.png" alt="Card illustration showing design in action across different use cases">
+                                                    <img class="cdt__stepImgMob" src="build/img/step05-a-mob.png" alt="Card illustration showing design in action across different use cases">
+                                                    <div class="cdt__stepDesc cdt__step05Desc01"><p>Select a <span class="br-noMob"><br aria-hidden="true" /></span>card <br aria-hidden="true" />mockup</p></div>
+                                                    <div class="cdt__stepDesc cdt__step05Desc02"><p>Save mock-ups <br aria-hidden="true" />to your <br aria-hidden="true" />hard drive.</p></div>
+                                                </div>
+                                            </div>
+                                            <div class="cdt__boxContent"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cdt__tutorialArrow cdt__tutorialArrowLeft" data-arrowdir="left" aria-label="Previous Step" role="button" tabindex="-1"><img class="enabled" src="build/img/icons/icon-arrow-left.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-left-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-left-white.png" alt=""></div>
+                                    <div class="cdt__tutorialArrow cdt__tutorialArrowRight" data-arrowdir="right" aria-label="Next Step" role="button" tabindex="0"><img class="enabled" src="build/img/icons/icon-arrow-right.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-right-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-right-white.png" alt=""></div>
+                                </div>
+
+                                <div id="video" class="cdt__innerBlock cdt__videoModule" style="display:none" role="tabpanel" aria-hidden="true">
+                                    <div class="cdt__topContent cdt__tutorialVideo">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Card Designer Tutorial</h1>
+                                                        <h2>VIDEO TUTORIAL</h2>
+                                                        <h3>A quick start</h3>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">Check out this short video or a step-by-step walk through.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__videoContent">
+                                                <div class="video__iframe">
+                                                    <div class="video__cover" style="background-image: url(img/cover-video.jpg)" role="button" tabindex="0" aria-label="Play Video">
+                                                        <div class="btn__play">
+                                                            <img src="build/img/play-btn.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="video__iframeCont">
+                                                        <!--<iframe sandbox="allow-scripts allow-same-origin allow-presentation" width="560" height="315" src="" class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" title="Visa Card Designer: Tutorial for Fintech Clients" allowfullscreen></iframe>-->
+
+                                                        <video id="visa-video-tutorial" preload="auto" data-root-path="build/ableplayer-assets/" data-youtube-id="3ynPDVONI1M" data-allow-fullscreen="true" data-skin="2020" data-heading-level="2" playsinline>
+                                                            <!--<track kind="descriptions" src="build/ableplayer-assets/captions/video_captions.vtt" srclang="en" />-->
+                                                            <track kind="descriptions" src="https://s3.us-east-2.wasabisys.com/assets-website.451.com/assets/video/video_captions.vtt" srclang="en" />
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="futureCard" class="cdt__innerBlock cdt__futureCardModule" style="display:none" role="tabpanel" aria-hidden="true">
+
+                                    <!-- STEP 07 MODULE -->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep7">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent cdt__boxContent--onlyText">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Technology on Cards</h1>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">
+                                                            Card-based technology can offer a unique and differentiated cardholder experience through new features and functionalities, such as visual displays, biometrics, pin pads and switches.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepBackgroundImg cdt__stepBackgroundImg--small" style="background-image: url('img/future-card-07.png')"></div>
+                                            <div class="cdt__boxContent cdt__boxContent--full"></div>
+                                            <nav class="cdt__futureCardDots" role="navigation" aria-label="Future of the Card Pagination Controls">
+                                                <ul>
+                                                    <li data-step="7" class="active" aria-current="true" role="button" tabindex="0">
+                                                        <span class="sr-only">Current Slide 01</span>
+                                                    </li>
+                                                    <li data-step="8" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 02</span>
+                                                    </li>
+                                                    <li data-step="9" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 03</span>
+                                                    </li>
+                                                    <li data-step="10" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 04</span>
+                                                    </li>
+                                                    <li data-step="11" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 05</span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 08 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep8" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent cdt__boxContent--onlyText">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>Vertical <br aria-hidden="true" />Cards</h1>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">
+                                                            This unique configuration can make a statement in the market compared to a traditional horizontal card.
+                                                        </p>
+                                                        <p class="cdt__descGeneral">
+                                                            Cards designed in a vertical orientation have a flexible set of personalization options to achieve a differentiated look and feel.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepBackgroundImg cdt__stepBackgroundImg--big" style="background-image: url('img/future-card-08.png')"></div>
+                                            <div class="cdt__boxContent cdt__boxContent--full"></div>
+                                            <nav class="cdt__futureCardDots" role="navigation" aria-label="Future of the Card Pagination Controls">
+                                                <ul>
+                                                    <li data-step="7" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 01</span>
+                                                    </li>
+                                                    <li data-step="8" class="active" aria-current="true" role="button" tabindex="0">
+                                                        <span class="sr-only">Current Slide 02</span>
+                                                    </li>
+                                                    <li data-step="9" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 03</span>
+                                                    </li>
+                                                    <li data-step="10" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 04</span>
+                                                    </li>
+                                                    <li data-step="11" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 05</span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 09 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep9" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent cdt__boxContent--onlyText">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>
+                                                            Materials <br aria-hidden="true" /><span>Metal Cards</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">
+                                                            The distinctive weight and feel of metal cards can serve as a powerful manifestation of your premium product offering, providing your most important cardholders with a truly affluent payment experience.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepBackgroundImg cdt__stepBackgroundImg--medium" style="background-image: url('img/future-card-09.png')"></div>
+                                            <div class="cdt__boxContent cdt__boxContent--full"></div>
+                                            <nav class="cdt__futureCardDots" role="navigation" aria-label="Future of the Card Pagination Controls">
+                                                <ul>
+                                                    <li data-step="7" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 01</span>
+                                                    </li>
+                                                    <li data-step="8" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 02</span>
+                                                    </li>
+                                                    <li data-step="9" class="active" aria-current="true" role="button" tabindex="0">
+                                                        <span class="sr-only">Current Slide 03</span>
+                                                    </li>
+                                                    <li data-step="10" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 04</span>
+                                                    </li>
+                                                    <li data-step="11" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 05</span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 10 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep10" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent cdt__boxContent--onlyText">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>
+                                                            Materials <br aria-hidden="true" /><span>Color Core Plastic</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">
+                                                            Colored plastic layers produce a defined edge on cards. This creates a handsome, distinctive card with contrasting face and edge colors that stand out in a cardholder’s wallet.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepBackgroundImg cdt__stepBackgroundImg--medium" style="background-image: url('img/future-card-10.png')"></div>
+                                            <div class="cdt__boxContent cdt__boxContent--full"></div>
+                                            <nav class="cdt__futureCardDots" role="navigation" aria-label="Future of the Card Pagination Controls">
+                                                <ul>
+                                                    <li data-step="7" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 01</span>
+                                                    </li>
+                                                    <li data-step="8" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 02</span>
+                                                    </li>
+                                                    <li data-step="9" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 03</span>
+                                                    </li>
+                                                    <li data-step="10" class="active" aria-current="true" role="button" tabindex="0">
+                                                        <span class="sr-only">Current Slide 04</span>
+                                                    </li>
+                                                    <li data-step="11" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 05</span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 11 MODULE --->
+                                    <div class="cdt__topContent cdt__tutorialSteps cdt__tutorialStep11" style="display:none">
+                                        <div class="cdt__leftContent">
+                                            <div class="cdt__boxContent cdt__boxContent--onlyText">
+                                                <div class="cdt__boxContentTop">
+                                                    <div class="cdt__moduleHeader">
+                                                        <h1>
+                                                            Best <br aria-hidden="true" />Practices
+                                                        </h1>
+                                                    </div>
+                                                    <div class="cdt__moduleDescription">
+                                                        <p class="cdt__descGeneral">
+                                                            There’s a lot to know when it comes to creating a successful card.
+                                                        </p>
+                                                        <p class="cdt__descGeneral">
+                                                            Here is some helpful information to keep in mind when you create your card: Design for Impact, Articulate Your Positioning, Leverage the Right Production Techniques, Know your Schedule and Budget, Put Your Audience First, Partner with Your Vendors, and Consider Prototyping Your Design.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__rightContent">
+                                            <div class="cdt__stepBackgroundImg cdt__stepBackgroundImg--bottom" style="background-image: url('img/future-card-11.png')"></div>
+                                            <div class="cdt__boxContent cdt__boxContent--full"></div>
+                                            <nav class="cdt__futureCardDots" role="navigation" aria-label="Future of the Card Pagination Controls">
+                                                <ul>
+                                                    <li data-step="7" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 01</span>
+                                                    </li>
+                                                    <li data-step="8" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 02</span>
+                                                    </li>
+                                                    <li data-step="9" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 03</span>
+                                                    </li>
+                                                    <li data-step="10" role="button" tabindex="0">
+                                                        <span class="sr-only">Slide 04</span>
+                                                    </li>
+                                                    <li data-step="11" class="active" aria-current="true" role="button" tabindex="0">
+                                                        <span class="sr-only">Current Slide 05</span>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <div class="cdt__tutorialArrow cdt__tutorialArrowLeft" data-arrowdir="left" aria-label="Previous Slide" role="button" tabindex="-1"><img class="enabled" src="build/img/icons/icon-arrow-left.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-left-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-left-white.png" alt=""></div>
+                                    <div class="cdt__tutorialArrow cdt__tutorialArrowRight" data-arrowdir="right" aria-label="Next Slide" role="button" tabindex="0"><img class="enabled" src="build/img/icons/icon-arrow-right.png" alt=""><img class="disabled" src="build/img/icons/icon-arrow-right-disabled.png" alt=""><img class="high-contrast" src="build/img/icons/icon-arrow-right-white.png" alt=""></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="cdt__bottomModule">
+                            <div class="cdt__button cdt__buttonTutorial" role="button" aria-labelledby="btnTutorialText" tabindex="0">
+                                <span id="btnTutorialText">Next</span>
+                            </div>
+                            <div class="cdt__button cdt__buttonDesignCard" role="button" aria-label="Skip Tutorial" tabindex="0">
+                                <span>Skip</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD DESIGN MODULE --->
+                <div id="flow" class="cdt__designModule">
+
+                    <!-- CARD DESIGN STEP 00 --->
+                    <div id="region" class="cdt__designRegion cdt__cardToolMenuStep00">
+                        <div class="cdt__flexBox">
+                            <div class="cdt__designTopHolder">
+                                <div class="map-areasList">
+                                    <div class="map-centerLines"></div>
+                                    <div id="chartdiv"></div>
+                                </div>
+                                <div class="map-selectionName"><p></p></div>
+                            </div>
+                            <div class="cdt__designBottomHolder">
+                                <ul class="cdt__designRegionSelector dragscroll" role="radiogroup" aria-label="Region Selector Panel"></ul>
+                                <div class="cdt__button cdt__buttonNext cdt__buttonDisabled" role="button" tabindex="-1" aria-hidden="true" aria-labelledby="btnNextRegionText">
+                                    <img src="build/img/icons/icon-arrow-btn.png" alt=""><span id="btnNextRegionText">Next Step</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD DESIGN STEP 01 --->
+                    <div id="product" class="cdt__designSelector cdt__cardToolMenuStep01">
+                        <div class="cdt__flexBox">
+                            <div class="cdt__designTopHolder">
+                                <div class="cdt__designTopContent">
+                                    <div class="cdt_cardSelector">
+                                        <div class="sliderCardSelectorCont">
+                                            <div class="sliderCardProductName"></div>
+                                            <div class="sliderCardLayer sliderCardLayer01"></div>
+                                            <div class="sliderCardSelector owl-carousel"></div>
+                                            <div class="sliderCardLayer sliderCardLayer02"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdt__designBottomHolder">
+                                <ul class="cdt__filterFormat" role="radiogroup" aria-label="Card Format Selector Panel">
+                                    <li class="cdt__filterFormatItem active" data-format="Physical Horizontal" data-format-id="11fbb1f9-1066-4644-b878-d74ef7d4a234" role="radio" aria-checked="true" tabindex="0">
+                                        <div class="cdt__filterFormatIcon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" alt="" role="img">
+                                            <g>
+                                            <defs>
+                                            <rect id="SVG01ID_1_" y="18.343" width="100" height="63.314" />
+                                                    </defs>
+                                            <clipPath id="SVG01ID_2_">
+                                            <use xlink:href="#SVG01ID_1_" overflow="visible" />
+                                                    </clipPath>
+                                            <path clip-path="url(#SVG01ID_2_)" fill="#FFFFFF" d="M93.842,18.343H6.158C2.757,18.343,0,21.1,0,24.501v50.998
+													        c0,3.401,2.757,6.158,6.158,6.158h87.684c3.4,0,6.158-2.757,6.158-6.158V24.501C100,21.1,97.242,18.343,93.842,18.343
+													        M70.494,61.081h19.962V72.21H70.494V61.081z" />
+											    </g>
+											</svg>
+                                        </div>
+                                        <span>Physical<br aria-hidden="true" />Horizontal</span>
+                                    </li>
+                                    <li class="cdt__filterFormatItem" data-format="Physical Vertical" data-format-id="aac8af79-1830-40d7-9bcb-bac7163f9e73" role="radio" aria-checked="false" tabindex="0">
+                                        <div class="cdt__filterFormatIcon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" alt="" role="img">
+                                            <g>
+                                            <defs>
+                                            <rect id="SVG01ID_3_" x="18.344" y="0.002" width="63.313" height="99.996" />
+                                                    </defs>
+                                            <clipPath id="SVG01ID_4_">
+                                            <use xlink:href="#SVG01ID_3_" overflow="visible" />
+                                                    </clipPath>
+                                            <path clip-path="url(#SVG01ID_4_)" fill="#FFFFFF" d="M18.344,6.159v87.682c0,3.4,2.757,6.157,6.158,6.157H75.5
+													        c3.399,0,6.156-2.757,6.156-6.157V6.159c0-3.4-2.757-6.157-6.156-6.157H24.502C21.101,0.002,18.344,2.759,18.344,6.159
+													        M72.278,79.177v11.128H52.317V79.177H72.278z" />
+											    </g>
+											</svg>
+                                        </div>
+                                        <span>Physical<br aria-hidden="true" />Vertical</span>
+                                    </li>
+                                    <li class="cdt__filterFormatItem" data-format="Digital Phone" data-format-id="b602cab6-10ae-4c6e-ba23-e6f81b4a1b90" role="radio" aria-checked="false" tabindex="0">
+                                        <div class="cdt__filterFormatIcon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" alt="" role="img">
+                                            <g>
+                                            <defs>
+                                            <rect id="SVG01ID_5_" x="20.64" width="58.721" height="100" />
+                                                    </defs>
+                                            <clipPath id="SVG01ID_6_">
+                                            <use xlink:href="#SVG01ID_5_" overflow="visible" />
+                                                    </clipPath>
+                                            <path clip-path="url(#SVG01ID_6_)" fill="#FFFFFF" d="M71.752,0H28.248c-4.193,0-7.607,3.415-7.607,7.607v26.935v30.917v26.933
+													        c0,4.194,3.414,7.608,7.607,7.608h43.504c4.194,0,7.609-3.414,7.609-7.608V65.459V34.542V7.607C79.361,3.415,75.946,0,71.752,0
+													        M55.184,5.182h1.727c0.952,0,1.727,0.771,1.727,1.727c0,0.955-0.774,1.728-1.727,1.728h-1.727c-0.959,0-1.729-0.772-1.729-1.728
+													        C53.455,5.953,54.225,5.182,55.184,5.182 M43.093,5.182h6.909c0.952,0,1.727,0.771,1.727,1.727c0,0.955-0.774,1.728-1.727,1.728
+													        h-6.909c-0.956,0-1.728-0.772-1.728-1.728C41.365,5.953,42.137,5.182,43.093,5.182 M50.002,96.567c-1.998,0-3.614-1.615-3.614-3.61
+													        s1.616-3.61,3.614-3.61c1.994,0,3.61,1.615,3.61,3.61S51.996,96.567,50.002,96.567 M72.685,85.137H27.731l-0.415-70.275h44.951
+													        L72.685,85.137z" />
+												</g>
+											</svg>
+                                        </div>
+                                        <span>Digital<br aria-hidden="true" />Phone</span>
+                                    </li>
+                                    <li class="cdt__filterFormatItem" data-format="Digital Watch" data-format-id="ffc82288-8c5e-4381-b78b-c8b006735a42" role="radio" aria-checked="false" tabindex="0">
+                                        <div class="cdt__filterFormatIcon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" alt="" role="img">
+                                            <g>
+                                            <defs>
+                                            <rect id="SVG01ID_7_" x="18.609" y="-0.014" width="68.781" height="100.027" />
+                                                    </defs>
+                                            <clipPath id="SVG01ID_8_">
+                                            <use xlink:href="#SVG01ID_7_" overflow="visible" />
+                                                    </clipPath>
+                                            <path clip-path="url(#SVG01ID_8_)" fill="#FFFFFF" d="M84.354,49.18h-3.522V34.422h3.522c1.678,0,3.037,1.359,3.037,3.037v8.685
+													        C87.391,47.821,86.031,49.18,84.354,49.18" />
+                                            <path clip-path="url(#SVG01ID_8_)" fill="#FFFFFF" d="M32.451,4.819c0.485-2.669,3.082-4.833,5.79-4.833h22.976
+													        c2.713,0,5.306,2.176,5.789,4.833l2.401,13.204H30.051L32.451,4.819z" />
+                                            <path clip-path="url(#SVG01ID_8_)" fill="#FFFFFF" d="M32.451,95.18c0.485,2.672,3.082,4.834,5.79,4.834h22.976
+													        c2.713,0,5.306-2.176,5.789-4.834l2.401-13.203H30.051L32.451,95.18z" />
+                                            <g clip-path="url(#SVG01ID_8_)">
+                                            <path fill="#FFFFFF" d="M67.767,85.219H31.691c-7.213,0-13.082-5.875-13.082-13.096V27.876c0-7.221,5.869-13.095,13.082-13.095
+														        h36.075c7.213,0,13.081,5.874,13.081,13.095v44.247C80.848,79.344,74.979,85.219,67.767,85.219z M31.691,21.267
+														        c-3.638,0-6.597,2.965-6.597,6.609v44.247c0,3.645,2.959,6.609,6.597,6.609h36.075c3.638,0,6.597-2.965,6.597-6.609V27.876
+														        c0-3.645-2.959-6.609-6.597-6.609H31.691z" />
+                                                    </g>
+                                            <path clip-path="url(#SVG01ID_8_)" fill="#FFFFFF" d="M31.69,35.242c-0.419,0-0.839-0.16-1.159-0.481
+													        c-0.641-0.64-0.641-1.678,0-2.318l4.1-4.1c0.641-0.641,1.679-0.641,2.319,0s0.641,1.679,0,2.319l-4.1,4.099
+													        C32.53,35.082,32.11,35.242,31.69,35.242" />
+                                            <path clip-path="url(#SVG01ID_8_)" fill="#FFFFFF" d="M33.33,40.161c-0.419,0-0.839-0.16-1.158-0.48
+													        c-0.641-0.641-0.641-1.679,0-2.318l9.019-9.02c0.641-0.641,1.678-0.641,2.318,0s0.641,1.679,0,2.319l-9.019,9.019
+													        C34.17,40.001,33.75,40.161,33.33,40.161" />
+												</g>
+											</svg>
+                                        </div>
+                                        <span>Digital<br aria-hidden="true" />Watch</span>
+                                    </li>
+                                </ul>
+                                <div class="cdt__button cdt__buttonNext" role="button" tabindex="0" aria-labelledby="btnNextProductText">
+                                    <img src="build/img/icons/icon-arrow-btn.png" alt=""><span id="btnNextProductText">Next Step</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD DESIGN STEP 02/03 --->
+                    <div class="cdt__designTool">
+                        <div class="cdt__flexBox">
+
+                            <div class="cdt__designTopHolder">
+                                <div class="cdt__designToolContent">
+                                    <div class="cardBuilder">
+                                        <div id="cardBuilder" class="cardBuilderContent">
+                                            <div class="backCard animation-move-bottom">
+                                                <div class="backCardLayers cardLayers">
+                                                    <div class="backgroundsLayers">
+                                                        <div class="CardBgColor card-layer card-background"></div>
+                                                        <div class="CardBgPattern card-layer card-background"></div>
+                                                        <div class="CardBgImage card-layer card-background"></div>
+                                                    </div>
+                                                    <div class="elementsLayers"></div>
+                                                    <div class="gradientsLayers" data-html2canvas-ignore="true">
+                                                        <div class="CardOverlayBlack card-layer"></div>
+                                                        <div class="CardGradientBlack card-layer"></div>
+                                                        <div class="CardGradientWhite card-layer"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frontCard animation-move-top">
+                                                <div class="frontCardLayers cardLayers">
+                                                    <div class="backgroundsLayers">
+                                                        <div class="CardBgColor card-layer card-background"></div>
+                                                        <div class="CardBgPattern card-layer card-background"></div>
+                                                        <div class="CardBgImage card-layer card-background"></div>
+                                                    </div>
+                                                    <div class="gradientsLayers" data-html2canvas-ignore="true">
+                                                        <div class="CardOverlayBlack card-layer"></div>
+                                                        <div class="CardGradientBlack card-layer"></div>
+                                                        <div class="CardGradientWhite card-layer"></div>
+                                                    </div>
+                                                    <div class="elementsLayers"></div>
+                                                </div>
+                                            </div>
+                                            <div class="cardSwitchBtn" role="button" aria-label="Swap card front/back view" tabindex="0">
+                                                <img class="enabled" src="build/img/icons/icon-switch.png" alt="">
+                                                <img class="high-contrast" src="build/img/icons/icon-switch-white.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cdt__cardTools">
+                                <div id="background" class="cdt__cardToolMenu cdt__cardToolMenuStep02">
+                                    <div class="cdt__cardToolSelector cdt__cardToolSelectorBg">
+                                        <div class="cdt__designBgSelection">
+                                            <div class="cdt__cardToolTabs">
+                                                <ul aria-label="Background selector panel">
+                                                    <li data-panel="bgColor" class="active">                                                       
+                                                        <div class="switch-element" role="switch" aria-checked="true" tabindex="0" aria-labelledby="bgColorBtnLabel">
+                                                            <div class="switch"><span class="slider round"></span></div>
+                                                        </div>
+                                                        <div class="cdt__cardToolTabsCont" role="button" aria-expanded="true" tabindex="0" aria-labelledby="bgColorBtnLabel">
+                                                            <div class="cdt__cardToolTabsIcon">
+                                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                     width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                                <g>
+                                                                <g>
+                                                                <g>
+                                                                <path fill="#959595" d="M293.5,114.251c-61.719,0-110.99,49.271-110.99,110.989c0,61.719,49.271,111.509,110.99,111.509
+																			c9.854,0,18.671-8.816,18.671-18.671c0-5.187-1.037-8.817-5.187-12.447c-2.593-3.631-5.187-7.262-5.187-12.448
+																			c0-9.854,8.817-18.671,18.672-18.671h22.302c34.749,0,61.719-26.97,61.719-61.719C404.49,158.854,355.219,114.251,293.5,114.251z
+																			M225.558,225.76c-9.854,0-18.672-8.817-18.672-18.672c0-9.854,8.817-18.671,18.672-18.671c9.854,0,18.671,8.817,18.671,18.671
+																			C244.229,216.942,235.411,225.76,225.558,225.76z M262.381,175.97c-9.854,0-18.671-8.817-18.671-18.671
+																			c0-9.854,8.817-18.672,18.671-18.672c9.854,0,18.672,8.817,18.672,18.672C281.053,167.152,272.235,175.97,262.381,175.97z
+																			M324.618,175.97c-9.854,0-18.671-8.817-18.671-18.671c0-9.854,8.817-18.672,18.671-18.672c9.854,0,18.672,8.817,18.672,18.672
+																			C343.29,167.152,334.473,175.97,324.618,175.97z M361.442,225.76c-9.854,0-18.671-8.817-18.671-18.672
+																			c0-9.854,8.816-18.671,18.671-18.671s18.671,8.817,18.671,18.671C380.113,216.942,371.297,225.76,361.442,225.76z" />
+
+
+
+																		</g>
+																	</g>
+																</g>
+															</svg>
+                                                            </div>
+                                                            <span id="bgColorBtnLabel">Color</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-panel="bgPattern"> 
+                                                        <div class="switch-element" role="switch" aria-checked="false" tabindex="0" aria-labelledby="bgPatternBtnLabel">
+                                                            <div class="switch"><span class="slider round"></span></div>
+                                                        </div>
+                                                        <div class="cdt__cardToolTabsCont" role="button" aria-expanded="false" tabindex="-1" aria-labelledby="bgPatternBtnLabel">
+                                                            <div class="cdt__cardToolTabsIcon">
+                                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                     width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                                <path fill="#959595" d="M232.3,336.749h-15.041v-35.268h-35.268V286.44l52.901-52.383h49.791v50.309L232.3,336.749z
+																M209.479,284.366h25.413v25.413l32.676-32.674v-25.414h-24.896L209.479,284.366z M387.375,131.885h17.634v-17.634h-17.634V131.885z
+																M199.625,114.251h-17.634v17.634h17.634V114.251z M387.375,336.749h17.634v-17.634h-17.634V336.749z M199.625,319.634h-17.634
+																v17.115h17.634V319.634z M284.684,234.576h17.634v-17.634h-17.634V234.576z M284.684,149h17.634v-17.634h-17.634V149z
+																M302.317,131.885h17.115v-17.634h-17.635v17.634H302.317z M267.568,131.885h17.633v-17.634h-17.633V131.885z M284.684,319.634
+																h17.634V302h-17.634V319.634z M302.317,336.749h17.115v-17.634h-17.635v17.634H302.317z M267.568,336.749h17.633v-17.634h-17.633
+																V336.749z M217.259,234.576v-17.634h-17.634v17.634H217.259z M199.625,216.942v-17.634h-17.634v17.634H199.625z M199.625,251.691
+																v-17.634h-17.634v17.634H199.625z M387.375,234.576v-17.634H369.74v17.634H387.375z M404.49,216.942v-17.634h-17.635v17.634H404.49z
+																M404.49,251.691v-17.634h-17.635v17.634H404.49z M369.74,336.749H354.7l-52.383-52.383v-50.309h49.789l52.902,52.383v15.041H369.74
+																V336.749z M319.433,277.105l32.674,32.674v-25.413h25.414l-32.675-32.675h-25.413V277.105z M284.684,216.942h-49.791L182.51,164.56
+																v-15.041h35.268v-35.268h15.041l52.383,52.383v50.309H284.684z M242.154,199.827h25.414v-25.413l-32.676-32.675v25.413h-25.413
+																L242.154,199.827z M351.588,216.942h-49.79v-50.309l52.384-52.383h15.04v35.268h35.269v15.041L351.588,216.942z M319.433,199.827
+																h24.895l32.675-32.675h-25.414v-25.413l-32.155,32.155V199.827z" />
+
+
+
+																</svg>
+                                                            </div>
+                                                            <span id="bgPatternBtnLabel">Pattern</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-panel="bgImg">
+                                                        <div class="switch-element" role="switch" aria-checked="false" tabindex="0" aria-labelledby="bgImgBtnLabel">
+                                                            <div class="switch"><span class="slider round"></span></div>
+                                                        </div>
+                                                        <div class="cdt__cardToolTabsCont" role="button" aria-expanded="false" tabindex="-1" aria-labelledby="bgImgBtnLabel">
+                                                            <div class="cdt__cardToolTabsIcon">
+                                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                     width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                                <g>
+                                                                <path fill="#959595" d="M220.371,180.896c7.78,0,14.004-2.593,19.19-7.779s7.779-11.929,7.779-19.19
+																	c0-7.779-2.593-14.003-7.779-19.189s-11.929-7.779-19.19-7.779c-7.779,0-14.003,2.593-19.189,7.779s-7.779,11.929-7.779,19.189
+																	c0,7.78,2.593,14.004,7.779,19.19C206.368,177.785,212.592,180.896,220.371,180.896z" />
+
+
+
+                                                                <path fill="#959595" d="M254.602,257.656c-6.742-8.299-14.003-17.115-23.339-25.414c-1.556-1.556-3.111-2.593-4.668-4.149
+																	c-1.556,1.557-3.63,3.112-5.186,5.187c-18.153,17.635-34.75,35.787-49.79,54.458c0,11.929,0,24.376,0,36.305h243.762v-84.538
+																	l-72.092-78.315L254.602,257.656z" />
+
+
+
+																</g>
+															</svg>
+                                                            </div>
+                                                            <span id="bgImgBtnLabel">Images</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="cdt__button cdt__buttonNext" role="button" tabindex="0" aria-labelledby="btnNextBackgroundText">
+                                                <img src="build/img/icons/icon-arrow-btn.png" alt=""><span id="btnNextBackgroundText">Next Step</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cdt__cardToolPanel cdt__cardToolPanel--bgColor" data-item="bgColor" aria-hidden="true">
+                                            <div class="cdt__panelBlock">
+                                                <div class="cdt__selectedTab">
+                                                    <div class="cdt__selectedTabClone active required" data-panel="bgColor">
+                                                        <div class="cdt__selectedTabIcon">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                 width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                            <g>
+                                                            <g>
+                                                            <g>
+                                                            <path fill="#959595" d="M293.5,114.251c-61.719,0-110.99,49.271-110.99,110.989c0,61.719,49.271,111.509,110.99,111.509
+																		c9.854,0,18.671-8.816,18.671-18.671c0-5.187-1.037-8.817-5.187-12.447c-2.593-3.631-5.187-7.262-5.187-12.448
+																		c0-9.854,8.817-18.671,18.672-18.671h22.302c34.749,0,61.719-26.97,61.719-61.719C404.49,158.854,355.219,114.251,293.5,114.251z
+																		M225.558,225.76c-9.854,0-18.672-8.817-18.672-18.672c0-9.854,8.817-18.671,18.672-18.671c9.854,0,18.671,8.817,18.671,18.671
+																		C244.229,216.942,235.411,225.76,225.558,225.76z M262.381,175.97c-9.854,0-18.671-8.817-18.671-18.671
+																		c0-9.854,8.817-18.672,18.671-18.672c9.854,0,18.672,8.817,18.672,18.672C281.053,167.152,272.235,175.97,262.381,175.97z
+																		M324.618,175.97c-9.854,0-18.671-8.817-18.671-18.671c0-9.854,8.817-18.672,18.671-18.672c9.854,0,18.672,8.817,18.672,18.672
+																		C343.29,167.152,334.473,175.97,324.618,175.97z M361.442,225.76c-9.854,0-18.671-8.817-18.671-18.672
+																		c0-9.854,8.816-18.671,18.671-18.671s18.671,8.817,18.671,18.671C380.113,216.942,371.297,225.76,361.442,225.76z" />
+
+
+
+																	</g>
+																</g>
+															</g>
+														</svg>
+                                                        </div>
+                                                        <span id="selectedBgColorText" class="cdt__selectedTabName">Colors</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__panelBlockFlex">
+                                                    <div class="cdt__cardToolOptions">
+                                                        <div class="jsColorContent">
+                                                            <div id="jsColorPicker"></div>
+                                                            <div class="jsColorPicker">
+                                                                <div class="jsColorInput">
+                                                                    <label class="jsColorTitle" aria-label="Background color hexadecimal value" for="jsColorPickerText">HEX:</label>
+                                                                </div>
+                                                                <div class="jsColorRGB">
+                                                                    <h5 class="jsColorTitle" aria-label="Background color RGB value">RGB:</h5>
+                                                                    <p class="jsColorText"></p>
+                                                                </div>
+                                                                <div class="jsColorHSV">
+                                                                    <h5 class="jsColorTitle" aria-label="Background color HSV value">HSV:</h5>
+                                                                    <p class="jsColorText"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg--accept" role="button" tabindex="0" aria-label="Accept Edition">
+                                                    <img src="build/img/icons/icon-accept.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cdt__cardToolPanel cdt__cardToolPanel--bgPattern" data-item="bgPattern" aria-hidden="true">
+                                            <div class="cdt__panelBlock">
+                                                <div class="cdt__selectedTab">
+                                                    <div class="cdt__selectedTabClone active" data-panel="bgPattern">
+                                                        <div class="cdt__selectedTabIcon">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                 width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                            <path fill="#959595" d="M232.3,336.749h-15.041v-35.268h-35.268V286.44l52.901-52.383h49.791v50.309L232.3,336.749z
+															M209.479,284.366h25.413v25.413l32.676-32.674v-25.414h-24.896L209.479,284.366z M387.375,131.885h17.634v-17.634h-17.634V131.885z
+															M199.625,114.251h-17.634v17.634h17.634V114.251z M387.375,336.749h17.634v-17.634h-17.634V336.749z M199.625,319.634h-17.634
+															v17.115h17.634V319.634z M284.684,234.576h17.634v-17.634h-17.634V234.576z M284.684,149h17.634v-17.634h-17.634V149z
+															M302.317,131.885h17.115v-17.634h-17.635v17.634H302.317z M267.568,131.885h17.633v-17.634h-17.633V131.885z M284.684,319.634
+															h17.634V302h-17.634V319.634z M302.317,336.749h17.115v-17.634h-17.635v17.634H302.317z M267.568,336.749h17.633v-17.634h-17.633
+															V336.749z M217.259,234.576v-17.634h-17.634v17.634H217.259z M199.625,216.942v-17.634h-17.634v17.634H199.625z M199.625,251.691
+															v-17.634h-17.634v17.634H199.625z M387.375,234.576v-17.634H369.74v17.634H387.375z M404.49,216.942v-17.634h-17.635v17.634H404.49z
+															M404.49,251.691v-17.634h-17.635v17.634H404.49z M369.74,336.749H354.7l-52.383-52.383v-50.309h49.789l52.902,52.383v15.041H369.74
+															V336.749z M319.433,277.105l32.674,32.674v-25.413h25.414l-32.675-32.675h-25.413V277.105z M284.684,216.942h-49.791L182.51,164.56
+															v-15.041h35.268v-35.268h15.041l52.383,52.383v50.309H284.684z M242.154,199.827h25.414v-25.413l-32.676-32.675v25.413h-25.413
+															L242.154,199.827z M351.588,216.942h-49.79v-50.309l52.384-52.383h15.04v35.268h35.269v15.041L351.588,216.942z M319.433,199.827
+															h24.895l32.675-32.675h-25.414v-25.413l-32.155,32.155V199.827z" />
+
+
+
+														</svg>
+                                                        </div>
+                                                        <span id="selectedPatternText" class="cdt__selectedTabName">Patterns</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__panelCarousel">
+                                                    <div class="cdt__cardToolOptions cdt__cardToolCarousel owl-carousel"></div>
+
+                                                    <div class="cdt__cardToolPanel--editor cdt__cardToolPanel--editorSmall cdt__cardToolPanel--patternEditor">
+                                                        <div class="cdt__cardToolEditControls">
+                                                            <div class="cdt__cardToolEditRange">
+                                                                <span class="cdt__cardToolEditTitle" aria-hidden="true">SIZE</span>
+                                                                <div class="rangeContent">
+                                                                    <div id="range-size"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cdt__cardToolEditRange">
+                                                                <span class="cdt__cardToolEditTitle" aria-hidden="true">OPACITY</span>
+                                                                <div class="rangeContent">
+                                                                    <div id="range-opacity"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg--accept" role="button" tabindex="0" aria-label="Accept Edition">
+                                                    <img src="build/img/icons/icon-accept.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cdt__cardToolPanel cdt__cardToolPanel--bgImg" data-item="bgImg" aria-hidden="true">
+                                            <div class="cdt__panelBlock">
+                                                <div class="cdt__selectedTab">
+                                                    <div class="cdt__selectedTabClone active" data-panel="bgImg">
+                                                        <div class="cdt__selectedTabIcon">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                 width="290px" height="290px" viewBox="148.5 80.5 290 290" enable-background="new 148.5 80.5 290 290" xml:space="preserve" alt="" role="img">
+                                                            <g>
+                                                            <path fill="#959595" d="M220.371,180.896c7.78,0,14.004-2.593,19.19-7.779s7.779-11.929,7.779-19.19
+																c0-7.779-2.593-14.003-7.779-19.189s-11.929-7.779-19.19-7.779c-7.779,0-14.003,2.593-19.189,7.779s-7.779,11.929-7.779,19.189
+																c0,7.78,2.593,14.004,7.779,19.19C206.368,177.785,212.592,180.896,220.371,180.896z" />
+
+
+
+                                                            <path fill="#959595" d="M254.602,257.656c-6.742-8.299-14.003-17.115-23.339-25.414c-1.556-1.556-3.111-2.593-4.668-4.149
+																c-1.556,1.557-3.63,3.112-5.186,5.187c-18.153,17.635-34.75,35.787-49.79,54.458c0,11.929,0,24.376,0,36.305h243.762v-84.538
+																l-72.092-78.315L254.602,257.656z" />
+
+
+
+															</g>
+														</svg>
+                                                        </div>
+                                                        <span id="selectedBgImgText" class="cdt__selectedTabName">Images</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cdt__panelCarousel">
+                                                    <div class="cdt__cardToolOptions cdt__cardToolCarousel owl-carousel"></div>
+                                                </div>
+                                                <div class="cdt__panelUploadImg" role="button" tabindex="0" aria-labelledby="uploadImgText">
+                                                    <div class="cdt__panelUploadImg--padding">
+                                                        <div class="cdt__panelUploadImgCon">
+                                                            <div class="cdt__panelUploadImgIcon">
+                                                                <div class="cdt__uploadImgIcon">
+                                                                    <img src="build/img/icons/icon-upload-img.png" alt="">
+                                                                    <span id="uploadImgText">Picture<br aria-hidden="true" />Upload</span>
+                                                                </div>
+                                                                <div class="cdt__uploadImgBackground"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg--accept" role="button" tabindex="0" aria-label="Accept Edition">
+                                                    <img src="build/img/icons/icon-accept.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cdt__cardToolPanel cdt__cardToolPanel--uploadImg" aria-hidden="true">
+                                            <div class="cdt__cardToolOptions">
+                                                <div class="editorUploadImg">
+                                                    <div class="editorUploadImg--ref">
+                                                        <div class="editorUploadImg--refCont">
+                                                            <div class="editorUploadImg--img">
+                                                                <div class="editorUploadImg--icon">
+                                                                    <img src="build/img/icons/icon-upload-img-blue.png" alt="">
+                                                                    <span>Picture<br />Upload</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="editorUploadImg--uploadInput">
+                                                        <div class="inputFileCont">
+                                                            <div class="inputFile">
+                                                                <label for="BackgroundUpload">Select your custom picture</label>
+                                                                <input type="file" id="BackgroundUpload" name="BackgroundUpload" class="file-uploader">
+                                                            </div>
+                                                            <div class="inputFileCondition">
+                                                                <div class="inputFileConIcon">
+                                                                    <img class="enabled" src="build/img/icons/icon-important.png" alt="">
+                                                                    <img class="high-contrast" src="build/img/icons/icon-important-white.png" alt="">
+                                                                </div>
+                                                                <div class="inputFileConMen">
+                                                                    <p>
+                                                                        Format image supported: <span>JPG</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="editor--accept" role="button" tabindex="0" aria-label="Accept Edition">
+                                                        <img src="build/img/icons/icon-accept.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="element" class="cdt__cardToolMenu cdt__cardToolMenuStep03">
+                                    <div class="cdt__cardToolSelector cdt__cardToolSelectorElement">
+
+                                        <div class="cdt__cardToolPanelCont">
+                                            <div class="cdt__cardToolPanel cdt__cardToolPanel--Element active">
+                                                <ul class="cdt__cardToolOptions cdt__cardToolCarousel dragscroll" aria-label="Elements Selector Panel"></ul>
+                                            </div>
+                                        </div>
+                                        <div class="cdt__button cdt__buttonNext cdt__designNavNext" role="button" tabindex="0" aria-labelledby="btnNextElementsText">
+                                            <img src="build/img/icons/icon-arrow-btn.png" alt=""><span id="btnNextElementsText">Next Step</span>
+                                        </div>
+                                        <div class="cdt__cardToolPanel cdt__cardToolPanel--editElement" data-item="">
+                                            <div class="editor-selectedElement"></div>
+                                            <div class="editor-elementOptions cdt__cardToolCarousel owl-carousel dragscroll">
+                                                <div class="editor-elementOption file">
+                                                    <div class="inputFileWithPreview">
+                                                        <div class="inputFileCont">
+                                                            <div class="inputFile">
+                                                                <label for="LogoUpload">Select your custom logo...</label>
+                                                                <input type="file" id="LogoUpload" name="LogoUpload" class="file-uploader">
+                                                            </div>
+                                                        </div>
+                                                        <div class="inputPreview"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="editor-elementOption process">
+                                                    <h4>Process</h4>
+                                                    <ul class="items" data-type="process" role="radiogroup" aria-label="Process options"></ul>
+                                                </div>
+                                                <div class="editor-elementOption pin">
+                                                    <h4>Pin</h4>
+                                                    <ul class="items" data-type="pin" role="radiogroup" aria-label="Pin options"></ul>
+                                                </div>
+                                                <div class="editor-elementOption position">
+                                                    <h4>Position</h4>
+                                                    <ul class="items" data-type="position" role="radiogroup" aria-label="Position options"></ul>
+                                                </div>
+                                                <div class="editor-elementOption color">
+                                                    <h4>Color</h4>
+                                                    <ul class="items" data-type="color" role="radiogroup" aria-label="Color options"></ul>
+                                                </div>
+                                                <div class="editor-elementOption shape">
+                                                    <h4>Shape</h4>
+                                                    <ul class="items" data-type="shape" role="radiogroup" aria-label="Shape options"></ul>
+                                                </div>
+                                            </div>
+                                            <div class="editor--accept" role="button" tabindex="0" aria-label="Accept edition">
+                                                <img src="build/img/icons/icon-accept.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Alert MODULE -->
+                                <div id="alert" class="cdt__alert">
+                                    <div class="cdt__alertContent" role="alert">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD DESIGN STEP 04 --->
+                    <div id="mockup" class="cdt__designMockup cdt__cardToolMenuStep04">
+                        <div class="cdt__flexBox">
+                            <div class="cdt__designTopHolder">
+                                <div class="cdt__mainMockup">
+                                    <div class="cdt__mainMockupCompo">
+                                        <div class="cdt__mainMockupBlack"></div>
+                                        <div class="cdt__mainMockupExtraLayer">
+                                            <img class="mockExtraPhone" src="build/img/mockups/big/phone/phone.png" alt="Mobile phone with digital card">
+                                            <img class="mockExtraWatch" src="build/img/mockups/big/watch/watch.png" alt="Watch with digital card">
+                                        </div>
+                                        <div class="cdt__mainMockupCardItems">
+                                            <div class="cdt__mainMockupBackCard cdt__mainMockupCard">
+                                                <img src="build/img/card-gradient.png" alt="" class="cdt__mockupGradient">
+                                            </div>
+                                            <div class="cdt__mainMockupFrontCard cdt__mainMockupCard">
+                                                <img src="build/img/card-gradient.png" alt="" class="cdt__mockupGradient">
+                                            </div>
+                                        </div>
+                                        <div class="cdt__mainMockupBanner"></div>
+                                        <div class="cdt__mainMockupWatermark"></div>
+                                    </div>
+                                    <div class="cdt__mainMockupText" data-html2canvas-ignore="true">
+                                        <h4>
+                                            <span>Congratulations</span> <span class="br-mock-desk"><br aria-hidden="true"></span>Your card is ready!
+                                        </h4>
+                                        <p>
+                                            Thanks for using the <span>Visa Card Designer</span>.
+                                            <br aria-hidden="true">
+                                            You can download sample mockups now.
+                                        </p>
+                                    </div>
+                                    <div class="cdt__button cdt__buttonPlayAgain" data-html2canvas-ignore="true" role="button" tabindex="0" aria-labelledby="buttonPlayAgainText">
+                                        <span id="buttonPlayAgainText">Design Another Card</span>
+                                    </div>
+                                    <div class="cdt__buttonContactUs" data-html2canvas-ignore="true">
+                                        <a href="#" class="cdt__buttonContactUsIcon" title="Contact Us" aria-label="Contact Us (Opens default email application)" aria-describedby="contactUsTooltip" tabindex="0">
+                                            <!--<img src="build/img/icons/icon-contact-us.png" alt="Contact Us Icon">-->
+                                            <span>Email us</span>
+                                            <img src="build/img/icons/icon-arrow-right-white.png" alt="">
+                                        </a>
+                                        <div id="contactUsTooltip" class="cdt__contactUsTooltip" role="tooltip"><p>Have questions about your card design?</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cdt__designBottomHolder">
+                                <ul class="cdt__mockupSelection dragscroll" role="radiogroup" aria-label="Mockup selector panel"></ul>
+                                <div class="cdt__button cdt__buttonDownload" role="button" tabindex="0" aria-labelledby="buttonDownloadText">
+                                    <img src="build/img/icons/icon-download-btn.png" alt=""><span id="buttonDownloadText">Download</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- LEGALS MODULE --->
+<footer class="cdt__legal" role="contentinfo" aria-label="Visa Card Designer Legals">
+    <div class="cdt__wrapper">
+        <div class="cdt__legalContent">
+            <p>For illustration purposes and not inclusive of all card elements. All third party marks are property of their respective owners and any use of such marks do not indicate any actual or potential partnership or endorsement. Official designs must adhere to Visa Product Brand Standards and be submitted by card vendor for formal approval via Visa Brand Management Approval System.</p>
+            <div class="cdt__legalImg">
+                <img class="enabled" src="build/img/visa-logo.png" alt="Visa Logo">
+                <img class="high-contrast-dark" src="build/img/visa-logo-black.png" alt="Visa Logo">
+                <img class="high-contrast-light" src="build/img/visa-logo-white.png" alt="Visa Logo">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="build/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="build/js/js.cookie.js" type="text/javascript"></script>
+    <script src="build/js/ableplayer.min.js" type="text/javascript"></script>
+    <script src="build/js/libs.min.js" type="text/javascript"></script>
+    <script src="build/js/main.min.js" type="text/javascript"></script>
+    <script src="build/js/map.min.js" type="text/javascript" async></script>
+    <!-- FIN SCRIPTS -->
+    <!-- Script to POST data to GA -->
+    <script type="text/javascript">
+        var dataLayer = [];
+        if (typeof webAnalyticsData !== 'undefined') {
+            for (var key in webAnalyticsData) {
+                dataLayer.push($.parseJSON('{"' + key + '" : "' + webAnalyticsData[key] + '"}'));
+            };
+        };
+        var wadkey = '';
+        $('[wad-key]').each(function (index) {
+            wadkey = $(this).attr('wad-key');
+            dataLayer.push($.parseJSON('{"' + wadkey + '" : "' + $(this).attr('wad-value') + '"}'));
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', GTMContainerID);</script>
+    <!-- End Google Tag Manager -->
+</body>
+
+</html>

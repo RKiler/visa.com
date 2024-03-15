@@ -1,0 +1,11 @@
+502 Bad Gateway
+Content-Type: text/html
+X-Cache: LambdaValidationError from cloudfront
+X-Amz-Cf-Pop: SFO53-P1
+X-Amz-Cf-Id: _KYOBKQvK3Sj0n8jIyYlIgY28lkFD7vUPag9wVFS4Z7NXE1n214P2g==
+Content-Length: 985
+Server: CloudFront
+Date: Fri, 15 Mar 2024 03:11:11 GMT
+Via: 1.1 c8c3180933886633be93f042334d6e12.cloudfront.net (CloudFront)
+Vary: Origin
+Retry-Count: 0

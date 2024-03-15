@@ -1,0 +1,14 @@
+200 OK
+Expires: -1
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+X-Frame-Options: DENY
+Content-Type: text/html; charset=utf-8
+X-Content-Security-Policy: allow *; script-src 'self' http://l2.io https://l2.io http://prosperent.com https://prosperent.com https://*.xport.glopalservice.com http://*.xport.glopalservice.com https://*.borderlinx.com http://*.borderlinx.com https://server.iad.liveperson.net http://server.iad.liveperson.net https://*.facebook.com http://*.facebook.com https://connect.facebook.net http://connect.facebook.net https://*.fbcdn.net http://*.fbcdn.net http://*.google.com https://*.google.com http://*.google-analytics.com https://*.google-analytics.com https://ssl.gstatic.com http://ajax.googleapis.com https://ajax.googleapis.com http://web01.optimix.asia https://web01.optimix.asia http://tracking.sokrati.com https://tracking.sokrati.com http://eulerian.kdpgroupe.com https://eulerian.kdpgroupe.com http://www.googleadservices.com https://www.googleadservices.com http://srv1.wa.marketingsolutions.yahoo.com https://srv1.wa.marketingsolutions.yahoo.com http://*.marinsm.com https://*.marinsm.com http://*.dgmsearchlab.com https://*.dgmsearchlab.com http://*.cedexis.com https://*.cedexis.com http://*.amazonaws.com https://*.amazonaws.com http://*.cedexis-radar.net https://*.cedexis-radar.net d39ze0fcltcujr.cloudfront.net http://aws.bximg.net http://*.referralcandy.com https://*.referralcandy.com https://www.paypalobjects.com http://*.youku.com https://*.youku.com ; options inline-script eval-script
+Frame-Options: DENY
+Pragma: no-cache
+Cache-Control: no-cache no-store must-revalidate
+Set-Cookie: prefs2=affiliate_timestamp%26%26lang%26enUS%26name%26%26hlb%26%26sem_tag%26%26subsite%26bx-de%26country%26DE%26currency%26EUR%26affiliate_reference%26; path=/; domain=.borderlinx.com; expires=Thu, 13-Jun-2024 03:08:40 GMT
+Server: nginx
+Date: Fri, 15 Mar 2024 03:08:41 GMT
+Vary: Accept-Encoding

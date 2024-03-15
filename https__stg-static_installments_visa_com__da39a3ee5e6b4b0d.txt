@@ -1,0 +1,8 @@
+403 Forbidden
+Content-Type: text/html
+Content-Length: 1233
+Retry-Count: 0
+X-Powered-By: ASP.NET
+Server: PINPONA
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Fri, 15 Mar 2024 03:12:25 GMT

@@ -1,0 +1,20 @@
+200 OK
+X-Content-Type-Options: nosniff nosniff
+Content-Security-Policy: upgrade-insecure-requests; script-src 'self' https://*.googletagmanager.com 'nonce-5351108162844659b66cbd2455f6ee2a'; object-src 'self'; img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+Expires: -1
+Cf-Ray: 86494c26ee88fb2c-SJC
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache,no-store
+Access-Control-Allow-Credentials: true
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:08:10 GMT
+X-Frame-Options: SAMEORIGIN SAMEORIGIN SAMEORIGIN
+X-Xss-Protection: 1; mode=block 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Access-Control-Allow-Headers: origin, x-requested-with, content-type
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS
+S: 73LGC002 CTE PR02
+Set-Cookie: CTE_BookMark=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ CTE_UiCulture=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ IDPID=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ b2bamtokenc=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ amlbcookie=; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=visaonline.com; path=/ XSRF-TOKEN-B2BIAM-COOKIE=CfDJ8DxOQ5XkVe9Hi0WEEPEHhLegy-MyNtl65VjZjdixmP3L-givc3W0XZTgew0YN6OCzdTslVIYbTpQ3LprgJ4U6yn5ESHZBOPgP9JXOYZslNPmCmNfYsL34I9qpLN8cQsjkjjgLmuhkJoNh9x9bK9xw1o; path=/; secure; samesite=strict; httponly .AspNetCore.Session=CfDJ8DxOQ5XkVe9Hi0WEEPEHhLfB6RurwRW3go7wvkbk868OmyxkesmZhudo8S9sMjDMVnWh8JuJWyB600p1e4Kw6tpqwcZSnFEv86X4xVPNHVIKUydIUvFUpK7pnQ0XK2HPepLoFx8JJaAfQukJRO6xe7CAy67EtEGzCI0pBky0GPV%2B; path=/; secure; samesite=lax; httponly BIGipServer~Extranet_CCTE_Business~B2BIAM-Login_18318_AB_119_20_11443=!EQMb/WZa3N02MTZrW3KgXL2iOe6JfMHVfVmP7sGWNqOzXjhBLiAco2GbSSWZ2sjuCMARD50p+hNiB3u6malkhTkChKLW57WnztklkUDCee8=; path=/; Httponly; Secure __cfruid=ed1f6faf9e34e2445ee4d0d15d787d3ac0ab7db8-1710472090; path=/; domain=.cte.visaonline.com; HttpOnly; Secure; SameSite=None _cfuvid=CqJFxaLf.b4ozfipX3LzeRSBsNYPaAa.IR5leD64jek-1710472090815-0.0.1.1-604800000; path=/; domain=.cte.visaonline.com; HttpOnly; Secure; SameSite=None
+Cf-Cache-Status: DYNAMIC
+Pragma: no-cache

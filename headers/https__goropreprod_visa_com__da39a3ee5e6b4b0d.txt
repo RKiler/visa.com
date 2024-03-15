@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: no-store, no-cache
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Ms-Request-Id: 3576c6d6-9ef2-443d-9c7e-81fce9643401
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+est"}]}
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Ms-Ests-Server: 2.1.17445.4 - SCUS ProdSlices
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+Set-Cookie: buid=0.ARcAEl4wOF3h6E6IucTbHEd9dsrXsLFLOG1Hiq_l3Q6csjYXAAA.AQABGgEAAADnfolhJpSnRYB1SVj-Hgd8msaAKrFFPU7B_GtpHztQ9sCAm6k7OWYXy-6tQ6XC4DP04hSd-I0qWGUOx7E1z8KQ01J761bw2_FgzJoTVkcwibwZ3-boeMEpd5kMAkS3TO8gAA; expires=Sun, 14-Apr-2024 03:09:32 GMT; path=/; secure; HttpOnly; SameSite=None ESTSWCTXFLOWTOKEN=AQABIQEAAADnfolhJpSnRYB1SVj-Hgd8rf7UWGRYl6qOhKbjFPYJCKyEpGovT_jqhSskAoDOyVPfib_fun3_TnUAxrD2OLCvf53EQJ80nAdzO3ZjfTXd6L4P9TOe4AraGdzmCytLcJEZfYW-rXuqlnAxWplBJPy0Cjfks1mAz9xERCPwNMmNdjyRQ54epWbw7bgj6PjHBxvsA9vvODzE_BFYHpthaajtz9IzFktgkVsA92VxDF-d1mUbpBzFHYs69R_V4RmPpvOTua7dU_W7TYwb4Bc1oPtF4X4i1z401seu_bxRLTigv2EgwmPNsxra8qK8cLZTQISIIvoIe_iTJJ5IIPDk2pmaluKsGC0vSykM8avEPtavLFT_oOg_K2RvxmegXUirhE06ye8IUwGwo8cih4fztpgoz44xEGgaZI6ptypKoFm941mThx_wS4G_p8xavreFsTklzyDM7lpQ5D7_gE_vhOtFqcC2sfw3wfIWQQFtSRBHIhYW8VmIcVWdUF_OeJ6hjNxDsr78PrLhiAPVVAGO6tYzIAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None fpc=Asmo9z5b_eRIi0GyYBjZ4mJHCjNLAQAAAOuyhd0OAAAA; expires=Sun, 14-Apr-2024 03:09:32 GMT; path=/; secure; HttpOnly; SameSite=None esctx=PAQABBwEAAADnfolhJpSnRYB1SVj-Hgd8oXRhbpQ44bz2L_7Ag_dMEPfRV3iecgIYQ6ksMGuLL7FObWKye6Kl6Bl_1vI6jyUOH4qflQExKI_qUMyJW_wEpI8zbLnbhlGdtY77fn6E8dnvO8gBOMhb76Z3M4liqTKJEJ2GYm7nbQEhH7qUwC02t9_kMVaKUjVP19rSLxT58m8gAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly stsservicecookie=estsfd; path=/; secure; samesite=none; httponly
+Content-Type: text/html; charset=utf-8
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Date: Fri, 15 Mar 2024 03:09:32 GMT
+Retry-Count: 0
+Expires: -1
+X-Xss-Protection: 0

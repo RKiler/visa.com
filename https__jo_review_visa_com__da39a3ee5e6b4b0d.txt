@@ -1,0 +1,19 @@
+403 Forbidden
+Date: Fri, 15 Mar 2024 03:10:09 GMT
+Cross-Origin-Opener-Policy: same-origin
+Origin-Agent-Cluster: ?1
+Permissions-Policy: accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+Vary: Accept-Encoding
+Cf-Ray: 86494f0cb8cb24fa-SJC
+Content-Type: text/html; charset=UTF-8
+Cf-Mitigated: challenge
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Retry-Count: 0
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Referrer-Policy: same-origin
+X-Frame-Options: SAMEORIGIN
+Cf-Chl-Out: yMUq2t62snHY+UYKHVdMgZbxeB4SofXqBBiangnpUMdssa/WcNsD4sOM/4qYW6VUBVPqd9YQ/gedJDEg4k2KwvfAPGjNTblqi4WnUuz3inommMYObBc0oot2JgC6zozWFK9CrIUJ/9fp134lZq64xQ==$JeuxkvaEFteh27cmiaop5g==
+Server: cloudflare
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Resource-Policy: same-origin
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0

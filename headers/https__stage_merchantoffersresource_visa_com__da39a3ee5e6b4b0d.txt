@@ -1,0 +1,12 @@
+502 Bad Gateway
+Cf-Ray: 8649511348f8f953-SJC
+Date: Fri, 15 Mar 2024 03:11:32 GMT
+Content-Length: 15
+Retry-Count: 0
+Referrer-Policy: same-origin
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Server: cloudflare
+Content-Type: text/plain; charset=UTF-8
+Set-Cookie: __cfruid=5c9c4db9ed44317c8257d53b6d8875dd0da028e6-1710472292; path=/; domain=.stage.merchantoffersresource.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=UpD7a2ljB28plWqRLThvELP.ycb6AI1Rqu2d.T_xYbc-1710472292519-0.0.1.1-604800000; path=/; domain=.stage.merchantoffersresource.visa.com; HttpOnly; Secure; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0

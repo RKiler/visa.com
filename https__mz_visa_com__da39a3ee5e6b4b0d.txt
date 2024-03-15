@@ -1,0 +1,16 @@
+200 OK
+Date: Fri, 15 Mar 2024 03:12:21 GMT
+X-Frame-Options: SAMEORIGIN
+Cf-Ray: 86495247fb4896d2-SJC
+Last-Modified: Fri, 15 Mar 2024 03:00:25 GMT
+Set-Cookie: lbs=!NqgZpeQxmsPISH+hTK7BLDNA2UyawCqOW/0bY1nSb0nwpGFwdORcFnTnd3lNrHuE2D36g6nM4nn2o11EjzUlDz62IvfOFmclsaPcuiZ4; Path=/; Version=1; Secure; Httponly __cfruid=d1b46619ab1366c615c6a1feba36f50d74b8ad50-1710472341; path=/; domain=.africa.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=hJ3PrbSvn_xU13q32d3L7utTx7R6EzNg.bgYOwxLNws-1710472341841-0.0.1.1-604800000; path=/; domain=.africa.visa.com; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Content-Security-Policy: self
+Vary: Accept-Encoding
+Retry-Count: 0
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: BYPASS
+Referrer-Policy: no-referrer-when-downgrade
+X-Content-Type-Options: nosniff nosniff
+X-Xss-Protection: 1; mode=block
+Server: cloudflare

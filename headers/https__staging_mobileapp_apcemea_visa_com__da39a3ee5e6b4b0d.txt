@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Cf-Cache-Status: DYNAMIC
+X-Frame-Options: SAMEORIGIN, SAMEORIGIN
+Vary: User-Agent
+Cf-Ray: 86494ff89eda1701-SJC
+Date: Fri, 15 Mar 2024 03:10:47 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Last-Modified: Wed, 02 Oct 2019 07:03:08 GMT
+Content-Security-Policy: script-src 'self' 'unsafe-eval' www.youtube.com rvcom-qa.trusted.visa.com tags.tiqcdn.com www.google-analytics.com connect.facebook.net system.tbrglobal.com maps.googleapis.com ds-aksb-a.akamaihd.net www.googletagmanager.com www.offerswidget.visa.com offerswidget.visa.com www.google.com/recaptcha/ www.gstatic.com/recaptcha/ apis.google.com/js/ ssl.gstatic.com/ ajax.googleapis.com static.ads-twitter.com amplify.outbrain.com/cp/ g.3gl.net secure.checkout.visa.com visa.fr www.visa.fr *.sharethis.com 'unsafe-eval' 'unsafe-inline' ; object-src 'self' blob:
+Set-Cookie: lbs=!nKWfp40sWF4101OgL/aE5Z6VpXxBesiBNx733canJ3d73HpdnaNEON0UfKbeVzDoK+HDDwbbFPpvsJD6AMS4iFgvUIMUIxTIG9NCTTfg5Pg=; Path=/; Version=1; Secure; Httponly __cfruid=bea9ca0b9470d60dbaa91d87f6b2a50857d1f71e-1710472247; path=/; domain=.staging.mobileapp.apcemea.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=CIKfh_6U7tGNTva9_b.eIcxqDny1rGzyj3NZr8i2w_Y-1710472247246-0.0.1.1-604800000; path=/; domain=.staging.mobileapp.apcemea.visa.com; HttpOnly; Secure; SameSite=None
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Server: cloudflare
+Retry-Count: 0
+Content-Type: text/html
+X-Xss-Protection: 1; mode=block

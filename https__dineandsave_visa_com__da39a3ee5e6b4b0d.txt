@@ -1,0 +1,7 @@
+200 OK
+Server: Apache/2.4.41 (Ubuntu)
+Date: Fri, 15 Mar 2024 03:09:41 GMT
+Content-Type: text/html; charset=UTF-8
+Link: <https://dineandsave.visa.com/wp-json/>; rel="https://api.w.org/" <https://dineandsave.visa.com/wp-json/wp/v2/pages/8>; rel="alternate"; type="application/json" <https://dineandsave.visa.com/>; rel=shortlink
+Vary: Accept-Encoding
+Retry-Count: 0

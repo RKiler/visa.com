@@ -1,0 +1,18 @@
+200 OK
+Age: 2104
+Last-Modified: Thu, 14 Mar 2024 03:00:20 GMT
+X-Frame-Options: SAMEORIGIN
+Server: cloudflare
+Content-Security-Policy: self
+Content-Type: text/html;charset=utf-8
+Cf-Ray: 86494f0a5c1d15c6-SJC
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Vary: Accept-Encoding
+Referrer-Policy: no-referrer-when-downgrade
+X-Content-Type-Options: nosniff nosniff
+X-Xss-Protection: 1; mode=block
+Cf-Cache-Status: HIT
+Cache-Control: max-age=14400
+Set-Cookie: __cf_bm=XZNp2YCREWPtJSOb_Ku5q0muzFC7VnSvlc581wKL5CA-1710472209-1.0.1.1-j3IMuCMBpITDZzCqQsuGoEO26Q5Kzp8XpTNcv_C7pJNfbzZlpzgiV36qG9vsNrCMqEmdFhj.oZvuPcuzQ4D1TA; path=/; expires=Fri, 15-Mar-24 03:40:09 GMT; domain=.visa.pl; HttpOnly; Secure; SameSite=None __cfruid=8a11b309152241acc90b419b49e4ddaaf4349949-1710472209; path=/; domain=.visa.pl; HttpOnly; Secure; SameSite=None _cfuvid=LNZ.rlGomHFhCY8Iiukk.2mXwyLw8xuE52bWpJAg1co-1710472209083-0.0.1.1-604800000; path=/; domain=.visa.pl; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:10:09 GMT

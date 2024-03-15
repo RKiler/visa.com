@@ -1,0 +1,10 @@
+200 true
+X-Xss-Protection: 1; mode=block
+Content-Length: 273
+Content-Type: text/html
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Content-Security-Policy: "default-src 'self' ; script-src 'self' 'unsafe-inline' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:"
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-Content-Security-Policy: default-src 'self' ; script-src 'self'

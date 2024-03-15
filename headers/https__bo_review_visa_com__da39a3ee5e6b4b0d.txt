@@ -1,0 +1,19 @@
+403 Forbidden
+Cf-Mitigated: challenge
+Vary: Accept-Encoding
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cross-Origin-Resource-Policy: same-origin
+Origin-Agent-Cluster: ?1
+Referrer-Policy: same-origin
+Retry-Count: 0
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+X-Frame-Options: SAMEORIGIN
+Cf-Chl-Out: qUddpmnjKB91J/aYMBu3pIsUueKChVvyGfCmX/ZmTTEkS0peCvUjCzLjkguB8RqL5DdqUZtEB70l2NdrjYz6+2emA+gNbway9VvcBblNXSh7YYZD3eCyEiNYe6TKHzZsXVJQA54LsYh82/+pzSpJtw==$QYNBQ9/al3M8s8q+viWpSg==
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:08:50 GMT
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+Cf-Ray: 86494d1f4c8fface-SJC
+Content-Type: text/html; charset=UTF-8
+Cross-Origin-Embedder-Policy: require-corp

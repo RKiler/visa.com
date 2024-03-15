@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Public Key certificates and Certificate Revocation Files from Visa" name="description">
+    <meta content='Visa' name='author'>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://enroll.visaca.com 'unsafe-inline' 'unsafe-eval';** ">
+    <title>Visa - Public Key Infrastructure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="navbar navbar-default " role="banner">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                <img class="visaLogo" alt="Visa Logo" src="images/visa-logo-white-desktop.png" />
+                <span class="pkiLogoText">Public Key Infrastructure</span>
+            </a>
+        </div>
+    </div><!-- /.container-fluid -->
+</div>
+
+<div class="container pki-content" role="main">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="a11y-hide-visually">Public Key Infrastructure</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="certificate-group-heading">Certification Authorities Certificates</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="certificate-heading">Root CAs</h3>
+                            <ul>
+                                <li><a href="smCAroot.crt">Self Managed Root CA</a></li>
+                                <li><a href="SMCAG2.cer">Self Managed Root CA - G2</a></li>
+                                <li><a href="VisaCorpRootCAG2.crt">Visa Corporate Root CA - G2</a></li>
+                                <li><a href="VisaCorpRSARootCA.crt">Visa Corp RSA Root CA</a></li>
+                                <li><a href="VisaInfoDeliveryRootCA.crt">Visa Information Delivery Root CA</a></li>
+                                <li><a href="VisaPublicECCRoot.crt">Visa Public ECC Root CA</a></li>
+                                <li><a href="VisaPublicRSARoot.crt">Visa Public RSA Root CA</a></li>
+                                <li><a href="VisaTLSRoot.crt">Visa TLS Root CA</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="certificate-heading">Online Production Subordinate CAs</h3>
+                            <ul>
+                                <li><a href="eCommG2.crt">eCommerce - G2</a></li>
+                                <li><a href="ecc3dsG2.crt">ECC 3DS - G2</a></li>
+                                <li><a href="VisaCorpIDRSAIssuingCA.crt">Visa Corp ID RSA Issuing CA</a></li>
+                                <li><a href="VisaServicesIssuingCA.crt">Visa Services Issuing CA</a></li>
+                                <li><a href="VCEICA.crt">VCEICA</a></li>
+                                <li><a href="VCIICA.crt">VCIICA</a></li>
+                                <li><a href="VICA32.crt">VICA3</a></li>
+                                <li><a href="VICA4.cer">VICA4</a></li>
+                                <li><a href="VICA10.crt">VICA10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Certification Authorities Certificates -->
+
+            <!-- Certification Authorities Revocation Lists -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="certificate-group-heading">Certification Authorities Revocation Lists</h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h3 class="certificate-heading">Root CAs</h3>
+                            <ul>
+                                <li><a href="SMRootCA.crl">Self Managed Root CA</a></li>
+                                <li><a href="VisaCorporateRootCA.crl">Visa Corporate Root CA</a></li>
+                                <li><a href="VisaCorpRSARootCA.crl">Visa Corp RSA Root CA</a></li>
+                                <li><a href="CorporateG2.crl">Visa Corporate Root CA - G2</a></li>
+                                <li><a href="VisaInfoDeliveryRootCA.crl">Visa Information Delivery Root CA</a></li>
+                                <li><a href="VisaPublicRSARoot.crl">Visa Public RSA Root CA</a></li>
+                                <li><a href="VisaPublicECCRoot.crl">Visa Public ECC Root CA</a></li>
+                                <li><a href="VisaTLSRootCA.crl">Visa TLS Root CA</a></li>
+                            </ul>
+
+                            <h3 class="certificate-heading">Subordinate CAs</h3>
+                            <ul>
+                                <li><a href="drjc\VisaCorporateEmailSubCA.crl">Visa Corporate Email Sub CA</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+
+                            <h3 class="certificate-heading">Online Production Subordinate CAs</h3>
+                            <p><small>(Updated at least once every 24 hours)</small></p>
+                            <ul>
+                                <li><a href="eCommG2.crl">eCommerce - G2</a></li>
+                                <li><a href="ecc3dsG2.crl">ECC 3DS - G2</a></li>
+                                <li><a href="VisaServicesIssuingCA.crl">Visa Services Issuing CA</a></li>
+                                <li><a href="VICA3.crl">VICA3</a></li>
+                                <li><a href="VICA4.crl">VICA4</a></li>
+                                <li><a href="VICA10.crl">VICA10</a></li>
+                            </ul>
+                            <h3 class="certificate-heading">Corporate PKI Email CA</h3>
+                            <ul>
+                                <li><a href="drjc\VCEICA.crl">VCEICA Base CRL</a></li>
+                                <li><a href="VisaCorpIDRSAIssuingCA.crl">Visa Corp ID RSA Issuing CA</a></li>
+                            </ul>
+
+                            <h3 class="certificate-heading">Corporate PKI</h3>
+                            <ul>
+                                <li><a href="drjc\VCDICA02.crl">Device CA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Certification Authorities Revocation Lists -->
+
+
+            <!-- Certification Authorities for Non-Production Environments -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="certificate-group-heading">Certification Authorities for Non-Production Environments</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="certificate-heading">Root and Sub CAs Certificates</h3>
+                            <ul>
+                                <li><a href="TESTVisaInfoDelRootCA.crt">Test Visa InfoDelivery Root CA</a></li>
+                                <li><a href="NonProdRootG2.cer">Visa Non-Prod Root - G2</a></li>
+                                <li><a href="NPInfodelG2.cer">Visa Non-Prod Corporate Root CA - G2</a></li>
+                                <li><a href="VICA3QA-SHA2.crt">VICA3 QA</a></li>
+                                <li><a href="VICA4QA-SHA2.crt">VICA4 QA</a></li>
+                                <li><a href="vicanonprod.cer">VICA Non-Prod</a></li>
+                                <li><a href="VicaNonProdG2.cer">VICA Non-Prod - G2</a></li>
+                                <li><a href="VisaSandboxIssuingCA.cer">Visa Sandbox CA</a></li>
+                                <li><a href="VisaeCommQAG2.crt">Visa eComm QA - G2</a></li>
+                                <li><a href="Visa3DSECCQA.crt">Visa 3DS ECC QA</a></li>
+                                <li><a href="VicaECCQA.crt">Visa ECC QA</a></li>
+                                <li><a href="VicaNonProdSHA256subca.cer">Visa Non-Prod Information Delivery Internal Issuing CA - G2</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="certificate-heading">Root and Sub CAs Revocation Lists</h3>
+                            <ul>
+                                <li><a href="TestInfoDelRoot.crl">CRL for Test Visa InfoDelivery Root CA</a></li>
+                                <li><a href="NonProdRootG2.crl">CRL for Visa Non-Prod Root - G2</a></li>
+                                <li><a href="NPCorpRootG2.crl">CRL for Visa Non-Prod Corporate Root CA - G2</a></li>
+                                <li><a href="VICA3QA.crl">CRL for VICA3 QA</a></li>
+                                <li><a href="VICA4QA.crl">CRL for VICA4 QA</a></li>
+                                <li><a href="vicanonprod.crl">CRL for VICA Non-Prod</a></li>
+                                <li><a href="VicaNonProdG2.crl">CRL for VICA Non-Prod - G2</a></li>
+                                <li><a href="VisaSandboxIssuingCA.crl">CRL for Visa Sandbox CA</a></li>
+                                <li><a href="eCommQAG2.crl">CRL for Visa eComm QA - G2</a></li>
+                                <li><a href="3DSECCQA.crl">CRL for Visa 3DS ECC QA</a></li>
+                                <li><a href="VICAECCQA.crl">CRL for Visa ECC QA</a></li>
+                                <li><a href="NPInfodelG2.crl">CRL for Visa Non-Prod Information Delivery Internal Issuing CA - G2</a></li>
+                                <li><a href="TESTsmROOTCA.crl">CRL for Test SM CA QA Root</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Certification Authorities for Non-Production Environments -->
+
+            <!-- Additional Information -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="certificate-group-heading">Additional Information</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="certificate-heading">Certificate Policy (CP) and Certificate Practice Statement (CPS)</h3>
+                            <ul>
+                                <li><a href="VisaPublicKeyInfrastructureCertificatePolicy.pdf">Certificate Policy (PDF)</a></li>
+                                <li><a href="VisaPublicKeyInfrastructureCertificatePracticeStatement.pdf">Certificate Practice Statement (PDF)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="certificate-heading">2022 WebTrust Audit Reports</h3>
+                            <ul>
+                                <li><a href="Visa_Combined_WTBR_2022.pdf">VISA WTBR Indp Accountant Report and Mgmt Assertion – All Visa Public Trusted CAs</a></li>
+                                <li><a href="Visa_Combined_WTCA_2002.pdf">VISA WTCA Indp Accountant Report and Mgmt Assertion – All Visa Public Trusted CAs</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="certificate-heading">2023 WebTrust Audit Reports</h3>
+                            <br>
+                            <ul>
+                                <!-- Webtrust for CA'S -->
+                                <a href="https://www.cpacanada.ca/webtrustseal?sealid=11149  "><img src="images/WebTrust_CertificationAuthorities.jpg" width="120" height="120"></a>
+                                <!-- WebTrust for CAs – SSL Baseline w/ Network Security -->
+                                <a href="https://www.cpacanada.ca/webtrustseal?sealid=11150 "><img src="images/WebTrust_BR-SSL.jpg" width="120" height="120"></a>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="certificate-heading">2021 WebTrust Audit Reports</h3>
+                            <ul>
+                                <li><a href="WTBR_InfoDel.pdf">VISA WTBR Indp Accountant Report and Mgmt Assertion - Information Delivery</a></li>
+                                <li><a href="WTCA_InfoDel.pdf">VISA WTCA Indp Accountant Report and Mgmt Assertion - Information Delivery</a></li>
+
+                                <li><a href="WTBR_eComm.pdf">VISA WTBR Indp Accountant Report and Mgmt Assertion - eCommerce</a></li>
+
+                                <li><a href="WTCA_eComm.pdf">VISA WTCA Indp Accountant Report and Mgmt Assertion - eCommerce</a></li>
+                                <li><a href="WTBR_PublicRSA-ECC.pdf">VISA WTBR Indp Accountant Report and Mgmt Assertion - Public RSA & ECC</a></li>
+                                <li><a href="WTCA_PublicRSA-ECC.pdf">VISA WTCA Indp Accountant Report and Mgmt Assertion - Public RSA & ECC</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <span>Visa discloses all of its public root certificate authority certificates and related information on <a href="https://www.ccadb.org/">Common CA Database</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Additional Information -->
+        </div>
+    </div>
+</div>
+<style id="antiClickjack">
+    body{display:none !important;}
+</style>
+
+<script type="text/javascript" src="js/acj.js"></script>
+
+</body>
+</html>

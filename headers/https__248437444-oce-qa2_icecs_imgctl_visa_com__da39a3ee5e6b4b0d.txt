@@ -1,0 +1,11 @@
+403 Forbidden
+Content-Type: text/html
+X-Powered-By: ASP.NET
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1233
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Fri, 15 Mar 2024 03:10:57 GMT

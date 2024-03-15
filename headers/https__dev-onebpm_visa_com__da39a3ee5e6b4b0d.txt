@@ -1,0 +1,17 @@
+200 200
+Vary: X-Remote-Client-IP,Accept-Encoding
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy-Report-Only: report-to /suite/rest/a/logging/latest/csp/report;
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:11:22 GMT
+Server: Apache
+Content-Security-Policy: script-src 'sha256-Oka5wP4QXPM7f07v/49Vt8X8rAp9O614XQ4IdgCsllE=' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none';
+Content-Type: text/html;charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+X-Robots-Tag: none
+X-Xss-Protection: 1; mode=block
+Set-Cookie: JSESSIONID=E09F63A1432A5C63A979E1DC828752DF.node1; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/suite; Secure; HttpOnly; SameSite=None; HttpOnly JSESSIONID=E09F63A1432A5C63A979E1DC828752DF.node1; Path=/suite; Secure; HttpOnly; SameSite=None; Partitioned; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload

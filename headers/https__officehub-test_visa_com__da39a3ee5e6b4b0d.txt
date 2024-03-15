@@ -1,0 +1,14 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: ALLOW
+Vary: Cookie
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:10:14 GMT
+Content-Length: 10212
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin

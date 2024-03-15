@@ -1,0 +1,15 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SameOrigin
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0
+Vary: Accept-Encoding
+Cache-Control: no-cache, no-store
+Referrer-Policy: origin-when-cross-origin
+Set-Cookie: .AspNetCore.Antiforgery.RZ_MfZbsdRA=CfDJ8CAmCmNBq-FDk-v6AaeeUWqu8hysrvlyoE3nAANRLCNe8U7iRmymDMeTymGzigmjMae4rgoL2BBznL6HE11RDCZGipQCd_uSwNqIDCTicpKP7Xa196lful-g_wkFQ-O936Xtsx56a-SO3nzkgMF50I8; path=/; secure; samesite=strict; httponly
+Correlationid: a1e65dfd-3865-44be-aef6-4964f406c936
+Server: 
+Date: Fri, 15 Mar 2024 03:09:40 GMT

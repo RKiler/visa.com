@@ -1,0 +1,17 @@
+200 OK
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Date: Fri, 15 Mar 2024 03:12:24 GMT
+Link: <https://codeofconduct.visa.com/wp-json/>; rel="https://api.w.org/" <https://codeofconduct.visa.com/wp-json/wp/v2/pages/7>; rel="alternate"; type="application/json" <https://codeofconduct.visa.com/>; rel=shortlink
+Strict-Transport-Security: max-age=63072000; includeSubdomains;
+X-Fastcgi-Cache-Key: httpsGETcodeofconduct.visa.com/
+Retry-Count: 0
+X-Fastcgi-Cache: BYPASS
+X-Ua-Compatible: IE=Edge,chrome=1
+X-Xss-Protection: 1; mode=block
+Permissions-Policy: geolocation=(), sync-xhr=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), payment=()
+Referrer-Policy: same-origin
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+X-Fastcgi-Cache-Uri: /

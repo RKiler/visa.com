@@ -1,0 +1,20 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Content-Language: en-US
+X-Cache: Miss from cloudfront
+Date: Fri, 15 Mar 2024 03:12:31 GMT
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Via: 1.1 c12dc5a7470811b7785c781e3f388796.cloudfront.net (CloudFront)
+Set-Cookie: XSRF-TOKEN=ee369549-0c23-455d-93ec-c2fe4a5f80a7; Path=/; Secure; HttpOnly; SameSite=Lax
+X-Amz-Cognito-Request-Id: d7f9ee7a-945f-4580-8bef-dafa679a5f76
+Expires: 0
+Server: Server
+X-Amz-Cf-Id: T4nsvLJw-Dv35en8H1mkwxhxZGwFtu_-ymU2H-YjslNFu59lZ4fYcg==
+Content-Type: text/html;charset=UTF-8
+X-Frame-Options: DENY
+X-Amz-Cf-Pop: SFO53-P6
+Retry-Count: 0
+Content-Security-Policy-Report-Only: script-src https://d18k7b2git647n.cloudfront.net https://auth.sandbox.vismerchantfilter.visa.com; style-src https://d18k7b2git647n.cloudfront.net https://auth.sandbox.vismerchantfilter.visa.com; img-src https://d18k7b2git647n.cloudfront.net https://auth.sandbox.vismerchantfilter.visa.com; report-uri https://auth.sandbox.vismerchantfilter.visa.com/cspreport

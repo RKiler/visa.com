@@ -1,0 +1,4 @@
+500 Internal Server Error
+Content-Type: text/xml
+X-Backside-Transport: FAIL FAIL
+Retry-Count: 0

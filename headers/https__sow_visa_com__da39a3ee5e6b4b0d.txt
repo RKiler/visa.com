@@ -1,0 +1,13 @@
+403 Forbidden
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html
+Content-Security-Policy: default-src 'self' ; connect-src 'self' *.pendo.io *.storage.googleapis.com cdn.auth0.com *.sentinelone.net wss://*.sentinelone.net https://cdnjs.cloudflare.com data: ; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.sentinelone.net cdn.pendo.io app.pendo.io data.pendo.io pendo-io-static.storage.googleapis.com *.storage.googleapis.com https://cdnjs.cloudflare.com ; img-src 'self' data: *.pendo.io *.sentinelone.com *.sentinelone.net *.storage.googleapis.com; style-src 'self' 'unsafe-inline' *.sentinelone.net app.pendo.io cdn.pendo.io *.storage.googleapis.com https://cdnjs.cloudflare.com ; font-src 'self' data: *.sentinelone.net; frame-src 'self' blob: https://*.sentinelone.net https://*.scalyr.com https://receptive.io https://*.pendo.io https://pendo-io-extensions.storage.googleapis.com/ https://www.youtube.com/; object-src 'none'; frame-ancestors 'self' app.pendo.io *.sentinelone.net
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 864951c57de2169a-SJC
+Retry-Count: 0
+Set-Cookie: __cfruid=c5dedd91d20a212252b3378939b50d80b4ea9ca4-1710472321; path=/; domain=.sow.visa.com; HttpOnly; Secure; SameSite=None
+Date: Fri, 15 Mar 2024 03:12:01 GMT
+X-Content-Type-Options: nosniff
+Server: cloudflare

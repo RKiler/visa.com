@@ -1,0 +1,27 @@
+200 OK
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0
+X-App-Status: 200
+X-Correlation-Id: 2_1710472098_058_87_l55p056m_VDP_ARM
+Content-Security-Policy-Report-Only: child-src *.facebook.com *.twitter.com *.linkedin.com *.doubleclick.net; default-src 'self' https://*.google.com/recaptcha/* *.visa.com *.tealiumiq.com https://api.company-target.com; frame-ancestors 'self'; img-src 'self' *.google-analytics.com *.facebook.com *.twitter.com *.eloqua.com *.google.com *.google.co.in *.t.co https://*.linkedin.com https://*.doubleclick.net https://*.company-target.com https://*.tealiumiq.com https://policy.cookiereports.com data:; object-src 'none'; report-uri /vdp-api/report-violation; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.visa.com https://*.google-analytics.com https://*.googletagmanager.com https://www.googleadservices.com https://www.gstatic.com https://*.facebook.com https://*.facebook.net https://*.twitter.com https://static.ads-twitter.com/uwt.js https://www.google.com/recaptcha/api.js https://img.en25.com https://*.eloqua.com https://snap.licdn.com/li.lms-analytics/insight.min.js https://*.linkedin.com https://*.demandbase.com https://tags.tiqcdn.com https://*.doubleclick.net https://*.bizographics.com https://*.akamaihd.net https://api.company-target.com https://*.tealiumiq.com https://*.t.co https://policy.cookiereports.com; style-src 'self' 'unsafe-inline' *.cloudflare.com default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+Cache-Control: no-cache, no-store, must-revalidate
+Set-Cookie: connect.sid=s%3AiC3TlA46NJdZIJfxmxXhfVbHEYLhShA9zusPB0jn54QTThbFawMJZTOzFQxqzEtlxI39j4HWr3U5znyjFGlrZg.O0EUQsuyDez9Pi6C7t9SSn0nrLDgL%2BOetIeA3SwTgb0; Path=/; HttpOnly; Secure _csrf=deleted; expires=Thu, 01 Jan 1970 00:00:00 GMT; Secure; Path=/; _csrf=7a7137d5-4392-4964-b902-d585a6648576; Secure; SameSite=None; Path=/; __cflb=0H28vP7m44xgC1JFmcT8azQsCA3i9P5RVtdAuVrxyLp; SameSite=None; Secure; path=/; expires=Sat, 16-Mar-24 02:08:18 GMT; HttpOnly __cfruid=46cf45840d23853ce71121d641aedef73208308b-1710472098; path=/; domain=.developer.visa.com; HttpOnly; Secure; SameSite=None
+Cf-Ray: 86494c547b046809-SJC
+X-Xss-Protection: 1; mode=block ,0
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+Vary: Accept-Encoding
+Expires: -1
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-Content-Security-Policy-Report-Only: default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+X-Webkit-Csp-Report-Only: default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+Content-Type: text/html;charset=utf-8
+Access-Control-Allow-Origin: https://partner.visa.com
+X-Download-Options: noopen
+Access-Control-Allow-Headers: X-Session-ID,x-csrf-token,user-agent,referrer,x-requested-with,Content-Type,origin,authorization,accept
+Date: Fri, 15 Mar 2024 03:08:18 GMT
+X-Served-By: l55p056m
+Strict-Transport-Security: max-age=31536000;includeSubdomains
+Pragma: no-cache
+Server: cloudflare

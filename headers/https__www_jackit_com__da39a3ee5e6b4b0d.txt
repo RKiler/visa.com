@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+X-Cache-Debug: 1
+X-Magento-Route: cms_index_index
+X-Cache-Lifetime: 15552000
+X-Frame-Options: SAMEORIGIN
+Expires: -1
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Alt-Svc: h3=":443"; ma=86400
+Date: Fri, 15 Mar 2024 03:09:02 GMT
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Server: cloudflare
+X-Magento-Tags: store,cms_b,cat_c,store_group,cms_p_22,cms_b_header_1_social_block,cms_b_header_1_top_left_link,cms_b_header_1_top_middle_block,cms_b_header_4_top_right,cat_p_32048,cat_p,cat_p_32046,cat_p_31207,cat_p_31925,cat_p_31924,cat_p_31752,cat_p_31802,cat_p_31732
+X-Content-Type-Options: nosniff
+X-Cache-Age: 5304
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 86494d6928f167fb-SJC

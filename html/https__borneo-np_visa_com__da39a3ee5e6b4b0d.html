@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><head>
+    <link href="https://d2uqej7bo24sqa.cloudfront.net/20230404192231/css/bootstrap.min.css" rel="stylesheet"
+        media="screen" />
+    <link href="https://d2uqej7bo24sqa.cloudfront.net/20230404192231/css/cognito-login.css" rel="stylesheet"
+        media="screen" />
+    
+    <title>Signin</title>
+
+    <script src="https://d2uqej7bo24sqa.cloudfront.net/20230404192231/js/amazon-cognito-advanced-security-data.min.js" ></script>
+    <script>
+    function getAdvancedSecurityData(formReference) {
+        if (typeof AmazonCognitoAdvancedSecurityData === "undefined") {
+            return true;
+        }
+
+        // UserpoolId is not available on frontend for springboard. We do not use userPoolId
+        // anyway other than put in context data. 
+        var userPoolId = "";
+        var clientId = getUrlParameter("client_id");
+
+        var username = "";
+        var usernameInput = document.getElementsByName("username")[0];
+        if (usernameInput && usernameInput.value) {
+            username = usernameInput.value;
+        }
+
+        var asfData = AmazonCognitoAdvancedSecurityData.getData(username, userPoolId, clientId);
+        if (typeof asfData === "undefined") {
+            return true;
+        }
+
+        if (formReference && formReference.cognitoAsfData) {
+            formReference.cognitoAsfData.value = asfData
+        }
+
+        return true;
+    }
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    function onSubmit(evt, formRef) {
+        formRef.querySelector('button[type="submit"]').disabled = true;
+        if (!!formRef.submitted) {
+            evt.preventDefault();
+            return false;
+        } else {
+            formRef.submitted = true;
+            return getAdvancedSecurityData(formRef);
+        }
+    }
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head></head>
+<body spellcheck="false">
+    <div class="container">
+        <div class="modal-dialog">
+            <div class="modal-content background-customizable modal-content-mobile visible-xs visible-sm">
+                <div><div>
+                    <div class="banner-customizable">
+                        <center>
+                            
+                        </center>
+                    </div>
+                </div></div>
+                <div class="modal-body">
+                    <div><div>
+    
+</div></div>
+                    <div>
+                        <div><div>
+    <div>
+        <form name="loginWithIdentityProvider" action="/login/oidc?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email profile openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D"
+              method="post"><input type="hidden" name="_csrf" value="ec2ca234-1195-4b63-946a-5c54de2f2dcd"/>
+
+            <div>
+                <span class="idpDescription-customizable">Sign in with your corporate ID</span>
+                
+                    <input type="button" onclick="window.location.href=&#39;/oauth2/authorize?identity_provider=dev-borneo-azure&amp;redirect_uri=https://borneo-np.visa.com/oauth2/idpresponse&amp;response_type=CODE&amp;client_id=v5o56qi98ap2mc65c6c314ob9&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE+ponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm+JFuf+t0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k\/G0Dm3qrn6t\/qbMQOjgr\/PBMHFR\/BSgjy2gOM3Q==&amp;scope=email profile openid&#39;"
+                           value="dev-borneo-azure" class="btn btn-info idpButton-customizable" aria-label="dev-borneo-azure"
+                    />
+                
+            </div>
+            
+        </form>
+    </div>
+</div></div>
+                        <div><div>
+    
+</div></div>
+                        <div>
+                            <div class="login-or">
+                                <hr class="hr-or">
+                                <span class="span-or background-customizable ">or</span>
+                            </div>
+                            <div><div>
+    
+        <Span class="textDescription-customizable ">Sign in with your email and password</Span>
+        <form action="/login?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email profile openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D" method="POST" name="cognitoSignInForm"
+              class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="ec2ca234-1195-4b63-946a-5c54de2f2dcd"/>
+
+            
+
+            
+            <label for="signInFormUsername" class="label-customizable">Email</label>
+            <div>
+                <input id="signInFormUsername" name="username" type="text" class="form-control inputField-customizable"
+                   placeholder="name@host.com" autocapitalize="none" required>
+                
+                
+            </div>
+
+            <label for="signInFormPassword" class="label-customizable">Password</label>
+            <div><input id="signInFormPassword" name="password" type="password" class="form-control inputField-customizable"
+                   placeholder="Password"
+                   required></div>
+            <input type="hidden" class="form-control inputField-customizable" name="cognitoAsfData"/>
+            <div>
+                <a class="redirect-customizable" href="/forgotPassword?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email%20profile%20openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D">Forgot your password?</a>
+            </div>
+            <input name="signInSubmitButton" type="Submit" value="Sign in"
+                   class="btn btn-primary submitButton-customizable" aria-label="submit"/>
+            <br/>
+            
+        </form>
+    
+</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-content background-customizable modal-content-desktop visible-md visible-lg">
+                <div><div>
+                    <div class="banner-customizable">
+                        <center>
+                            
+                        </center>
+                    </div>
+                </div></div>
+                <div class="modal-body">
+                    <div><div>
+    
+</div></div>
+                    <div>
+                        <div class="panel panel-right-border col-md-6 col-lg-6">
+                            <div><div>
+    <div>
+        <form name="loginWithIdentityProvider" action="/login/oidc?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email profile openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D"
+              method="post"><input type="hidden" name="_csrf" value="ec2ca234-1195-4b63-946a-5c54de2f2dcd"/>
+
+            <div>
+                <span class="idpDescription-customizable">Sign in with your corporate ID</span>
+                
+                    <input type="button" onclick="window.location.href=&#39;/oauth2/authorize?identity_provider=dev-borneo-azure&amp;redirect_uri=https://borneo-np.visa.com/oauth2/idpresponse&amp;response_type=CODE&amp;client_id=v5o56qi98ap2mc65c6c314ob9&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE+ponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm+JFuf+t0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k\/G0Dm3qrn6t\/qbMQOjgr\/PBMHFR\/BSgjy2gOM3Q==&amp;scope=email profile openid&#39;"
+                           value="dev-borneo-azure" class="btn btn-info idpButton-customizable" aria-label="dev-borneo-azure"
+                    />
+                
+            </div>
+            
+        </form>
+    </div>
+</div></div>
+                            <div><div>
+    
+</div></div>
+                        </div>
+                        <div class="panel panel-left-border col-md-6 col-lg-6">
+                            <div class="span-or-verical background-customizable">or</div>
+                            <div><div>
+    
+        <Span class="textDescription-customizable ">Sign in with your email and password</Span>
+        <form action="/login?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email profile openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D" method="POST" name="cognitoSignInForm"
+              class="cognito-asf" onsubmit="getAdvancedSecurityData(this);"><input type="hidden" name="_csrf" value="ec2ca234-1195-4b63-946a-5c54de2f2dcd"/>
+
+            
+
+            
+            <label for="signInFormUsername" class="label-customizable">Email</label>
+            <div>
+                <input id="signInFormUsername" name="username" type="text" class="form-control inputField-customizable"
+                   placeholder="name@host.com" autocapitalize="none" required>
+                
+                
+            </div>
+
+            <label for="signInFormPassword" class="label-customizable">Password</label>
+            <div><input id="signInFormPassword" name="password" type="password" class="form-control inputField-customizable"
+                   placeholder="Password"
+                   required></div>
+            <input type="hidden" class="form-control inputField-customizable" name="cognitoAsfData"/>
+            <div>
+                <a class="redirect-customizable" href="/forgotPassword?client_id=v5o56qi98ap2mc65c6c314ob9&amp;redirect_uri=https%3A%2F%2Fborneo-np.visa.com%2Foauth2%2Fidpresponse&amp;response_type=code&amp;scope=email%20profile%20openid&amp;state=O8pIqn0CEZGP6kfgpd9soc2fOpIOfZXWpVIPknVq0L2feZRbVQqE%2BponSd0V11Q25KegG4iw3CTnuqYpk9gsnePfMTHdVT9BjI227qufyzQBfXXtAP4rSQ6X4URsrpm%2BJFuf%2Bt0QQVMQSVosTWsEY62eXWLPwsQZLEUBOB59AuPfcbwbBDjVE4BqXodIVhQ6CzU6nPUCJruuO8k%2FG0Dm3qrn6t%2FqbMQOjgr%2FPBMHFR%2FBSgjy2gOM3Q%3D%3D">Forgot your password?</a>
+            </div>
+            <input name="signInSubmitButton" type="Submit" value="Sign in"
+                   class="btn btn-primary submitButton-customizable" aria-label="submit"/>
+            <br/>
+            
+        </form>
+    
+</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="https://d2uqej7bo24sqa.cloudfront.net/20230404192231/js/jquery-3.5.1.min.js" ></script>
+    <script>
+    var $inputs = $(":input");
+    $inputs.on('input', function () {
+        var self = this;
+        var matches = $('input[name="' + this.name + '"]');
+        var selfIndex = matches.index($(self));
+        matches.each(function (index, element) {
+            if (selfIndex !== index) {
+                $(element).val($(self).val());
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

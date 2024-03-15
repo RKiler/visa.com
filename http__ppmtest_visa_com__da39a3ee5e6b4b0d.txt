@@ -1,0 +1,22 @@
+200 OK
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+wst"}]}
+X-Ms-Clitelem: 1,0,0,,
+Date: Fri, 15 Mar 2024 03:11:19 GMT
+X-Ms-Request-Id: c6b68896-723f-4fc3-a98c-661f76703e01
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+Cache-Control: no-store, no-cache
+Vary: Accept-Encoding
+Set-Cookie: buid=0.ARcAEl4wOF3h6E6IucTbHEd9dl6Zkyd9CtdAvTVpaLoUIZcXAAA.AQABGgEAAADnfolhJpSnRYB1SVj-Hgd8KYH7tujIeUU56oKM2ws-7iYJbLYTGAj5DbXEkRk9S2mEN287kqFaNzuBL9VErUITjYyczdOsvdRPYTHFblOFstjKnXeG87Crx4PGpQQBk44gAA; expires=Sun, 14-Apr-2024 03:11:19 GMT; path=/; secure; HttpOnly esctx=PAQABBwEAAADnfolhJpSnRYB1SVj-Hgd8HCRc2j2U7_pyiZEj5pDzpnx18nhoc0u686BpYqY9bzfH1_xwhGx3hw8sGzbhbtu2CVO1rDm_dBMWr1iHynHKtN9ZJJmj0h-rAjSTGcvWDh2ExYMn9nojTLHXMdSEsudz9ttiRmawJsvkEJy5BOidZk31OBqIc9999xAYhm8eOEMgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly esctx-lJth3YpKc4=AQABCQEAAADnfolhJpSnRYB1SVj-Hgd8HRtuRHSIfUz-Zyw_mU6ScG9tP7KMLfNmhlAs5mRKKiY2ehTkIDqilweis_H1oX_HfaIWW0IctZyHpRuIS3RGT2q1syHmS_IFaoejyvABhJd64qrW8W0bmbh8QYlrhezXLUdouI0XPjIvtTSl6t0WHCAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly fpc=AgYQfAyJ8f5Pj5uK2RFhcBmcJqchAQAAAFazhd0OAAAA; expires=Sun, 14-Apr-2024 03:11:19 GMT; path=/; secure; HttpOnly x-ms-gateway-slice=estsfd; path=/; secure; httponly stsservicecookie=estsfd; path=/; secure; httponly
+Link: <https://aadcdn.msauth.net>; rel=preconnect; crossorigin <https://aadcdn.msauth.net>; rel=dns-prefetch <https://aadcdn.msftauth.net>; rel=dns-prefetch
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Expires: -1
+X-Dns-Prefetch-Control: on
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Pragma: no-cache
+X-Ms-Ests-Server: 2.1.17445.4 - SCUS ProdSlices
+Referrer-Policy: strict-origin-when-cross-origin

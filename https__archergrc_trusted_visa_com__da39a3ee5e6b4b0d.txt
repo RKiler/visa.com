@@ -1,0 +1,18 @@
+200 OK
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Expires: -1
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+est"}]}
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+Date: Fri, 15 Mar 2024 03:09:54 GMT
+Retry-Count: 0
+Cache-Control: no-store, no-cache
+Pragma: no-cache
+X-Ms-Request-Id: fd8ac489-e455-4035-8942-ff62d8f97800
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+X-Xss-Protection: 0
+Set-Cookie: esctx-HKzGmnRXsRE=AQABCQEAAADnfolhJpSnRYB1SVj-Hgd8nzgwEPQmFh0up5ZIlzJ62EkToacOHravxUO6qYAIXv8ZuYyNQAgSyARtal0375YKth4RTV9L2BE3l0g6YaehBclEH9MpAHeOl8_kMrsjvdw70ePnGDzQOBuZc_hIrvb_t0BvfmzPp08acPIc7lptlCAA; domain=.login.microsoftonline.com; expires=Fri, 15-Mar-2024 03:34:54 GMT; path=/; secure; HttpOnly fpc=Au_Wsji6MgdKjc31BtjJe_o; expires=Sun, 14-Apr-2024 03:09:54 GMT; path=/; secure; HttpOnly esctx=PAQABBwEAAADnfolhJpSnRYB1SVj-Hgd84ke8zO4uvD3WhEWD9LauZGlGawg26A_PYce8iaRqWUiorZwRneYBdVdk5L7GkQt5P_yw4l7EJF2JxZiS7cneGJQop2QhRb4APBDEZOwsNQKALT24AkrzucgXdN-XYOt7dUtCEliojERrp80A1B26xG65e-jfc2nRTSNVt6sOAlsgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly x-ms-gateway-slice=estsfd; path=/; secure; httponly stsservicecookie=estsfd; path=/; secure; httponly
+X-Content-Type-Options: nosniff
+X-Ms-Ests-Server: 2.1.17507.9 - WUS3 ProdSlices

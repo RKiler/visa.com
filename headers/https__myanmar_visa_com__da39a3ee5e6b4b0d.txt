@@ -1,0 +1,17 @@
+200 OK
+Server: cloudflare
+Retry-Count: 0
+Set-Cookie: __cfruid=99674b45c80b67f6a36c0c23bdeb4b5df47f41f2-1710472192; path=/; domain=.myanmar.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=npwZKWb1r4MTS0XZljJMloWFYALgHEPrUqRrggqZQQ8-1710472192975-0.0.1.1-604800000; path=/; domain=.myanmar.visa.com; HttpOnly; Secure; SameSite=None
+Age: 7134
+X-Content-Type-Options: nosniff nosniff
+Last-Modified: Thu, 14 Mar 2024 03:40:05 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Vary: Accept-Encoding
+Content-Security-Policy: self
+Date: Fri, 15 Mar 2024 03:09:52 GMT
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: HIT
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Cf-Ray: 86494ea5bfaf67cd-SJC

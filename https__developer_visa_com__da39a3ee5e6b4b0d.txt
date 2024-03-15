@@ -1,0 +1,27 @@
+200 OK
+Access-Control-Allow-Credentials: true
+X-App-Status: 200
+Set-Cookie: connect.sid=s%3A4ZDErK3WHedjNHtDTcbKzidEzSQGGfD1KGKmivLovab3EMSmlSuHkktKFmpHAe-EIAVuZ-loaGMGA3fxhjPz7g.fhaIdGP4ZiS%2BYzVgnxBXLaRm6NMzOqjcMhsM5hBnMy8; Path=/; HttpOnly; Secure _csrf=deleted; expires=Thu, 01 Jan 1970 00:00:00 GMT; Secure; Path=/; _csrf=a58cd979-dd5a-445b-8f2b-fa3b139665d4; Secure; SameSite=None; Path=/; __cflb=0H28vP7m44xgC1JFmcT8azQsCA3i9P6ZCyfb23LVeDA; SameSite=None; Secure; path=/; expires=Sat, 16-Mar-24 02:11:55 GMT; HttpOnly __cfruid=a726183c61927be9b9a7d17835270af652cc5634-1710472315; path=/; domain=.developer.visa.com; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Access-Control-Allow-Headers: X-Session-ID,x-csrf-token,user-agent,referrer,x-requested-with,Content-Type,origin,authorization,accept
+X-Xss-Protection: 1; mode=block ,0
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+Access-Control-Allow-Origin: https://partner.visa.com
+X-Correlation-Id: 2_1710472315_577_9141_l55p056m_VDP_ARM
+X-Content-Type-Options: nosniff
+Expires: -1
+X-Webkit-Csp-Report-Only: default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+Cf-Ray: 864951a40c73fabe-SJC
+X-Served-By: l55p056m
+Vary: Accept-Encoding
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+X-Content-Security-Policy-Report-Only: default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+Cf-Cache-Status: DYNAMIC
+Date: Fri, 15 Mar 2024 03:11:55 GMT
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+X-Download-Options: noopen
+Content-Security-Policy-Report-Only: child-src *.facebook.com *.twitter.com *.linkedin.com *.doubleclick.net; frame-ancestors 'self'; img-src 'self' *.google-analytics.com *.facebook.com *.twitter.com *.eloqua.com *.google.com *.google.co.in *.t.co https://*.linkedin.com https://*.doubleclick.net https://*.company-target.com https://*.tealiumiq.com https://policy.cookiereports.com data:; object-src 'none'; report-uri /vdp-api/report-violation; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.visa.com https://*.google-analytics.com https://*.googletagmanager.com https://www.googleadservices.com https://www.gstatic.com https://*.facebook.com https://*.facebook.net https://*.twitter.com https://static.ads-twitter.com/uwt.js https://www.google.com/recaptcha/api.js https://img.en25.com https://*.eloqua.com https://snap.licdn.com/li.lms-analytics/insight.min.js https://*.linkedin.com https://*.demandbase.com https://tags.tiqcdn.com https://*.doubleclick.net https://*.bizographics.com https://*.akamaihd.net https://api.company-target.com https://*.tealiumiq.com https://*.t.co https://policy.cookiereports.com; style-src 'self' 'unsafe-inline' *.cloudflare.com default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Strict-Transport-Security: max-age=31536000;includeSubdomains

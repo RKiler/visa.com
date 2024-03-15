@@ -1,0 +1,14 @@
+200 OK
+Content-Type: text/html
+Last-Modified: Thu, 21 Jan 2021 06:10:32 GMT
+Date: Fri, 15 Mar 2024 03:11:51 GMT
+Content-Length: 34
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Cf-Ray: 864951881fc76456-SJC
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' 'unsafe-dynamic'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline';
+Set-Cookie: lbs=!Skah5EBHstKgbU6hTK7BLDNA2UyawAKsvQEvnvUIDNJMgxGnOnV2tCOfmLgr6HLgr/2Tfi/yJkNGEv729W/w4nth5WLApuV7Wr+eZH4X4A==; path=/; Httponly; Secure __cfruid=58358ee0aa180501efc8ae610e5d195a3a433557-1710472311; path=/; domain=.offerswidget.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=FSlJnjS6HxlXBvyAwGJjz2J6ter5rSpSKqoHVmwYOo4-1710472311134-0.0.1.1-604800000; path=/; domain=.offerswidget.visa.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+Accept-Ranges: bytes
+Cf-Cache-Status: DYNAMIC

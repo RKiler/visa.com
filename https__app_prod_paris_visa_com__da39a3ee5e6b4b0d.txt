@@ -1,0 +1,13 @@
+530 
+Content-Type: text/plain; charset=UTF-8
+Set-Cookie: __cfruid=d409cea5dd0a7ece0f91d037e271452dec663b55-1710472128; path=/; domain=.paris.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=PrtOR80VbdjiaBCuQiXo7bZNa1MNzGnSUP.AH_59.1Q-1710472128967-0.0.1.1-604800000; path=/; domain=.paris.visa.com; HttpOnly; Secure; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Cf-Ray: 86494d15df0f7af4-SJC
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:08:48 GMT
+Content-Length: 16
+Strict-Transport-Security: max-age=264310; preload
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Server: cloudflare

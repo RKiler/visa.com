@@ -1,0 +1,15 @@
+401 Unauthorized
+Content-Type: text/html;charset=UTF-8
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Www-Authenticate: Basic realm="Lithium"
+Retry-Count: 0
+Content-Length: 167
+Date: Fri, 15 Mar 2024 03:12:10 GMT
+Set-Cookie: AWSALB=m/NK8Yk8jiCCJEMbUsX7dchH9iOPO/hfL3NqLZLE05T2+qn4jK5NdwWEAq0x63nPtQ8NsRGNg0Z+ywBsGpSCSgWKX5E0qJmkpMC7BI+V6KzlVZ+1LwSgq3OMJcWO; Expires=Fri, 22 Mar 2024 03:12:10 GMT; Path=/ AWSALBCORS=m/NK8Yk8jiCCJEMbUsX7dchH9iOPO/hfL3NqLZLE05T2+qn4jK5NdwWEAq0x63nPtQ8NsRGNg0Z+ywBsGpSCSgWKX5E0qJmkpMC7BI+V6KzlVZ+1LwSgq3OMJcWO; Expires=Fri, 22 Mar 2024 03:12:10 GMT; Path=/; SameSite=None; Secure
+X-Xss-Protection: 1; mode=block
+Via: 1.1 28663e5849ed20a9d037ca8066957990.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SFO5-C1
+Server: Apache
+X-Cache: Error from cloudfront
+X-Amz-Cf-Id: aF_yti59RXEfjwrGxn68tUoFhpoOE8f5D6rH-o2Swr22GmRjgnmo1w==

@@ -1,0 +1,15 @@
+401 Unauthorized
+Server: Apache
+Www-Authenticate: Basic realm="Lithium"
+Retry-Count: 0
+Content-Length: 167
+Set-Cookie: AWSALB=TZWBsQbWcSD++dzgd11RtcMhFEh1KeK/Exd/0BaUg2LGFB5IjYfzNqGVDH8ecJtY9dwky35KWtpUUK6haWeeqCVgna0lFyrW/Kn2dZ8l14g0BihWSkm2KT0Rw55U; Expires=Fri, 22 Mar 2024 03:10:01 GMT; Path=/ AWSALBCORS=TZWBsQbWcSD++dzgd11RtcMhFEh1KeK/Exd/0BaUg2LGFB5IjYfzNqGVDH8ecJtY9dwky35KWtpUUK6haWeeqCVgna0lFyrW/Kn2dZ8l14g0BihWSkm2KT0Rw55U; Expires=Fri, 22 Mar 2024 03:10:01 GMT; Path=/; SameSite=None; Secure
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: SFO5-C1
+Content-Type: text/html;charset=UTF-8
+X-Amz-Cf-Id: 6IM1DXoATZCPt4sRFCz4uahPUM7_BoDbVzud7JmzVAty5hqSTONP0Q==
+X-Content-Type-Options: nosniff
+Via: 1.1 28663e5849ed20a9d037ca8066957990.cloudfront.net (CloudFront)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Fri, 15 Mar 2024 03:10:01 GMT
+X-Xss-Protection: 1; mode=block

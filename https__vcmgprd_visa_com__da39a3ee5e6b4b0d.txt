@@ -1,0 +1,7 @@
+403 Forbidden
+Server: Microsoft-IIS/10.0
+X-Frame-Options: DENY
+Date: Fri, 15 Mar 2024 03:11:13 GMT
+Retry-Count: 0
+Content-Length: 1233
+Content-Type: text/html

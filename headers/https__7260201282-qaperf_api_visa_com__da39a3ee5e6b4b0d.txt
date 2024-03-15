@@ -1,0 +1,4 @@
+500 Error
+Content-Type: text/xml
+X-Backside-Transport: FAIL FAIL
+Retry-Count: 0

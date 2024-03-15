@@ -1,0 +1,12 @@
+403 Forbidden
+X-Amzn-Requestid: 7bade809-d365-484a-ba29-e9a7fbe9bc83
+X-Amzn-Errortype: ForbiddenException
+X-Amz-Apigw-Id: UppcuFQVSwMEhrg=
+Access-Control-Allow-Methods: GET,OPTIONS,POST
+Retry-Count: 0
+X-Amzn-Trace-Id: Root=1-65f3bc51-5188ee8d6f66d5513a2ad5a8
+Date: Fri, 15 Mar 2024 03:11:13 GMT
+Content-Type: application/json
+Content-Length: 23
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,x-access-token,x-id-token

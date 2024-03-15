@@ -1,0 +1,18 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+X-Permitted-Cross-Domain-Policies: none
+Cross-Origin-Opener-Policy: same-origin
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:12:28 GMT
+Content-Length: 6020
+Pragma: no-cache
+Set-Cookie: dnn_IsMobile=False; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true dnn_IsMobile=False; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true language=en-US; path=/; secure; HttpOnly; SameSite=Lax; SameSite=Lax;secure=true
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html
+Expires: -1
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' https: https://ajax.googleapis.com https://cdn.jsdelivr.net https://dnnapi.com https://cdnjs.cloudflare.com; font-src * data:; connect-src 'self' https: https://wtwdevcbot-bot.azurewebsites.net wss://directline.botframework.com; script-src 'self' https: 'unsafe-inline' 'unsafe-eval' blob:; style-src * 'unsafe-inline' 'unsafe-eval' blob:; media-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: 'unsafe-inline' 'unsafe-eval' data: blob:
+Permissions-Policy: accelerometer=(),camera=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),payment=(),usb=()
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload

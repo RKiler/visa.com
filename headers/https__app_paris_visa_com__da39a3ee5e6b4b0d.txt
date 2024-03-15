@@ -1,0 +1,13 @@
+403 Forbidden
+Content-Length: 42
+X-Amz-Apigw-Id: UppZlF2gDoEEcZA=
+Strict-Transport-Security: max-age=264310; preload
+Date: Fri, 15 Mar 2024 03:10:53 GMT
+X-Amzn-Errortype: MissingAuthenticationTokenException
+Set-Cookie: __cf_bm=IzzLpXPWogPJpJmTG2rAqS0sUpRNaO4RxmEmkNbck9E-1710472253-1.0.1.1-lnEelQLU7Y991Cm3gkugQm5pNW9_eHNIeR4nxC8NzsUA0yov0eaeAYX4kZQ5Mm9t6.mvO90ETcQpjUr53JPH3Q; path=/; expires=Fri, 15-Mar-24 03:40:53 GMT; domain=.paris.visa.com; HttpOnly; Secure; SameSite=None __cfruid=218d89c03dad09e0f05d265a6023782c5b77b911-1710472253; path=/; domain=.paris.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=lAcYe_Z.707mJuDOwWE3qOZIvhlPGt5wxEhbYszV0rA-1710472253138-0.0.1.1-604800000; path=/; domain=.paris.visa.com; HttpOnly; Secure; SameSite=None
+Content-Type: application/json
+X-Amzn-Requestid: 78d2fa13-6fc6-4dff-bc39-0d340da0957c
+Cf-Ray: 8649501cdcb57e30-SJC
+Retry-Count: 0
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

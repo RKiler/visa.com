@@ -1,0 +1,22 @@
+200 OK
+Date: Fri, 15 Mar 2024 03:12:05 GMT
+Access-Control-Allow-Origin: https://developer.visa.com
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+X-Download-Options: noopen noopen
+X-Content-Type-Options: nosniff nosniff
+Vary: Accept-Encoding
+Retry-Count: 0
+Content-Type: text/html;charset=utf-8
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+Access-Control-Allow-Headers: X-Session-ID,x-csrf-token,user-agent,referrer,x-requested-with,Content-Type,origin,authorization,accept
+X-Xss-Protection: 1; mode=block
+Server: cloudflare
+Cf-Ray: 864951deecfcfae3-SJC
+Expires: -1 -1
+Access-Control-Allow-Credentials: true
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' connect.facebook.net snap.licdn.com img.en25.com www.google.com web-assets.appiancloud.com web-assets.appian-cdn.com visa.appiancloud.com login.partner.visa.com www.gstatic.com www.googletagmanager.com tagmanager.google.com www.google-analytics.com www.youtube.com www.youtube-nocookie.com s.ytimg.com ajax.cloudflare.com sjs.bizographics.com px.ads.linkedin.com policy.cookiereports.com ajax.googleapis.com tag.demandbase.com; object-src 'self' web-assets.appiancloud.com web-assets.appian-cdn.com visa.appiancloud.com login.partner.visa.com www.googletagmanager.com ajax.googleapis.com www.google-analytics.com; default-src 'self' 'unsafe-inline' developer.visa.com web-assets.appiancloud.com web-assets.appian-cdn.com visa.appiancloud.com login.partner.visa.com www.googletagmanager.com ajax.googleapis.com tagmanager.google.com fonts.googleapis.com www.google-analytics.com policy.cookiereports.com company-target.com api.company-target.com; img-src 'self' data: 'unsafe-eval' www.facebook.com p.adsymptotic.com s1667884968.t.eloqua.com www.google-analytics.com dc.ads.linkedin.com ssl.gstatic.com www.gstatic.com tagmanager.google.com ad.doubleclick.net adservice.google.com px.ads.linkedin.com policy.cookiereports.com ajax.googleapis.com match.prod.bidr.io segments.company-target.com; frame-src 'self' blob: www.google.com visatv.visa.com visadirect.rev.vbrick.com login.partner.visa.com secure.visaonline.com www.visaonline.visa.com web-assets.appiancloud.com web-assets.appian-cdn.com visa.appiancloud-static.com visa.appiancloud.com www.youtube.com www.youtube-nocookie.com www.googletagmanager.com ajax.googleapis.com www.google-analytics.com player.vimeo.com str.visaonline.com 5525825.fls.doubleclick.net carddesigner.visa.com
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: no-cache, no-store, must-revalidate
+Set-Cookie: lbs=!WFm1VoTuZk6YqTjSRwPgNd72zLQ0nPbMFYkphp3RBFqsHanS3G5LcuHnpIJEYOpKTFtqHsA4WSCZ1aVbHmWepte+nnNxTahzI5HBqvqi; path=/; Httponly; Secure __cfruid=f705aee44df7a674536d1752629e909427ebd9f4-1710472325; path=/; domain=.partner.visa.com; HttpOnly; Secure; SameSite=None
+Cf-Cache-Status: DYNAMIC
+Pragma: no-cache no-cache

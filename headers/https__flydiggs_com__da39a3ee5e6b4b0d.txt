@@ -1,0 +1,13 @@
+200 OK
+Content-Security-Policy: frame-ancestors 'self' godaddy.com *.godaddy.com
+Vary: Accept-Encoding
+X-Version: 623bf47
+Etag: 39b34b866e90acc3ca5bb5f4e55300ad
+Retry-Count: 0
+Cache-Control: max-age=30
+Content-Type: text/html;charset=utf-8
+X-Siteid: us-west-2
+Set-Cookie: dps_site_id=us-west-2; path=/; secure
+Date: Fri, 15 Mar 2024 03:10:29 GMT
+Link: <//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.37.7.js>; rel=preload; as=script; crossorigin,<https://img1.wsimg.com/gfonts/s/abrilfatface/v23/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/droidsans/v18/SlGVmQWMvZQIdix7AFxXkHNSbRYXags.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/droidsans/v18/SlGWmQWMvZQIdix7AFxXmMh3eDs1ZyHKpWg.woff2>; rel=preload; as=font; crossorigin,<https://img1.wsimg.com/gfonts/s/cabin/v27/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkbqDH7alxw.woff2>; rel=preload; as=font; crossorigin,<https://fonts.googleapis.com>; rel=preconnect; crossorigin,<https://fonts.gstatic.com>; rel=preconnect; crossorigin,<https://img1.wsimg.com>; rel=preconnect; crossorigin,<https://isteam.wsimg.com>; rel=preconnect; crossorigin,<https://f8513fae-4b8c-49d0-8404-7b1bfc05d865.onlinestore.godaddy.com>; rel=preconnect; crossorigin
+Server: DPS/2.0.0+sha-623bf47

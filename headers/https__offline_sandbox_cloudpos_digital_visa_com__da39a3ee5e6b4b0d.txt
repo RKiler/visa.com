@@ -1,0 +1,12 @@
+520 
+Date: Fri, 15 Mar 2024 03:08:29 GMT
+Retry-Count: 0
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Cf-Ray: 86494c9ab985cfc4-SJC
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 15
+Set-Cookie: __cfruid=d62e7adc2fe68796315dd4dd0ad270053943a339-1710472109; path=/; domain=.offline.sandbox.cloudpos.digital.visa.com; HttpOnly; Secure; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+Server: cloudflare

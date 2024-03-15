@@ -1,0 +1,16 @@
+200 OK
+X-Content-Type-Options: nosniff nosniff
+X-Xss-Protection: 1; mode=block
+Cf-Ray: 864950b25b6796de-SJC
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Server: cloudflare
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:11:16 GMT
+Set-Cookie: lbs=!A1652m7S1ZRv+8uCWW0fbBXS8ZnHLpl5oVlXi2s3+oxgtgIICBsaSCYfhEetKaTFTcEk7dD5xL0A3MK9YKVrYthVVrQRCTfew62S7FJ8; Path=/; Version=1; Secure; Httponly __cfruid=79cbce955ac26a318f9cc593c58f61bf57ec0e49-1710472276; path=/; domain=.visa.com.tw; HttpOnly; Secure; SameSite=None _cfuvid=p0XFWun9frI9YjQz9Y1kCSRRXfgDMXt4SVRVX1LgvEY-1710472276994-0.0.1.1-604800000; path=/; domain=.visa.com.tw; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: BYPASS
+Last-Modified: Fri, 15 Mar 2024 03:01:17 GMT
+Content-Security-Policy: self

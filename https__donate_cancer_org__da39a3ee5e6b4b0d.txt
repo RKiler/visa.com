@@ -1,0 +1,18 @@
+200 OK
+Set-Cookie: .AspNetCore.Culture=c%3Den%7Cuic%3Den; expires=Sat, 16 Mar 2024 03:12:01 GMT; path=/; secure; samesite=lax; httponly
+Strict-Transport-Security: max-age=10886400; includeSubDomains; preload
+Content-Security-Policy: default-src https:; connect-src https: wss:; font-src https: data:; frame-src https: blob:; img-src https: data:; media-src https:; object-src https: blob:; script-src  'unsafe-inline' 'unsafe-eval' https: blob:; style-src 'self' 'unsafe-inline' https:; frame-ancestors 'self' https://*.azurewebsites.net https://*.cancer.org https://*.cybersource.com https://*.paypal.com;
+Date: Fri, 15 Mar 2024 03:12:00 GMT
+Expires: 0
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Arr-Disable-Session-Affinity: true
+X-Xss-Protection: 1; mode=block
+Last-Modified: Wed, 28 Feb 2024 16:46:48 GMT
+Pragma: no-cache
+Content-Type: text/html
+Request-Context: appId=cid-v1:9229859a-f65d-474c-bda8-ba405acb1d01
+Referrer-Policy: no-referrer-when-downgrade
+Cache-Control: must-revalidate

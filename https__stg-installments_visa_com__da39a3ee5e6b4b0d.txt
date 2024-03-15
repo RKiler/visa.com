@@ -1,0 +1,15 @@
+401 Unauthorized
+Www-Authenticate: Basic realm="stg-installments.visa.com"
+Server: PINPONA
+X-Download-Options: noopen
+Referrer-Policy: same-origin
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Length: 1293
+Retry-Count: 0
+Date: Fri, 15 Mar 2024 03:09:22 GMT
+Content-Type: text/html
+Content-Security-Policy: script-src 'sha256-ZJDHXMuxoBHgMxAi6zcW+usmqp5f4s+7y/cUhIE7Jnk=' 'sha256-w7QCWtZ7dsgmtiHgn6aXoiZGftfLITQMu+CO4+klNY0=' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com/recaptcha/  https://www.gstatic.com/recaptcha/ https://maps.googleapis.com/ 'self';    object-src 'none';base-uri 'self';    default-src 'self';    img-src https://usa.visa.com https://www.google-analytics.com https://stg-static.installments.visa.com https://maps.gstatic.com/ https://maps.googleapis.com/ 'self' data:;     style-src 'unsafe-inline' https://fonts.googleapis.com/ 'self';    connect-src https://stg-apife.installments.visa.com https://www.google-analytics.com https://stats.g.doubleclick.net https://maps.googleapis.com 'self';    font-src https://fonts.gstatic.com/ 'self' data:;    frame-src https://www.google.com;
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Permissions-Policy: fullscreen=(self),camera=(),midi=(),microphone=(),magnetometer=(),gyroscope=(),payment=()

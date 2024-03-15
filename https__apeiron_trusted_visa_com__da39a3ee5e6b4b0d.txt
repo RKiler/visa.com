@@ -1,0 +1,14 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:;
+Date: Fri, 15 Mar 2024 03:08:14 GMT
+Retry-Count: 0
+Cache-Control: no-cache,no-store
+Content-Length: 28896
+Expires: -1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age = 31536000

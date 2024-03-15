@@ -1,0 +1,569 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  
+    <title id="pagetitle">VisaPOS : UK&Ireland</title>
+  
+
+
+  <!-- Global CSS Styles -->
+  <link href="/foundation/css/GlobalStyles.css" rel="stylesheet" type="text/css"/>
+  <link href="/foundation/css/ModalPopup.css" rel="stylesheet" type="text/css" />
+  <link href="/foundation/css/animations.css" rel="stylesheet" type="text/css" />
+	
+
+  <!-- Global Javascript -->
+  <script src="/foundation/js/globalFuncs.js" type="text/javascript"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+	<!-- Global Assets -->
+	
+	
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EZL5Q63ZT"></script>
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag("js", new Date());
+		gtag("config", "G-9EZL5Q63ZT", { cookie_flags: "SameSite=None;Secure" });
+	</script>
+
+
+	
+
+  <!-- Local CSS Styles -->
+  <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/media-queries.css" rel="stylesheet" type="text/css"/>
+
+
+  
+  <!-- ClickJacking prevention> -->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+  </script>
+  
+
+  <!-- Local CSS Styles -->
+
+  <link href="/images/favicon.ico" rel="SHORTCUT ICON">
+
+  <link href="/css/GlobalStyles.css" rel="stylesheet" type="text/css">
+  <link href="/css/slick.css" rel="stylesheet" type="text/css">
+  <link href="/css/visa.css" rel="stylesheet" type="text/css">
+  <link href="/css/styles_emea.css" rel="stylesheet" type="text/css"/>
+
+  
+  <script src="/js/globalFuncs.js" type="text/javascript"></script>
+  <script src="/js/slick.min.js" type="text/javascript"></script>
+
+
+
+  <script src="/js/WebResource.js" type="text/javascript"></script>
+  <script src="/js/ScriptResource.js" type="text/javascript"></script>
+  <script src="/js/ScriptResource(1).js" type="text/javascript"></script>
+
+
+  <script type="text/javascript">
+    $(document).on('click', '.hamburger', function () {
+      console.log('on click hamb');
+      $(this).toggleClass("is-active");
+      $(".mobilenav").slideToggle(500, "easeInCubic");
+    })
+    $(document).on('click', '.mobilenav li.topItem.hassub, .mobilenav li.childItemLevel_2.hassub, .mobilenav li.childItemLevel_3.hassub', function (e) {
+      $(this).find("a").first().toggleClass("arrowup");
+      $(this).find("ul").first().slideToggle(500, "easeInCubic");
+      e.stopPropagation();
+    })
+
+
+
+    $(document).ready(function () {
+      //- Removes this category unless language selected is French.  Then shows the department links.
+      var languageCode = "en";
+
+      if (languageCode != "fr") {
+        $('ul li ul li:contains("Signalisation FIFA")').remove();
+      }
+
+      if (languageCode != "it") {
+        $('ul li ul li:contains("Venezia")').remove();
+      }
+
+
+      $(".desktopdepts").fadeIn(300);
+
+    });
+
+  </script>
+
+	
+
+
+</head>
+
+<body style="margin:0px;">
+
+
+	<!-- Site Flexmodal -->
+  
+	<div id="page-overlay" class="page-overlay"></div>
+	
+	<!-- Screen Overlay (hidden) - contains plugins: PopUp-Box-->
+	<div class="screen-overlay">
+	  		<link rel="stylesheet" type="text/css" href="/foundation/assets/popup-box/css/popup-box.css">
+		<script src="/foundation/assets/popup-box/js/popup-box.js" type="text/javascript"></script>
+
+		
+
+
+
+    <div class="popup-container">
+		
+    </div>
+
+		
+	</div>
+
+	
+	<script>var showregionbanner = true;</script>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/foundation/assets/country-banner/css/country-banner.css">
+  <script src="/foundation/assets/country-banner/js/country-banner.js" type="text/javascript"></script>
+
+
+	<!--Top banner  -->
+	
+	<div id="regionBanner-wrapper" class="regionBanner-wrapper">
+		<div id="regionBanner" class="regionBanner">
+
+		<div id="regionBannerInfoBox" class="regionBannerInfoBox">
+
+			
+			<div>
+				Currently Shopping the Non EU Catalog
+			</div>
+			
+
+		</div>
+
+		<div id="regionBannerSelectedBox" class="regionBannerSelectedBox">
+			<img class="mappin" src="/foundation/images/mappin-blue.png" />
+			<div>Selected delivery country:&nbsp;
+				<span class="regionBannerSelCountry" style="color: rgb(52,173,236);"><b></b></span>
+				&nbsp;<span id="changeButton">[Change]</span></div>
+		</div>
+
+		<div id="regionBannerExtraBox"></div>
+	</div>
+	</div>
+
+	<!--Popup Notice  -->
+  <div id="regionbanner-notice-wrapper" class="regionbanner-notice-wrapper">
+		<div id="regionbanner-notice" class="regionbanner-notice">
+
+			<form id="frmPostBack1" action="#" method="post">
+				<div class="regionbanner-notice-text">
+
+					
+
+					<div style="font-weight:bold; font-size:1.2em; margin:10px;">Please select the country where your items will be delivered.</div>
+
+					<div class="regionbanner-notice-text-selectline">
+						<img class="mappin2" src="/foundation/images/mappin-blue.png" />
+						<div class="country-select">
+
+							Deliver to country:&nbsp;<select id="selCountry"  name="selCountry" class="bodycopy countryddl" ><option value=0>---Select One---</option><option value="1" data-iseu="0"  >Albania</option><option value="2" data-iseu="0"  >Algeria</option><option value="245" data-iseu="0"  >American Samoa</option><option value="4" data-iseu="0"  >Andorra</option><option value="6" data-iseu="0"  >Angola</option><option value="7" data-iseu="0"  >Anguilla</option><option value="9" data-iseu="0"  >Antigua and Barbuda</option><option value="11" data-iseu="0"  >Antilles, Netherlands</option><option value="13" data-iseu="0"  >Argentina</option><option value="14" data-iseu="0"  >Armenia</option><option value="16" data-iseu="0"  >Aruba</option><option value="18" data-iseu="0"  >Australia</option><option value="218" data-iseu="1"  >Austria</option><option value="20" data-iseu="0"  >Azerbaijan</option><option value="23" data-iseu="0"  >Bahamas</option><option value="25" data-iseu="0"  >Bahrain</option><option value="27" data-iseu="0"  >Bangladesh</option><option value="28" data-iseu="0"  >Barbados</option><option value="30" data-iseu="0"  >Barbuda (Antigua)</option><option value="32" data-iseu="0"  >Belarus</option><option value="33" data-iseu="1"  >Belgium</option><option value="34" data-iseu="0"  >Belize</option><option value="35" data-iseu="0"  >Benin</option><option value="37" data-iseu="0"  >Bermuda</option><option value="39" data-iseu="0"  >Bolivia</option><option value="40" data-iseu="0"  >Bonaire (Netherlands Antilles)</option><option value="42" data-iseu="0"  >Bosnia-Herzegovina</option><option value="43" data-iseu="0"  >Botswana</option><option value="44" data-iseu="0"  >Brazil</option><option value="46" data-iseu="0"  >British Virgin Islands</option><option value="48" data-iseu="0"  >Brunei</option><option value="49" data-iseu="1"  >Bulgaria</option><option value="50" data-iseu="0"  >Burkina Faso</option><option value="51" data-iseu="0"  >Burundi</option><option value="52" data-iseu="0"  >Cambodia</option><option value="143" data-iseu="0"  >Cameroon</option><option value="53" data-iseu="0"  >Canada</option><option value="142" data-iseu="0"  >Cape Verde Islands</option><option value="140" data-iseu="0"  >Cayman Islands</option><option value="55" data-iseu="0"  >Central African Republic</option><option value="297" data-iseu="0"  >Chad</option><option value="57" data-iseu="0"  >Chile</option><option value="58" data-iseu="0"  >China, People's Republic of</option><option value="59" data-iseu="0"  >Columbia</option><option value="60" data-iseu="0"  >Congo (Brazzaville)</option><option value="61" data-iseu="0"  >Congo, Democratic republic of</option><option value="62" data-iseu="0"  >Cook Islands</option><option value="63" data-iseu="0"  >Costa Rica</option><option value="64" data-iseu="0"  >Cote d'Ivoire (Ivory Coast)</option><option value="155" data-iseu="1"  >Croatia</option><option value="66" data-iseu="0"  >Curacao (Netherlands Antilles)</option><option value="68" data-iseu="1"  >Cyprus</option><option value="298" data-iseu="1"  >Czech Republic</option><option value="69" data-iseu="1"  >Denmark</option><option value="71" data-iseu="0"  >Djibouti</option><option value="72" data-iseu="0"  >Dominica</option><option value="74" data-iseu="0"  >Dominican Republic</option><option value="78" data-iseu="0"  >Ecuador</option><option value="79" data-iseu="0"  >Egypt</option><option value="81" data-iseu="0"  >El Salvador</option><option value="82" data-iseu="0"  >Equatorial Guinea</option><option value="83" data-iseu="0"  >Eritrea</option><option value="84" data-iseu="1"  >Estonia</option><option value="85" data-iseu="0"  >Ethiopia</option><option value="87" data-iseu="0"  >Faroe Islands</option><option value="88" data-iseu="0"  >Fiji</option><option value="90" data-iseu="1"  >Finland</option><option value="91" data-iseu="1"  >France</option><option value="93" data-iseu="0"  >French Guyana</option><option value="94" data-iseu="0"  >French Polynesia</option><option value="95" data-iseu="0"  >Gabon</option><option value="96" data-iseu="0"  >Gambia</option><option value="99" data-iseu="0"  >Georgia</option><option value="76" data-iseu="1"  >Germany</option><option value="100" data-iseu="0"  >Ghana</option><option value="102" data-iseu="0"  >Gibraltar</option><option value="105" data-iseu="1"  >Greece</option><option value="107" data-iseu="0"  >Greenland</option><option value="103" data-iseu="0"  >Grenada</option><option value="108" data-iseu="0"  >Guadeloupe</option><option value="110" data-iseu="0"  >Guam</option><option value="111" data-iseu="0"  >Guatemala</option><option value="145" data-iseu="0"  >Guernsey</option><option value="112" data-iseu="0"  >Guinea</option><option value="113" data-iseu="0"  >Guyana</option><option value="114" data-iseu="0"  >Haiti</option><option value="116" data-iseu="0"  >Honduras</option><option value="117" data-iseu="0"  >Hong Kong</option><option value="118" data-iseu="1"  >Hungary</option><option value="123" data-iseu="0"  >Iceland</option><option value="124" data-iseu="0"  >India</option><option value="125" data-iseu="0"  >Indonesia</option><option value="338" data-iseu="0"  >Iraq</option><option value="119" data-iseu="1"  >Ireland</option><option value="127" data-iseu="0"  >Israel</option><option value="128" data-iseu="1"  >Italy</option><option value="129" data-iseu="0"  >Ivory coast  (Côte d’Ivoire)</option><option value="131" data-iseu="0"  >Jamaica</option><option value="133" data-iseu="0"  >Japan</option><option value="339" data-iseu="0"  >Jersey</option><option value="138" data-iseu="0"  >Jordan</option><option value="146" data-iseu="0"  >Kazakhstan</option><option value="147" data-iseu="0"  >Kenya</option><option value="149" data-iseu="0"  >Kiribati</option><option value="152" data-iseu="0"  >Korea, South</option><option value="335" data-iseu="0"  >Kosovo</option><option value="154" data-iseu="0"  >Kosrae (Micronesia, Federated States of )</option><option value="150" data-iseu="0"  >Kuwait</option><option value="156" data-iseu="0"  >Kyrgystan</option><option value="157" data-iseu="0"  >Laos</option><option value="159" data-iseu="1"  >Latvia</option><option value="160" data-iseu="0"  >Lebanon</option><option value="158" data-iseu="0"  >Lesotho</option><option value="162" data-iseu="0"  >Liechtenstein</option><option value="163" data-iseu="1"  >Lithuania</option><option value="164" data-iseu="1"  >Luxembourg</option><option value="166" data-iseu="0"  >Macau</option><option value="168" data-iseu="0"  >Macedonia (FYROM)</option><option value="169" data-iseu="0"  >Madagascar</option><option value="173" data-iseu="0"  >Malavi</option><option value="176" data-iseu="0"  >Malaysia</option><option value="175" data-iseu="0"  >Maldives</option><option value="178" data-iseu="0"  >Mali</option><option value="179" data-iseu="1"  >Malta</option><option value="182" data-iseu="0"  >Marshall Islands</option><option value="183" data-iseu="0"  >Martinique</option><option value="185" data-iseu="0"  >Mauritania</option><option value="186" data-iseu="0"  >Mauritius</option><option value="189" data-iseu="0"  >Mexico</option><option value="190" data-iseu="0"  >Micronesia, Federated States of</option><option value="191" data-iseu="0"  >Moldova (Moldavia)</option><option value="192" data-iseu="0"  >Monaco</option><option value="193" data-iseu="0"  >Mongolia</option><option value="336" data-iseu="0"  >Montenegro</option><option value="195" data-iseu="0"  >Montserrat</option><option value="180" data-iseu="0"  >Morocco</option><option value="197" data-iseu="0"  >Mozambique</option><option value="198" data-iseu="0"  >Namibia</option><option value="202" data-iseu="0"  >Nepal</option><option value="199" data-iseu="1"  >Netherlands</option><option value="206" data-iseu="0"  >New Caledonia</option><option value="207" data-iseu="0"  >New Zealand</option><option value="205" data-iseu="0"  >NICARAGUA</option><option value="209" data-iseu="0"  >Niger</option><option value="210" data-iseu="0"  >Nigeria</option><option value="314" data-iseu="0"  >Northern Ireland</option><option value="211" data-iseu="0"  >Northern Mariana Islands</option><option value="212" data-iseu="0"  >Norway</option><option value="216" data-iseu="0"  >Oman</option><option value="220" data-iseu="0"  >Pakistan</option><option value="222" data-iseu="0"  >Palau</option><option value="223" data-iseu="0"  >Panama</option><option value="224" data-iseu="0"  >Papua New Guinea</option><option value="225" data-iseu="0"  >Paraguay</option><option value="226" data-iseu="0"  >Peru</option><option value="89" data-iseu="0"  >Philippines</option><option value="227" data-iseu="1"  >Poland</option><option value="228" data-iseu="0"  >Ponape (Micronesia, Federated States of )</option><option value="229" data-iseu="1"  >Portugal</option><option value="231" data-iseu="0"  >Puerto Rico</option><option value="232" data-iseu="0"  >Qatar</option><option value="234" data-iseu="0"  >Reunion</option><option value="236" data-iseu="1"  >Romania</option><option value="241" data-iseu="0"  >Rwanda</option><option value="242" data-iseu="0"  >Saba (Netherlands Antilles)</option><option value="246" data-iseu="0"  >San Marino</option><option value="247" data-iseu="0"  >Saudi Arabia</option><option value="248" data-iseu="0"  >Senegal</option><option value="337" data-iseu="0"  >Serbia</option><option value="250" data-iseu="0"  >Seychelles</option><option value="251" data-iseu="0"  >Sierra Leone</option><option value="252" data-iseu="0"  >Singapore</option><option value="253" data-iseu="1"  >Slovak Republic</option><option value="254" data-iseu="1"  >Slovenia</option><option value="255" data-iseu="0"  >Solomon Islands</option><option value="332" data-iseu="0"  >South Africa</option><option value="256" data-iseu="1"  >Spain</option><option value="258" data-iseu="0"  >Sri Lanka</option><option value="263" data-iseu="0"  >St. Croix (US Virgin Islands)</option><option value="264" data-iseu="0"  >St. Eustatius (Netherlands Antilles)</option><option value="266" data-iseu="0"  >St. John (US Virgin Islands)</option><option value="271" data-iseu="0"  >St. Maarten (Netherlands Antilles)</option><option value="272" data-iseu="0"  >St. Maarten (Netherlands Antilles)</option><option value="275" data-iseu="0"  >St. Thomas (US Virgin Islands)</option><option value="276" data-iseu="0"  >St. Vincent and the Grenadines</option><option value="278" data-iseu="0"  >Surinam</option><option value="279" data-iseu="0"  >Swaziland</option><option value="333" data-iseu="1"  >Sweden</option><option value="334" data-iseu="0"  >Switzerland</option><option value="280" data-iseu="0"  >Syria</option><option value="284" data-iseu="0"  >Taiwan</option><option value="282" data-iseu="0"  >Tajikistan</option><option value="286" data-iseu="0"  >Tanzania</option><option value="288" data-iseu="0"  >Thailand</option><option value="289" data-iseu="0"  >Togo</option><option value="294" data-iseu="0"  >Trinidad and Tobago</option><option value="299" data-iseu="0"  >Tunisia</option><option value="300" data-iseu="0"  >Turkey</option><option value="302" data-iseu="0"  >Turkmenistan</option><option value="303" data-iseu="0"  >Turks and Caicos Islands</option><option value="305" data-iseu="0"  >Tuvalu</option><option value="213" data-iseu="0"  >Uganda</option><option value="215" data-iseu="0"  >Ukraine</option><option value="318" data-iseu="0"  >United Arab Emirates</option><option value="312" data-iseu="0"  >United Kingdom</option><option value="319" data-iseu="0"  >United States</option><option value="308" data-iseu="0"  >Uruguay</option><option value="309" data-iseu="0"  >Uzbekistan</option><option value="310" data-iseu="0"  >Vanuatu</option><option value="311" data-iseu="0"  >Venezuela</option><option value="320" data-iseu="0"  >Vietnam</option><option value="322" data-iseu="0"  >Virgin Gorda (British Virgin Islands)</option><option value="3" data-iseu="0"  >Virgin Islands US</option><option value="324" data-iseu="0"  >Wallis and Futuna Islands</option><option value="327" data-iseu="0"  >Yap (Micronesia, Federated States of)</option><option value="135" data-iseu="0"  >Yemen, Republic of</option><option value="328" data-iseu="0"  >Zambia</option><option value="330" data-iseu="0"  >Zimbabwe</option></select>
+						</div>
+					</div>
+
+				
+					<input type="text" id="txtRegion" name="txtRegion" class="bodycopy" readonly>
+					<br />
+					<input type="hidden" id="selRegion" name="selRegion" class="bodycopy">
+					<input type="hidden" id="selCountryText" name="selCountryText" class="bodycopy">
+					<input type="hidden" name="postToken" value=" EJxECUE24TwjGQr9iL/2k5k+f10JrS/SfIuT7N7HOcRoTqDEUXdG4jK+TPwk8lr5f/FJVq+JXoC6PJEdD4vFa8mCgLKrceu8hR38Qzw7z0Y=" />
+					<br /><br /><br />&nbsp;
+
+				</div>
+			</form>
+		
+		</div>
+
+		<form id="frmPostBack" action="#" method="get"></form>
+
+
+	</div>
+
+
+
+	 
+  <link rel="stylesheet" type="text/css" href="/foundation/assets/flexmodal/css/flexmodal.css">
+  <script src="/foundation/assets/flexmodal/js/flexmodal.js" type="text/javascript"></script>
+
+
+
+  <div class="slim_modal" id="dataModal">
+    <div class="sm_content">
+      <div class="sm_header"></div>
+      <div class="sm_icon_menu is_right">
+        <ul>
+          <li class="sm_close">X<i class="fa fa-times fa-fw ">X</i></li>
+        </ul>
+      </div>
+      <div class="sm_content_inner_wrap">
+        <div class="sm_area_all"></div>
+        <a class="sm_close sm_close_button">CLOSE</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+	<!-- Site Overlay (hidden) -->
+	<div class="site-overlay"></div>
+
+    <div class="header-wrapper">
+      <!-- Start - Site Custom Control: Header_TopBanner --> 
+
+
+      <div class="bigheaderwrapper">
+
+        <div class="aiCustomUserControl-Header-ai">
+          <!-- Start - Site Custom Control: Header -->
+          <div class="topnavwrapper">
+            <div class="desktopnav">
+
+              <div class="desktoplogo">
+                <a class="BodyLink" href="/default.asp" target="_self">
+                  <img style="border-width: 0px;" alt="logo" src="/images/logo.png">
+                </a>
+
+              </div>
+
+
+              <div>
+                <nav id="main_nav">
+				          <ul>
+					          <li class="topItem hassub"><a href="/product.asp?dptID=696">Brand Guidelines</a></li>
+				          </ul>
+                </nav>
+              </div>
+
+
+
+	            <div class="toprightwrapper">
+
+								<div>
+		<form action="/product.asp?dptID=844" method="post">
+		<select  class = "header-currency-selecton" name="CL_ID" id="selLanguagge"  onchange='this.form.submit()'><option value="188" selected>English</option><option value="189">French</option><option value="190">German</option><option value="197">Italian</option><option value="219">Portuguese</option><option value="198">Spanish</option></select>
+		</form>
+		</div>
+
+									<div class="cartwrapper">
+										<a class="BodyLink" href="/checkout.asp">
+										<div class="carticon">
+											<img alt="carticon" src="/images/icon-cart.png">
+										</div>
+										<div class="cartnumber">0</div>
+										</a>
+									</div>
+
+							</div>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- End - Site Custom Control: Header -->
+        </div>
+
+      </div>
+
+
+
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $('.slider').slick({
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: true
+          })
+        });
+      </script>
+      <!-- End - Site Custom Control: Header_TopBanner -->
+    </div>
+		<div class="main-content">
+		
+
+	<link href="/foundation/assets/slickmodal/css/slickmodal.min.css" rel="stylesheet" type="text/css" />
+	<script src="/foundation/assets/slickmodal/js/jquery.slickmodal.min.js"></script>
+	<link href="/foundation/assets/slickmodal/css/alert-success.css" rel="stylesheet" type="text/css" />
+
+	<!-- Popup HTML -->
+	<div class="alert-success" data-sm-init="true">
+		<div>Item added to your basket</div>
+	</div>
+
+
+	<!-- Plugin invoke & settings -->
+	<script>
+    jQuery(".alert-success").SlickModals({
+        popup_reopenClass: "open-sm",
+        popup_position: "topCenter",
+        popup_autoClose: true,
+        popup_autoCloseAfter: "4s",
+        popup_animation: "zoomIn",
+        popup_closeButtonStyle: "cancel square",
+        popup_closeButtonPlace: "inside",
+        overlay_isVisible: false,
+				popup_openWithHash: "#added",
+        mobile_position: "topCenter"
+			});
+	</script>
+
+
+
+	<style>
+		.sm-popup {
+			margin-top: 300px !important;
+		}
+	</style>
+
+<script>
+	function imgError(image) {
+		image.onerror = "";
+		image.style.visibility = 'hidden'
+		return true;
+	}
+
+
+	function showdiv() {
+
+		var icon = document.getElementById("icon");
+		var div = document.getElementById("container1")
+		var className = div.getAttribute("class");
+
+
+		if(className=="toggle_container") {
+			div.className = "toggle_container-active";
+			icon.src = "/images/icon-minus.png"
+		}
+		else{
+			div.className = "toggle_container";
+			icon.src = "/images/icon-plus.png"
+		}
+	}
+
+
+	$( document ).ready(function() {
+
+		 if($("#product_header_insert").length != 0) {
+			 $("#product_header_insert").detach().appendTo("#product_header");
+			 $("#product_header").show();
+		 }
+
+
+	});
+</script>
+
+
+
+
+
+<div class="mainContentTable">
+
+	
+
+
+	<!-- Department Radio Buttons -->
+	<br />
+
+	
+	<div class="Product-radiobutton-bar">
+
+		<form method="get" action="/product.asp">
+			<label for="categoryA">Merchant Signage</label>
+			<input type="radio" id="categoryA" name="dptID" value="694" onClick="javascript:this.parentNode.submit();" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="categoryB">Contactless</label>
+			<input type="radio" id="categoryB" name="dptID" value="695" onClick="javascript:this.parentNode.submit();" />
+			&nbsp;&nbsp;&nbsp;
+			
+			
+
+			<label for="categoryE">All</label>
+			<input type="radio" id="categoryE" name="dptID" value="844"  onClick="javascript:this.parentNode.submit();" checked/>
+
+		</form>
+	</div>
+
+
+	<br />
+	
+
+	<div style="text-align:center;">
+		<div id="pagnationNav1" class="holder">
+		</div>
+		<!-- item container -->
+		<div id="itemContainer">
+			
+			<div style="color:red;">There are no items in this category to display for the selected language.<br>Please select the language that matches your delivery country.<br>Select English if your delivery country is outside of the EU.</div>
+			
+		</div>
+
+		<div id="pagnationNav2" class="clear holder">
+		</div>
+	</div>
+
+
+	
+	<script>
+	/* when document is ready */
+	$(function() {
+			/* destroy jpages */
+			$("div.holder").jPages("destroy");
+
+	});
+	</script>
+	
+
+
+  <div id="item-list-bottomsection"></div>
+
+
+</div>
+
+		</div>
+
+    <!-- Start - Site Custom Control: Footer -->
+    <div class="footerwrapper">
+      <div class="footercopy">
+        <span class="footercopybold"><a href="mailto:Visa@MarkeCreative.com">Visa@MarkeCreative.com</a></span>
+        <br><a href="tel:+44 (0) 208 640 2999">+44 (0) 208 640 2999</a>
+      </div>
+      <div class="copyright">
+        &copy; 2024&nbsp; Visa. All Rights Reserved.
+      </div>
+      <div class="privacy">
+        <a href="https://www.markecreativemerchandise.com/en/privacy-policy/" target="_blank">Marke Creative Privacy Policy</a>
+      </div>
+      <br />
+      <div class="privacy">
+        <a href="https://www.visaeurope.com/privacy/" target="_blank">Visa Privacy Policy</a>
+      </div>
+
+      <div style="margin-top:10px;">
+      <span id="cookiepolicyholder" style="margin-top:7px; display:none;"></span>
+      
+	<div class="footer-include-wrapper">
+   
+ <!--Global Footer Include  -->
+
+
+  <link rel="stylesheet" type="text/css" href="/foundation/assets/footer-include/css/footer-include.css">
+  <script src="/foundation/assets/footer-include/js/footer-include.js" type="text/javascript"></script>
+
+   
+ <!--Global Footer Include  -->
+
+ 
+
+   <div id="teconsent"></div> 
+
+   <script async="async" src="//consent.trustarc.com/notice?domain=markecreative.com&c=teconsent&js=nj&noticeType=bb&text=true&language=en" crossorigin=""></script>
+
+
+<script type="text/javascript">
+	if ($("#cookiepolicyholder").length != 0) {
+		$("#teconsent").detach().appendTo("#cookiepolicyholder");
+		$("#cookiepolicyholder").show();
+	}
+
+	$(document).ready(function () {
+
+
+//		var aval = $("#cookiepolicyholder  div:first a").text();
+//		alert(aval);
+
+		//alert($("#link1").text());
+
+
+		//$('#teconsent a').contents(':contains("Cookie Preferences")')[0].nodeValue = '"Hi I am replace"';
+
+
+		//$(".truste_cursor_pointer").text("helpme");
+		
+		///var replaced = $("#teconsent a").html().replace("Cookie Preferences","BUBA");
+		//$("#teconsent a").html(replaced);
+	});
+
+
+
+</script>
+
+
+	</div>
+  
+      </div>
+
+    </div>
+
+<style>
+.regionBanner {
+	font-family: VisaDialect-Regular !important;
+}
+
+</style>
+
+
+
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=2038491949" async></script></body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- *********************************************************************************************************************** -->
+
+
+
+
+<script>
+$( "#item-list-title" ).text("View All");
+</script>

@@ -1,0 +1,20 @@
+200 OK
+Date: Fri, 15 Mar 2024 03:11:22 GMT
+Content-Length: 34
+Cf-Cache-Status: DYNAMIC
+Last-Modified: Tue, 06 Sep 2016 17:29:58 GMT
+Vary: User-Agent, Accept-Encoding
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN, SAMEORIGIN
+Content-Type: text/html
+Set-Cookie: lbs=!7sdMbmgxhOYctxagL/aE5Z6VpXxBem4tAjv8xx/4nexLv08gImEAxGmmYk+RNUpQVC1ZaJoOSf/BD0xCTKRZk7nqBaqSbY9F1A6FFe2HWx0=; Path=/; Version=1; Secure; Httponly __cfruid=afef4e83779668e5a5f76ef68938f8fc4d947cd1-1710472282; path=/; domain=.staging.offerswidget.visa.com; HttpOnly; Secure; SameSite=None _cfuvid=npJgfhX7Re7X1.yzIto9NHIgSVh0kxy1ejUv49xljwQ-1710472282868-0.0.1.1-604800000; path=/; domain=.staging.offerswidget.visa.com; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: cloudflare
+Cf-Ray: 864950d6f9837aaf-SJC
+Accept-Ranges: bytes
+Content-Security-Policy: script-src 'self' 'unsafe-eval' www.google-analytics.com connect.facebook.net maps.googleapis.com ds-aksb-a.akamaihd.net 'unsafe-eval' 'unsafe-inline' ; object-src 'self'

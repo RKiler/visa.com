@@ -1,0 +1,13 @@
+200 OK
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://jsonip.com *.artifi.net *.jquery.com *.trustarc.com *.corpmerchandise.com https://dy-api.com *.googletagmanager.com *.marketo.com *.google-analytics.com *.zmags.com *.issuu.com *.marketo.net *.googleadservices.com connect.facebook.net cdnjs.cloudflare.com *.staples.com googleads.g.doubleclick.net polyfill.io *.staplespromo.com *.staples-static.com *.inside-graph.com *.newrelic.com *.nr-data.net countdown.omegawatches.com https://*.kaptcha.com *.cloudfront.net *.retentionscience.com *.lightboxcdn.com lightboxapi.azurewebsites.net *.boldchat.com *.licdn.com *.linkedin.com *.btttag.com *.attentivemobile.com *.attn.tv *.contentsquare.net *.contentsquare.com *.bing.com *.dynamicyield.com *.azureedge.net *.mczbf.com *.oppwa.com https://eu-test.oppwa.com/ https://assets.adobedtm.com/;
+X-Content-Type-Options: nosniff
+Set-Cookie: _WebStoreculture_bWVyY2hhbnRzaWduYWdlZ2xvYmFsLnZpc2EuY29t=1; expires=Fri, 15-Mar-2024 04:12:29 GMT; SameSite=Strict; path=/; HttpOnly; secure portal_bWVyY2hhbnRzaWduYWdlZ2xvYmFsLnZpc2EuY29t=21; expires=Fri, 15-Mar-2024 04:12:29 GMT; SameSite=Strict; path=/; HttpOnly; secure publishstate_bWVyY2hhbnRzaWduYWdlZ2xvYmFsLnZpc2EuY29t=PRODUCTION; expires=Fri, 15-Mar-2024 04:12:29 GMT; SameSite=Strict; path=/; HttpOnly; secure culture_bWVyY2hhbnRzaWduYWdlZ2xvYmFsLnZpc2EuY29t=en-US; expires=Fri, 15-Mar-2024 04:12:29 GMT; SameSite=Strict; path=/; HttpOnly; secure visid_incap_2999160=xSHjaD4rTQW9VSh/CQ2Y9J2882UAAAAAQUIPAAAAAABpE/giC5c+MrDiOlatGH/Z; expires=Fri, 14 Mar 2025 06:30:11 GMT; HttpOnly; path=/; Domain=.visa.com nlbi_2999160=XoktRyLU12WP2kgE9M9DCgAAAAAw7AMcD/D54ooqUEaD/VRG; path=/; Domain=.visa.com incap_ses_1163_2999160=eIxoehjxokas4D34e88jEJ2882UAAAAADkXIBWRFCrZlsuDF7eedsg==; path=/; Domain=.visa.com
+Retry-Count: 0
+X-Iinfo: 14-71911634-71911639 NNNN CT(76 157 0) RT(1710472349118 8) q(0 0 2 1) r(3 3) U24
+Date: Fri, 15 Mar 2024 03:12:29 GMT
+X-Cdn: Imperva
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload max-age=31536000;includeSubDomains;redirectHttpToHttps
+Sppone-Username: 
+X-Frame-Options: DENY

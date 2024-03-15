@@ -1,0 +1,14 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Date: Fri, 15 Mar 2024 03:09:38 GMT
+Pragma: no-cache
+Content-Length: 28872
+Server: Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age = 31536000
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:;
+Retry-Count: 0
+Cache-Control: no-cache,no-store
+Expires: -1

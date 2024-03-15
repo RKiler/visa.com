@@ -1,0 +1,28 @@
+200 OK
+Pragma: no-cache
+Expect-Ct: enforce, max-age=604800
+Access-Control-Allow-Methods: OPTIONS,HEAD,GET,POST,PUT,DELETE,MOVE,COPY,PATCH
+X-Aspnet-Version: 
+Cross-Origin-Opener-Policy-Report-Only: same-origin
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: DENY
+Access-Control-Max-Age: 600
+X-Download-Options: noopen
+Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+Access-Control-Allow-Headers: authorization,content-type,x-transfersegment
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: frame-ancestors 'self'; upgrade-insecure-requests
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Set-Cookie: X-Mapping-edakkigk=31498ADD3FDB42DDD7CD1BE6642E75D5; path=/
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:08:29 GMT
+X-Content-Type-Options: nosniff
+Last-Modified: Wed, 24 Jan 2024 15:47:48 GMT
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 86494c9e3b02642f-SJC
+Vary: Host,Accept-Encoding,User-Agent
+Access-Control-Allow-Credentials: true
+Retry-Count: 0
+Content-Type: text/html
+Cross-Origin-Resource-Policy: same-origin
+Cache-Control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0, max-age=0, s-maxage=0

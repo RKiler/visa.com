@@ -1,0 +1,9 @@
+500 Internal Server Error
+Set-Cookie: __cfruid=b929d649afecc1b4de4042c403147dcd60cffbda-1710472138; path=/; domain=.vntsnotificationservice.visa.com; HttpOnly; Secure; SameSite=None
+Cf-Ray: 86494d4e492d6896-SJC
+Date: Fri, 15 Mar 2024 03:08:58 GMT
+Retry-Count: 0
+X-Backside-Transport: FAIL FAIL
+Cf-Cache-Status: DYNAMIC
+Content-Type: text/xml
+Server: cloudflare

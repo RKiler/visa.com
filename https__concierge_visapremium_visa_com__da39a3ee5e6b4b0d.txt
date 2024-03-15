@@ -1,0 +1,14 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload;
+Cache-Control: private
+Content-Security-Policy: script-src 'self' 'unsafe-eval' www.google-analytics.com tagmanager.google.com connect.facebook.net code.jquery.com www.googletagmanager.com maps.googleapis.com ds-aksb-a.akamaihd.net g.3gl.net 'unsafe-eval' 'unsafe-inline' ; object-src 'self'
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Set-Cookie: JSESSIONID=DBBFB1D1B7514DAEF9F160395EAE9D6D.localhost_vpppublish; Path=/; Secure; HttpOnly JSESSIONID=.2; path=/;HttpOnly;Secure VPPJSESSIONID=.2; path=/
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Date: Fri, 15 Mar 2024 03:09:58 GMT
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+X-Content-Type-Options: nosniff nosniff
+Content-Type: text/html;charset=UTF-8
+Cf-Ray: 86494ec65dd467dc-SJC
